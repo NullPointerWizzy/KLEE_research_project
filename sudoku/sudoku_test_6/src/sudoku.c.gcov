@@ -1,0 +1,668 @@
+        -:    0:Source:sudoku.c
+        -:    0:Graph:sudoku.gcno
+        -:    0:Data:sudoku.gcda
+        -:    0:Runs:891
+        -:    1:#include "sudoku.h"
+        -:    2:
+        -:    3:#include "grid.h"
+        -:    4:
+        -:    5:#include <stdbool.h>
+        -:    6:#include <stdio.h>
+        -:    7:#include <stdlib.h>
+        -:    8:#include <unistd.h>
+        -:    9:
+        -:   10:#include "/home/thomas/Application/klee_with_uclibc/klee/include/klee/klee.h"
+        -:   11:#include <err.h>
+        -:   12:#include <getopt.h>
+        -:   13:#include <math.h>
+        -:   14:#include <string.h>
+        -:   15:#include <time.h>
+        -:   16:
+        -:   17:typedef enum { mode_first, mode_all, mode_generate, mode_unique } mode_type;
+        -:   18:
+        -:   19:static bool verbose = false;
+        -:   20:static bool error = false;
+        -:   21:static size_t fill_ratio = 0;
+        -:   22:static size_t nb_choice = 0;
+        -:   23:static size_t nb_backtrack = 0;
+        -:   24:static size_t nb_sol = 0;
+        -:   25:static clock_t clock_debut;
+        -:   26:
+        -:   27:/************ FILE_PARSER ************/
+      870:   28:static grid_t *file_parser (char *filename) {
+      870:   29:  FILE *input_file = fopen (filename, "r+");
+      870:   30:  if (input_file == NULL) {
+    #####:   31:    warnx ("error : the file cannot be opened correctly\n");
+    #####:   32:    goto error;
+        -:   33:  }
+        -:   34:
+      870:   35:  char first_row[MAX_GRID_SIZE];
+      870:   36:  size_t size = MAX_GRID_SIZE;
+      870:   37:  size_t row = 0;
+      870:   38:  size_t column = 0;
+      870:   39:  bool commentary = false;
+      870:   40:  grid_t *grid = NULL;
+      870:   41:  size_t nb_fill = 0;
+        -:   42:
+      870:   43:  int c = fgetc (input_file);
+      870:   44:  if (c == EOF) {
+       30:   45:    warnx ("warning : '%s' : empty file\n", filename);
+       30:   46:    goto error;
+        -:   47:  }
+        -:   48:
+   280710:   49:  while (c != EOF) {
+   280110:   50:    switch (c) {
+        -:   51:    case ' ':
+        -:   52:
+        -:   53:    case '\t':
+        -:   54:      break;
+        -:   55:
+        -:   56:    case '#':
+     1800:   57:      commentary = true;
+        -:   58:      break;
+        -:   59:
+     8010:   60:    case '\n':
+     8010:   61:      commentary = false;
+        -:   62:
+        -:   63:      /* Creating the grid and adding the first line */
+     8010:   64:      if (row == 0 && !commentary && column != 0) {
+      720:   65:        size = column;
+      720:   66:        if (!grid_check_size (size)) {
+       30:   67:          warnx ("warning : '%s' : invalid size of grid\n", filename);
+       30:   68:          goto error;
+        -:   69:        }
+        -:   70:
+      690:   71:        grid = grid_alloc (size);
+      690:   72:        if (grid == NULL) {
+    #####:   73:          warnx ("warning : '%s' : allocation of the grid failed\n", filename);
+    #####:   74:          goto error;
+        -:   75:        }
+        -:   76:
+     9780:   77:        for (size_t i = 0; i < size; i++) {
+     9150:   78:          if (!grid_check_char (grid, first_row[i])) {
+       60:   79:            warnx ("warning : '%s' : wrong character '%c' at line 1\n",
+        -:   80:                   filename, first_row[i]);
+       60:   81:            goto error_free;
+        -:   82:          }
+     9090:   83:          grid_set_cell (grid, 0, i, first_row[i]);
+        -:   84:
+     9090:   85:          if (first_row[i] != '_') {
+     3060:   86:            nb_fill++;
+        -:   87:          }
+        -:   88:        }
+        -:   89:      }
+        -:   90:
+     7920:   91:      if (row != 0 && column != size && column != 0) {
+       60:   92:        warnx ("warning : '%s' : line %li is malformed! (wrong number of "
+        -:   93:               "columns)\n",
+        -:   94:               filename, row + 1);
+       60:   95:        goto error_free;
+        -:   96:      }
+        -:   97:
+     7740:   98:      if (column != 0) {
+     7650:   99:        column = 0;
+     7650:  100:        row += 1;
+        -:  101:      }
+        -:  102:      break;
+        -:  103:
+   139410:  104:    default:
+   139410:  105:      if (commentary) {
+        -:  106:        break;
+        -:  107:      }
+        -:  108:
+   137790:  109:      if (grid != NULL && !grid_check_char (grid, c)) {
+       30:  110:        warnx ("warning : '%s' : wrong character '%c' at line %li\n", filename,
+        -:  111:               c, row + 1);
+       30:  112:        goto error_free;
+        -:  113:      }
+        -:  114:
+   137760:  115:      if (row == size) {
+       30:  116:        warnx ("warning : '%s' : grid has additional line!\n", filename);
+       30:  117:        goto error_free;
+        -:  118:      }
+        -:  119:
+   137730:  120:      if (column == size) {
+       30:  121:        warnx ("warning : '%s' : line %li is malformed! (wrong number of "
+        -:  122:               "columns)\n",
+        -:  123:               filename, row + 1);
+       30:  124:        goto error_free;
+        -:  125:      }
+        -:  126:
+   137700:  127:      if (grid == NULL) {
+     9840:  128:        first_row[column] = c;
+     9840:  129:        column++;
+        -:  130:
+        -:  131:      } else {
+   127860:  132:        grid_set_cell (grid, row, column, c);
+        -:  133:
+   127860:  134:        if (c != '_') {
+    56760:  135:          nb_fill++;
+        -:  136:        }
+        -:  137:
+   127860:  138:        column++;
+        -:  139:      }
+        -:  140:    }
+   279870:  141:    c = fgetc (input_file);
+        -:  142:  }
+        -:  143:
+        -:  144:  /* Case if size = 1 and file with no '\n */
+      600:  145:  if (row == 0 && column == 1) {
+       60:  146:    size = 1;
+       60:  147:    grid = grid_alloc (size);
+        -:  148:
+       60:  149:    if (!grid_check_char (grid, first_row[0])) {
+       30:  150:      warnx ("warning : '%s' : wrong character '%c' at line 1\n", filename,
+        -:  151:             first_row[0]);
+       30:  152:      goto error_free;
+        -:  153:    }
+        -:  154:
+       30:  155:    grid_set_cell (grid, 0, 0, first_row[0]);
+        -:  156:
+       30:  157:    if (first_row[0] != '_') {
+    #####:  158:      nb_fill++;
+        -:  159:    }
+        -:  160:
+       30:  161:    size_t size_full = grid_get_size (grid) * grid_get_size (grid);
+       30:  162:    fill_ratio = round (100 * nb_fill / size_full);
+        -:  163:
+       30:  164:    fclose (input_file);
+       30:  165:    return grid;
+        -:  166:  }
+        -:  167:
+        -:  168:  /* Case if EOF with non '\n' */
+      540:  169:  if (column == size && row == size - 1) {
+       30:  170:    size_t size_full = grid_get_size (grid) * grid_get_size (grid);
+       30:  171:    fill_ratio = round (100 * nb_fill / size_full);
+        -:  172:
+       30:  173:    fclose (input_file);
+       30:  174:    return grid;
+        -:  175:  }
+        -:  176:
+      510:  177:  if (column != 0) {
+       30:  178:    warnx ("warning : '%s' : line %li is malformed! (wrong number of "
+        -:  179:           "columns)\n",
+        -:  180:           filename, row + 1);
+       30:  181:    goto error_free;
+        -:  182:  }
+        -:  183:
+      480:  184:  if (grid == NULL) {
+       60:  185:    warnx ("warning : '%s' : file with no sudoku\n", filename);
+       60:  186:    goto error_free;
+        -:  187:  }
+        -:  188:
+      420:  189:  if (row != size) {
+       30:  190:    warnx ("warning : '%s' : grid has %li missing line(s)!\n", filename,
+        -:  191:           size - row);
+       30:  192:    goto error_free;
+        -:  193:  }
+        -:  194:
+      390:  195:  size_t size_full = grid_get_size (grid) * grid_get_size (grid);
+      390:  196:  fill_ratio = 100 * nb_fill / size_full;
+        -:  197:
+      390:  198:  fclose (input_file);
+      390:  199:  return grid;
+        -:  200:
+        -:  201:/* Error handling */
+      360:  202:error_free:
+      360:  203:  grid_free (grid);
+        -:  204:
+      420:  205:error:
+      420:  206:  error = true;
+      420:  207:  fclose (input_file);
+      420:  208:  return NULL;
+        -:  209:}
+        -:  210:
+        -:  211:/************ GRID_BACKTRACK ************/
+    13423:  212:static grid_t *grid_backtrack (grid_t *grid, mode_type mode,
+        -:  213:                               FILE *output_file) {
+    16684:  214:  double temps_ecoule = ((double)(clock () - clock_debut)) / CLOCKS_PER_SEC;
+        -:  215:  /* Number due to empiric test */
+    16684:  216:  if (mode == mode_generate && temps_ecoule >= 20.0) {
+        -:  217:    return grid;
+        -:  218:  }
+    16684:  219:  if (!grid_is_consistent (grid)) {
+        -:  220:    return NULL;
+        -:  221:  }
+        -:  222:
+    14510:  223:  status_t status = grid_heuristic (grid);
+    14510:  224:  if ((mode == mode_first || mode == mode_generate) && status == grid_solved) {
+        -:  225:    return grid;
+        -:  226:  }
+        -:  227:
+    13484:  228:  if (mode == mode_all && status == grid_solved) {
+    #####:  229:    nb_sol = nb_sol + 1;
+    #####:  230:    fprintf (output_file, "# Solution #%li\n", nb_sol);
+    #####:  231:    grid_print (grid, output_file);
+    #####:  232:    return NULL;
+        -:  233:  }
+        -:  234:
+    13484:  235:  if (mode == mode_unique && status == grid_solved) {
+     1816:  236:    nb_sol = nb_sol + 1;
+        -:  237:
+     1816:  238:    if (nb_sol >= 2) {
+        -:  239:      return grid;
+        -:  240:    }
+        -:  241:
+        -:  242:    return NULL;
+        -:  243:  }
+        -:  244:
+    11668:  245:  prng_init ();
+    11668:  246:  choice_t *choice = grid_choice (grid);
+        -:  247:
+    11668:  248:  if (choice == NULL || grid_choice_is_empty (*choice)) {
+     1192:  249:    free (choice);
+     1192:  250:    return NULL;
+        -:  251:  }
+    10476:  252:  nb_choice++;
+        -:  253:
+    10476:  254:  grid_t *copy = grid_copy (grid);
+        -:  255:
+    10476:  256:  grid_choice_apply (copy, *choice);
+        -:  257:
+    10476:  258:  grid_t *grid_returned = grid_backtrack (copy, mode, output_file);
+    10476:  259:  nb_backtrack++;
+        -:  260:
+    10476:  261:  if ((mode == mode_first || mode == mode_generate) && grid_returned != NULL) {
+     7215:  262:    if (grid_returned != copy) {
+     6602:  263:      grid_free (copy);
+        -:  264:    }
+        -:  265:
+     7215:  266:    free (choice);
+     7215:  267:    return grid_returned;
+        -:  268:  }
+        -:  269:
+     3261:  270:  grid_free (copy);
+     3261:  271:  grid_free (grid_returned);
+        -:  272:
+     3261:  273:  grid_choice_discard (grid, *choice);
+     3261:  274:  free (choice);
+        -:  275:
+     3261:  276:  nb_backtrack++;
+     3261:  277:  return grid_backtrack (grid, mode, output_file);
+        -:  278:}
+        -:  279:
+        -:  280:/************ GRID_SOLVER ************/
+      450:  281:static grid_t *grid_solver (grid_t *grid, const mode_type mode,
+        -:  282:                            FILE *output_file) {
+      450:  283:  if (grid == NULL) {
+        -:  284:    return NULL;
+        -:  285:  }
+        -:  286:
+      450:  287:  nb_sol = 0;
+        -:  288:
+      450:  289:  grid_t *grid_final = grid_backtrack (grid, mode, output_file);
+     450*:  290:  if (mode == mode_all && nb_sol == 0) {
+    #####:  291:    fprintf (output_file, "The grid hasn't been solved !\n"
+        -:  292:                          "The initial grid isn't consistent!\n\n");
+    #####:  293:    error = true;
+    #####:  294:    return NULL;
+        -:  295:  }
+        -:  296:
+    #####:  297:  if (mode == mode_all) {
+    #####:  298:    if (grid != grid_final) {
+    #####:  299:      free (grid_final);
+        -:  300:    }
+    #####:  301:    return NULL;
+        -:  302:  }
+        -:  303:
+        -:  304:  return grid_final;
+        -:  305:}
+        -:  306:
+        -:  307:/************ GRID_GENERATE ************/
+      696:  308:grid_t *grid_generate (size_t size, bool unique) {
+      696:  309:  grid_t *grid = grid_alloc (size);
+      696:  310:  if (grid == NULL) {
+        -:  311:    return NULL;
+        -:  312:  }
+        -:  313:
+     3944:  314:  for (size_t row = 0; row < size; row++) {
+    25984:  315:    for (size_t column = 0; column < size; column++) {
+    22736:  316:      grid_set_cell (grid, row, column, colors_full (size));
+        -:  317:    }
+        -:  318:  }
+        -:  319:
+      696:  320:  prng_init ();
+      696:  321:  size_t sqrt_size = sqrt (grid_get_size (grid));
+        -:  322:
+        -:  323:  /* Fill the first block*/
+     2088:  324:  for (size_t row = 0; row < sqrt_size; row++) {
+     4640:  325:    for (size_t column = 0; column < sqrt_size; column++) {
+     3248:  326:      grid_set_cell_random (grid, row, column);
+     3248:  327:      grid_heuristic (grid);
+        -:  328:    }
+        -:  329:  }
+        -:  330:
+        -:  331:  /* Fill the first row and column */
+     3944:  332:  for (size_t i = 0; i < grid_get_size (grid); i++) {
+     3248:  333:    grid_set_cell_random (grid, 0, i);
+     3248:  334:    grid_set_cell_random (grid, i, 0);
+     3248:  335:    grid_heuristic (grid);
+        -:  336:  }
+        -:  337:
+        -:  338:  grid_t *return_grid = NULL;
+      696:  339:  bool test;
+      696:  340:  do {
+      696:  341:    if (return_grid != NULL) {
+    #####:  342:      grid_free (return_grid);
+        -:  343:    }
+        -:  344:
+      696:  345:    clock_debut = clock ();
+      696:  346:    grid_t *grid_tmp = grid_copy (grid);
+        -:  347:
+      696:  348:    return_grid = grid_backtrack (grid_tmp, mode_generate, stdout);
+        -:  349:
+      696:  350:    if (grid_tmp != return_grid) {
+      464:  351:      grid_free (grid_tmp);
+        -:  352:    }
+        -:  353:
+      696:  354:    test = false;
+      696:  355:    if (return_grid != NULL) {
+      696:  356:      test = grid_is_solved (return_grid) && grid_is_consistent (return_grid);
+        -:  357:    }
+      696:  358:  } while (!test);
+        -:  359:
+      696:  360:  if (return_grid != grid) {
+      696:  361:    grid_free (grid);
+        -:  362:  }
+        -:  363:
+        -:  364:  /* Select random cell to clear */
+      696:  365:  size_t full_size = size * size;
+      696:  366:  size_t nb_empty_cell = full_size - full_size * FILLED_RATIO;
+        -:  367:
+      696:  368:  size_t i = 0;
+      696:  369:  size_t rand_index;
+      696:  370:  size_t row;
+      696:  371:  size_t column;
+        -:  372:
+     7820:  373:  while (i <= nb_empty_cell) {
+     7124:  374:    rand_index = rand () % full_size;
+     7124:  375:    row = rand_index / size;
+     7124:  376:    column = rand_index % size;
+        -:  377:
+     7124:  378:    colors_t tmp = grid_get_cell_colors (return_grid, row, column);
+        -:  379:
+     7124:  380:    if (colors_is_singleton (tmp)) {
+     6279:  381:      grid_set_cell (return_grid, row, column, colors_full (size));
+     6279:  382:      i++;
+        -:  383:    }
+     7124:  384:    if (unique) {
+     1801:  385:      nb_sol = 0;
+     1801:  386:      grid_t *grid_test = grid_copy (return_grid);
+     1801:  387:      grid_t *tmp_grid = grid_backtrack (grid_test, mode_unique, stdout);
+        -:  388:
+     1801:  389:      if (tmp_grid != grid_test) {
+     1786:  390:        grid_free (tmp_grid);
+        -:  391:      }
+     1801:  392:      grid_free (grid_test);
+        -:  393:
+     1801:  394:      if (nb_sol >= 2) {
+       15:  395:        grid_set_cell_colors (return_grid, row, column, tmp);
+       15:  396:        i--;
+        -:  397:      }
+        -:  398:    }
+        -:  399:  }
+        -:  400:
+        -:  401:  return return_grid;
+        -:  402:}
+        -:  403:
+        -:  404:/************ USAGE ************/
+    #####:  405:void usage () {
+    #####:  406:  printf ("Usage: sudoku [-a|-o FILE|-v|-V|-h] FILE...\n"
+        -:  407:          "       sudoku -g[SIZE] [-u|-o FILE|-v|-V|inputFile-h]\n"
+        -:  408:          "Solve or generate Sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, "
+        -:  409:          "64\n\n"
+        -:  410:          "-a,--all                search for all possible solutions\n"
+        -:  411:          "-g[N],--generate[=N]    generate a grid of size NxN (default: 9)\n"
+        -:  412:          "-o FILE,--outpout FILE  write output to FILE\n"
+        -:  413:          "-u,--unique             generate a grid with unique solution\n"
+        -:  414:          "-v,--verbose            verbose output\n"
+        -:  415:          "-V,--version            display version and exit\n"
+        -:  416:          "-h,--help               display this help and exit\n");
+    #####:  417:}
+        -:  418:
+        -:  419:/************ MAIN ************/
+      891:  420:int main (int argc, char *argv[]) {
+      891:  421:  int input_size = 39;
+      891:  422:  char *input[input_size];
+      891:  423:  input[0] = "-a";
+      891:  424:  input[1] = "-g";
+      891:  425:  input[2] = "-g1";
+      891:  426:  input[3] = "-g2";
+      891:  427:  input[4] = "-g3";
+      891:  428:  input[5] = "-g4";
+      891:  429:  input[6] = "-u";
+      891:  430:  input[7] = "-v";
+      891:  431:  input[8] = "-V";
+      891:  432:  input[9] = "-h";
+      891:  433:  input[10] = "../test/grid-parser/grid-00-empty_file-fail.sku";
+      891:  434:  input[11] = "../test/grid-parser/grid-09-unknown_char_l1_c1-fail.sku";
+      891:  435:  input[12] = "../test/grid-parser/grid-10-unknown_char_l7_c12-fail.sku";
+      891:  436:  input[13] = "../test/grid-parser/grid-11-missing_char_l9-fail.sku";
+      891:  437:  input[14] = "../test/grid-parser/grid-12-extra_char_l10-fail.sku";
+      891:  438:  input[15] = "../test/grid-parser/grid-13-missing_line-fail.sku";
+      891:  439:  input[16] = "../test/grid-parser/grid-14-extra_line-fail.sku";
+      891:  440:  input[17] = "../test/grid-parser/grid-15-empty_line-pass.sku";
+      891:  441:  input[18] = "../test/grid-parser/grid-16-whole_line_commented_out-pass.sku";
+      891:  442:  input[19] = "../test/grid-parser/grid-17-end_with_EOF_no_endofline-pass.sku";
+      891:  443:  input[20] =
+        -:  444:      "../test/grid-parser/grid-18-size_1_end_with_EOF_no_endofline-pass.sku";
+      891:  445:  input[21] =
+        -:  446:      "../test/grid-parser/grid-19-start_with_comment_and_empty_line-pass.sku";
+      891:  447:  input[22] = "../test/grid-parser/grid-20-size_17-fail.sku";
+      891:  448:  input[23] = "../test/grid-parser/grid-21-commented_char_l4-fail.sku";
+      891:  449:  input[24] = "../test/grid-parser/grid-22-comment_at_last_line-pass.sku";
+      891:  450:  input[25] =
+        -:  451:      "../test/grid-parser/grid-23-missing_char_with_EOF_no_endofline-fail.sku";
+      891:  452:  input[26] = "../test/grid-parser/grid-24-only_a_comment_no_grid-fail.sku";
+      891:  453:  input[27] =
+        -:  454:      "../test/grid-parser/"
+        -:  455:      "grid-25-only_a_comment_grid_end_with_no_endofline_before_EOF-fail.sku";
+      891:  456:  input[28] =
+        -:  457:      "../test/grid-parser/grid-26-random_number_of_spaces_tabs-pass.sku";
+      891:  458:  input[29] = "../test/grid-parser/grid-27-wrong_char_on_first_line-fail.sku";
+      891:  459:  input[30] = "../test/grid-parser/"
+        -:  460:              "grid-28-size_1_with_EOF_no_endofline_and_wrong_char-fail.sku";
+      891:  461:  input[31] = "../test/grid-solver/grid-01x01-01.sku";
+      891:  462:  input[32] =
+        -:  463:      "../test/grid-solver/grid-16x16-06-twice_char_8_in_line-inconsistent.sku";
+      891:  464:  input[33] = "../test/grid-solver/grid-04x04-01.sku";
+      891:  465:  input[34] = "../test/grid-solver/"
+        -:  466:              "grid-16x16-07-twice_char_A_in_columns-inconsistent.sku";
+      891:  467:  input[35] = "../test/grid-solver/grid-04x04-02.sku";
+      891:  468:  input[36] = "../test/grid-solver/"
+        -:  469:              "grid-16x16-08-twice_char_B_in_a_block-inconsistent.sku";
+        -:  470:  /*input[37] = "../test/grid-solver/grid-04x04-03.sku";
+        -:  471:  input[38] = "../test/grid-solver/grid-04x04-04.sku";
+        -:  472:  input[39] = "../test/grid-solver/grid-04x04-05.sku";
+        -:  473:  input[41] = "../test/grid-solver/grid-09x09-01.sku";*/
+      891:  474:  input[37] = "../test/grid-solver/grid-09x09-02.sku";
+        -:  475:  // input[43] = "../test/grid-solver/grid-09x09-03.sku";
+      891:  476:  input[38] = "../test/grid-solver/grid-36x36-03-inconsistent.sku";
+        -:  477:  /*input[45] = "../test/grid-solver/grid-09x09-04.sku";
+        -:  478:  input[46] = "../test/grid-solver/grid-49x49-03-inconsistent.sku";*/
+        -:  479:
+      891:  480:  int new_argc = klee_range (3, 5, "new_argc");
+        -:  481:
+      891:  482:  int tab[4];
+     2525:  483:  for (int i = 1; i < new_argc - 1; i++) {
+     1634:  484:    tab[i] = klee_range (1, 9, "tab");
+        -:  485:  }
+      891:  486:  tab[new_argc - 1] = klee_range (10, input_size, "file");
+        -:  487:
+      891:  488:  char *new_argv[5];
+     3416:  489:  for (int i = 1; i < new_argc; i++) {
+     2525:  490:    new_argv[i] = input[tab[i]];
+        -:  491:  }
+        -:  492:
+      891:  493:  mode_type mode = mode_first;
+      891:  494:  bool unique = false;
+      891:  495:  int size_grid = 0;
+        -:  496:
+        -:  497:  /* Check the different option entry by the user */
+      891:  498:  int optc;
+      891:  499:  char *name_output_file = NULL;
+      891:  500:  FILE *output_file = stdout;
+        -:  501:
+      891:  502:  const char *short_opts = "ao:uvVhg::";
+      891:  503:  const struct option lopt[] = {{"help", no_argument, NULL, 'h'},
+        -:  504:                                {"all", no_argument, NULL, 'a'},
+        -:  505:                                {"generate", optional_argument, NULL, 'g'},
+        -:  506:                                {"output", required_argument, NULL, 'o'},
+        -:  507:                                {"unique", no_argument, NULL, 'u'},
+        -:  508:                                {"verbose", no_argument, NULL, 'v'},
+        -:  509:                                {"version", no_argument, NULL, 'V'},
+        -:  510:                                {NULL, 0, NULL, 0}};
+        -:  511:
+     2501:  512:  while ((optc = getopt_long (new_argc, new_argv, short_opts, lopt, NULL)) !=
+        -:  513:         -1) {
+     1631:  514:    switch (optc) {
+        -:  515:    case 'a':
+        -:  516:      mode = mode_all;
+        -:  517:      break;
+        -:  518:
+      980:  519:    case 'g':
+      980:  520:      if (!optarg) {
+        -:  521:        size_grid = DEFAULT_SIZE;
+        -:  522:        break;
+        -:  523:      }
+      658:  524:      size_grid = atoi (optarg);
+      658:  525:      if (size_grid == 0) {
+    #####:  526:        errx (EXIT_FAILURE,
+        -:  527:              "error : the argument pass to the option 'generate' is not an "
+        -:  528:              "integer\n");
+        -:  529:      }
+      658:  530:      if (!grid_check_size (size_grid)) {
+       14:  531:        errx (EXIT_FAILURE, "error : invalid size of grid\n");
+        -:  532:      }
+        -:  533:      break;
+        -:  534:
+    #####:  535:    case 'o':
+    #####:  536:      name_output_file = optarg;
+    #####:  537:      break;
+        -:  538:
+      322:  539:    case 'u':
+      322:  540:      unique = true;
+      322:  541:      break;
+        -:  542:
+        7:  543:    case 'V':
+        7:  544:      printf ("sudoku %i.%i.%i\n", VERSION, REVISION, SUBVERSION);
+        7:  545:      printf ("Solve/generate sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, "
+        -:  546:              "64\n");
+        7:  547:      return EXIT_SUCCESS;
+        -:  548:
+      322:  549:    case 'v':
+      322:  550:      verbose = true;
+      322:  551:      break;
+        -:  552:
+        -:  553:    case 'h':
+    #####:  554:      usage ();
+    #####:  555:      return EXIT_SUCCESS;
+        -:  556:
+    #####:  557:    default:
+    #####:  558:      errx (EXIT_FAILURE, "error: invalid option '%s'!\n",
+    #####:  559:            new_argv[optind - 1]);
+        -:  560:    }
+        -:  561:  }
+        -:  562:
+        -:  563:  /*Test if we are in solver with no file*/
+     870*:  564:  if (new_argc - optind == 0 && size_grid == 0) {
+    #####:  565:    errx (EXIT_FAILURE, "error : no input grid given !\n");
+        -:  566:  }
+        -:  567:
+        -:  568:  /*Check if different option are in conflict*/
+      870:  569:  if (size_grid != 0 && mode == mode_all) {
+    #####:  570:    warnx (
+        -:  571:        "warning : option 'all' conflict with generate mode, disabling it !");
+        -:  572:  }
+        -:  573:
+      870:  574:  if (size_grid == 0 && unique) {
+      116:  575:    warnx ("warning : option 'unique' conflict with solver mode, disabling "
+        -:  576:           "it !");
+        -:  577:  }
+        -:  578:
+        -:  579:  /*Test if the files are readable*/
+     1740:  580:  for (int i = optind; i < new_argc; i++) {
+      870:  581:    if (new_argv[i] == NULL || access (new_argv[i], R_OK) != 0) {
+    #####:  582:      errx (EXIT_FAILURE, "error : the file %s is not readable\n", new_argv[i]);
+        -:  583:    }
+        -:  584:  }
+        -:  585:
+        -:  586:  /* Generate a grid */
+      870:  587:  if (size_grid != 0) {
+      696:  588:    grid_t *grid = grid_generate (size_grid, unique);
+      696:  589:    grid_print (grid, output_file);
+      696:  590:    grid_free (grid);
+        -:  591:  }
+        -:  592:
+        -:  593:  /*Solve the grid*/
+      870:  594:  if (name_output_file != NULL) {
+    #####:  595:    output_file = fopen (name_output_file, "w+");
+    #####:  596:    if (output_file == NULL) {
+    #####:  597:      errx (EXIT_FAILURE, "error : the file cannot be opened correctly\n");
+        -:  598:    }
+        -:  599:  }
+        -:  600:
+     1740:  601:  for (int i = optind; i < new_argc; i++) {
+        -:  602:    /* Reset global variable*/
+      870:  603:    fill_ratio = 0;
+      870:  604:    nb_choice = 0;
+      870:  605:    nb_backtrack = 0;
+      870:  606:    nb_sol = 0;
+        -:  607:
+      870:  608:    fprintf (output_file, "# Solving '%s'...\n\n", new_argv[i]);
+      870:  609:    grid_t *grid = file_parser (new_argv[i]);
+        -:  610:
+      870:  611:    if (grid != NULL) {
+      450:  612:      if (verbose) {
+      150:  613:        fprintf (output_file, "# Initial grid:\n");
+      150:  614:        grid_print (grid, output_file);
+        -:  615:      }
+        -:  616:
+      450:  617:      grid_t *grid_solve = grid_solver (grid, mode, output_file);
+        -:  618:
+      450:  619:      if (mode == mode_first) {
+      450:  620:        status_t status = grid_heuristic (grid_solve);
+        -:  621:
+      450:  622:        if (status == grid_solved) {
+      330:  623:          fprintf (output_file, "# Solution:\n");
+      330:  624:          grid_print (grid_solve, output_file);
+        -:  625:        }
+        -:  626:
+      450:  627:        if (status == grid_inconsistent) {
+      120:  628:          fprintf (output_file, "The grid hasn't been solved !\n");
+      120:  629:          fprintf (output_file, "The initial grid isn't consistent!\n\n");
+      120:  630:          error = true;
+        -:  631:        }
+        -:  632:
+      450:  633:        if (grid != grid_solve) {
+      269:  634:          grid_free (grid_solve);
+        -:  635:        }
+        -:  636:      }
+        -:  637:
+      450:  638:      grid_free (grid);
+        -:  639:
+      450:  640:      if (verbose) {
+      150:  641:        fprintf (output_file,
+        -:  642:                 "# Statistics for the current run\n"
+        -:  643:                 "# Initial fill ratio: %li%%\n"
+        -:  644:                 "# Number of choices: %li\n"
+        -:  645:                 "# Number of backtracks: %li\n",
+        -:  646:                 fill_ratio, nb_choice, nb_backtrack);
+        -:  647:
+      150:  648:        if (mode == mode_first) {
+      150:  649:          fprintf (output_file, "\n");
+        -:  650:        }
+        -:  651:      }
+        -:  652:
+      450:  653:      if (mode == mode_all) {
+    #####:  654:        fprintf (output_file, "# Number of solutions: %li\n\n", nb_sol);
+        -:  655:      }
+        -:  656:    }
+        -:  657:  }
+        -:  658:
+      870:  659:  if (output_file != stdout) {
+    #####:  660:    fclose (output_file);
+        -:  661:  }
+        -:  662:
+      870:  663:  return (!error) ? EXIT_SUCCESS : EXIT_FAILURE;
+        -:  664:}

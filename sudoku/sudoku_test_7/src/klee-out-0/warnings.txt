@@ -1,0 +1,413 @@
+KLEE: WARNING: undefined reference to function: round
+KLEE: WARNING: undefined reference to function: sqrt
+KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 139487888801792) at runtime/POSIX/fd.c:997 10
+KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling __klee_posix_wrapped_main with extra arguments.
+KLEE: WARNING ONCE: calling external: vprintf(140683986862080, 139478225125376) at libc/stdio/fprintf.c:35 14
+KLEE: WARNING ONCE: calling external: printf(140684137857024, 1, 0, 0) at sudoku.c:472 7
+KLEE: WARNING ONCE: calling external: gettimeofday(139472856416256, 0) at runtime/POSIX/stubs.c:174 7
+KLEE: WARNING ONCE: calling external: getpid() at colors.c:116 27
+KLEE: WARNING ONCE: calling external: sqrt(4621256167635550208) at sudoku.c:321 22
+KLEE: WARNING ONCE: silently concretizing (reason: floating point) expression (SExt w64 (Extract w32 0 (ZExt w64 (Extract w8 0 (Add w32 4294967248
+                                                           (SExt w32 (Read w8 2 arg00))))))) to value 1 (sudoku.c:321)
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING ONCE: Alignment of memory from call "calloc" is not modelled. Using alignment of 8.
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+
+KLEE: WARNING: times: setting all times to 0 and returning 0
+

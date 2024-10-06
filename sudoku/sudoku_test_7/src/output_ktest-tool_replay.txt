@@ -1,0 +1,1586 @@
+Analyse  :
+ktest file : 'klee-out-0/test000001.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-h\x01\xff'
+object 0: hex : 0x2d6801ff
+object 0: int : -16685011
+object 0: uint: 4278282285
+object 0: text: -h..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000001.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-h" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-7eRAh9
+Usage: sudoku [-a|-o FILE|-v|-V|-h] FILE...
+       sudoku -g[SIZE] [-u|-o FILE|-v|-V|inputFile-h]
+Solve or generate Sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+
+-a,--all                search for all possible solutions
+-g[N],--generate[=N]    generate a grid of size NxN (default: 9)
+-o FILE,--outpout FILE  write output to FILE
+-u,--unique             generate a grid with unique solution
+-v,--verbose            verbose output
+-V,--version            display version and exit
+-h,--help               display this help and exit
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-7eRAh9
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000002.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-V\x00\xff'
+object 0: hex : 0x2d5600ff
+object 0: int : -16755155
+object 0: uint: 4278212141
+object 0: text: -V..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000002.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-V" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-Pdxo4H
+sudoku 1.0.0
+Solve/generate sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-Pdxo4H
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000003.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-V\x01\xff'
+object 0: hex : 0x2d5601ff
+object 0: int : -16689619
+object 0: uint: 4278277677
+object 0: text: -V..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000003.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-V" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-wc1Q1Z
+sudoku 1.0.0
+Solve/generate sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-wc1Q1Z
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000004.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-h\x00\xff'
+object 0: hex : 0x2d6800ff
+object 0: int : -16750547
+object 0: uint: 4278216749
+object 0: text: -h..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000004.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-h" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-nThJtD
+Usage: sudoku [-a|-o FILE|-v|-V|-h] FILE...
+       sudoku -g[SIZE] [-u|-o FILE|-v|-V|inputFile-h]
+Solve or generate Sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+
+-a,--all                search for all possible solutions
+-g[N],--generate[=N]    generate a grid of size NxN (default: 9)
+-o FILE,--outpout FILE  write output to FILE
+-u,--unique             generate a grid with unique solution
+-v,--verbose            verbose output
+-V,--version            display version and exit
+-h,--help               display this help and exit
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-nThJtD
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000005.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-aV\xff'
+object 0: hex : 0x2d6156ff
+object 0: int : -11116243
+object 0: uint: 4283851053
+object 0: text: -aV.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000005.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-aV" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-bpeV5v
+sudoku 1.0.0
+Solve/generate sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-bpeV5v
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000006.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-ah\xff'
+object 0: hex : 0x2d6168ff
+object 0: int : -9936595
+object 0: uint: 4285030701
+object 0: text: -ah.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000006.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-ah" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-KbG2FN
+Usage: sudoku [-a|-o FILE|-v|-V|-h] FILE...
+       sudoku -g[SIZE] [-u|-o FILE|-v|-V|inputFile-h]
+Solve or generate Sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+
+-a,--all                search for all possible solutions
+-g[N],--generate[=N]    generate a grid of size NxN (default: 9)
+-o FILE,--outpout FILE  write output to FILE
+-u,--unique             generate a grid with unique solution
+-v,--verbose            verbose output
+-V,--version            display version and exit
+-h,--help               display this help and exit
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-KbG2FN
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000007.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-uV\xff'
+object 0: hex : 0x2d7556ff
+object 0: int : -11111123
+object 0: uint: 4283856173
+object 0: text: -uV.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000007.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-uV" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-x7WQse
+sudoku 1.0.0
+Solve/generate sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-x7WQse
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000008.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-vV\xff'
+object 0: hex : 0x2d7656ff
+object 0: int : -11110867
+object 0: uint: 4283856429
+object 0: text: -vV.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000008.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-vV" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-H4bzID
+sudoku 1.0.0
+Solve/generate sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-H4bzID
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000009.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'--h\xff'
+object 0: hex : 0x2d2d68ff
+object 0: int : -9949907
+object 0: uint: 4285017389
+object 0: text: --h.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000009.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "--h" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-G1vStG
+Usage: sudoku [-a|-o FILE|-v|-V|-h] FILE...
+       sudoku -g[SIZE] [-u|-o FILE|-v|-V|inputFile-h]
+Solve or generate Sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+
+-a,--all                search for all possible solutions
+-g[N],--generate[=N]    generate a grid of size NxN (default: 9)
+-o FILE,--outpout FILE  write output to FILE
+-u,--unique             generate a grid with unique solution
+-v,--verbose            verbose output
+-V,--version            display version and exit
+-h,--help               display this help and exit
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-G1vStG
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000010.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-uh\xff'
+object 0: hex : 0x2d7568ff
+object 0: int : -9931475
+object 0: uint: 4285035821
+object 0: text: -uh.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000010.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-uh" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-pH53p9
+Usage: sudoku [-a|-o FILE|-v|-V|-h] FILE...
+       sudoku -g[SIZE] [-u|-o FILE|-v|-V|inputFile-h]
+Solve or generate Sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+
+-a,--all                search for all possible solutions
+-g[N],--generate[=N]    generate a grid of size NxN (default: 9)
+-o FILE,--outpout FILE  write output to FILE
+-u,--unique             generate a grid with unique solution
+-v,--verbose            verbose output
+-V,--version            display version and exit
+-h,--help               display this help and exit
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-pH53p9
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000011.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-vh\xff'
+object 0: hex : 0x2d7668ff
+object 0: int : -9931219
+object 0: uint: 4285036077
+object 0: text: -vh.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000011.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-vh" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-nZ7teh
+Usage: sudoku [-a|-o FILE|-v|-V|-h] FILE...
+       sudoku -g[SIZE] [-u|-o FILE|-v|-V|inputFile-h]
+Solve or generate Sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+
+-a,--all                search for all possible solutions
+-g[N],--generate[=N]    generate a grid of size NxN (default: 9)
+-o FILE,--outpout FILE  write output to FILE
+-u,--unique             generate a grid with unique solution
+-v,--verbose            verbose output
+-V,--version            display version and exit
+-h,--help               display this help and exit
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-nZ7teh
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000012.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-\x00\xff\xff'
+object 0: hex : 0x2d00ffff
+object 0: int : -65491
+object 0: uint: 4294901805
+object 0: text: -...
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000012.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-aTWLC6
+sudoku: error : the file - is not readable
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-aTWLC6
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000013.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-g4\xff'
+object 0: hex : 0x2d6734ff
+object 0: int : -13342931
+object 0: uint: 4281624365
+object 0: text: -g4.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000013.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-g4" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-OAPJCH
+2 _ 1 3 
+1 3 _ _ 
+4 _ 3 _ 
+3 2 4 1 
+
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-OAPJCH
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000014.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'--\x00\xff'
+object 0: hex : 0x2d2d00ff
+object 0: int : -16765651
+object 0: uint: 4278201645
+object 0: text: --..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000014.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "--" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-ytMCoV
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-ytMCoV
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000015.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'\x00\x00\x00\x00'
+object 0: hex : 0x00000000
+object 0: int : 0
+object 0: uint: 0
+object 0: text: ....
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000015.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-OLxtUC
+sudoku: error : the file  is not readable
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-OLxtUC
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000016.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-a\x00\xff'
+object 0: hex : 0x2d6100ff
+object 0: int : -16752339
+object 0: uint: 4278214957
+object 0: text: -a..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000016.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-a" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-Qklte8
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-Qklte8
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000017.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'\x01\x00\xff\xff'
+object 0: hex : 0x0100ffff
+object 0: int : -65535
+object 0: uint: 4294901761
+object 0: text: ....
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000017.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-vl7By6
+sudoku: error : the file  is not readable
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-vl7By6
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000018.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'--=\xff'
+object 0: hex : 0x2d2d3dff
+object 0: int : -12767955
+object 0: uint: 4282199341
+object 0: text: --=.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000018.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "--=" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-X1gvDU
+./sudoku: option '--=' is ambiguous; possibilities: '--help' '--all' '--generate' '--output' '--unique' '--verbose' '--version'
+sudoku: error: invalid option '--='!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-X1gvDU
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000019.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'--a\xff'
+object 0: hex : 0x2d2d61ff
+object 0: int : -10408659
+object 0: uint: 4284558637
+object 0: text: --a.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000019.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "--a" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-obumGh
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-obumGh
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000020.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-aa\xff'
+object 0: hex : 0x2d6161ff
+object 0: int : -10395347
+object 0: uint: 4284571949
+object 0: text: -aa.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000020.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-aa" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-MU3tQq
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-MU3tQq
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000021.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-o\x01\xff'
+object 0: hex : 0x2d6f01ff
+object 0: int : -16683219
+object 0: uint: 4278284077
+object 0: text: -o..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000021.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-o" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-kE8Sil
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-kE8Sil
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000022.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'\x01/\x00\xff'
+object 0: hex : 0x012f00ff
+object 0: int : -16765183
+object 0: uint: 4278202113
+object 0: text: ./..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000022.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "/" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-Ae1iQi
+sudoku: error : the file / is not readable
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-Ae1iQi
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000023.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'\x01\x01\x00\xff'
+object 0: hex : 0x010100ff
+object 0: int : -16776959
+object 0: uint: 4278190337
+object 0: text: ....
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000023.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-HZds63
+sudoku: error : the file  is not readable
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-HZds63
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000024.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-o\x00\xff'
+object 0: hex : 0x2d6f00ff
+object 0: int : -16748755
+object 0: uint: 4278218541
+object 0: text: -o..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000024.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-o" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-binqBB
+./sudoku: option requires an argument -- 'o'
+sudoku: error: invalid option '-o'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-binqBB
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000025.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-ao\xff'
+object 0: hex : 0x2d616fff
+object 0: int : -9477843
+object 0: uint: 4285489453
+object 0: text: -ao.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000025.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-ao" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-HOIqCJ
+./sudoku: option requires an argument -- 'o'
+sudoku: error: invalid option '-ao'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-HOIqCJ
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000026.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'--o\xff'
+object 0: hex : 0x2d2d6fff
+object 0: int : -9491155
+object 0: uint: 4285476141
+object 0: text: --o.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000026.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "--o" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-bMBCNZ
+./sudoku: option '--output' requires an argument
+sudoku: error: invalid option '--o'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-bMBCNZ
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000027.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'--u\xff'
+object 0: hex : 0x2d2d75ff
+object 0: int : -9097939
+object 0: uint: 4285869357
+object 0: text: --u.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000027.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "--u" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-S3mFeu
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-S3mFeu
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000028.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'\x01//\xff'
+object 0: hex : 0x012f2fff
+object 0: int : -13684991
+object 0: uint: 4281282305
+object 0: text: .//.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000028.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "//" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-4PtpoR
+sudoku: error : the file // is not readable
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-4PtpoR
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000029.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'\x01/\x01\xff'
+object 0: hex : 0x012f01ff
+object 0: int : -16699647
+object 0: uint: 4278267649
+object 0: text: ./..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000029.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "/" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-Ax0fZW
+sudoku: error : the file / is not readable
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-Ax0fZW
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000030.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'\x01\x01\x01\xff'
+object 0: hex : 0x010101ff
+object 0: int : -16711423
+object 0: uint: 4278255873
+object 0: text: ....
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000030.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-KTgAwu
+sudoku: error : the file  is not readable
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-KTgAwu
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000031.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'\x01\x01/\xff'
+object 0: hex : 0x01012fff
+object 0: int : -13696767
+object 0: uint: 4281270529
+object 0: text: ../.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000031.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "/" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-8Rgta0
+sudoku: error : the file / is not readable
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-8Rgta0
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000032.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-au\xff'
+object 0: hex : 0x2d6175ff
+object 0: int : -9084627
+object 0: uint: 4285882669
+object 0: text: -au.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000032.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-au" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-sRBg1x
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-sRBg1x
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000033.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-a:\xff'
+object 0: hex : 0x2d613aff
+object 0: int : -12951251
+object 0: uint: 4282016045
+object 0: text: -a:.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000033.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-a:" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-zhNLl1
+./sudoku: invalid option -- ':'
+sudoku: error: invalid option '-a:'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-zhNLl1
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000034.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-u\x00\xff'
+object 0: hex : 0x2d7500ff
+object 0: int : -16747219
+object 0: uint: 4278220077
+object 0: text: -u..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000034.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-u" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-VbPyIq
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-VbPyIq
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000035.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-av\xff'
+object 0: hex : 0x2d6176ff
+object 0: int : -9019091
+object 0: uint: 4285948205
+object 0: text: -av.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000035.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-av" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-BVkPlV
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-BVkPlV
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000036.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'--\x01\xff'
+object 0: hex : 0x2d2d01ff
+object 0: int : -16700115
+object 0: uint: 4278267181
+object 0: text: --..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000036.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "--" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-P5gweu
+./sudoku: unrecognized option '--'
+sudoku: error: invalid option '--'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-P5gweu
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000037.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'--v\xff'
+object 0: hex : 0x2d2d76ff
+object 0: int : -9032403
+object 0: uint: 4285934893
+object 0: text: --v.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000037.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "--v" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-HgtNyJ
+./sudoku: option '--v' is ambiguous; possibilities: '--verbose' '--version'
+sudoku: error: invalid option '--v'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-HgtNyJ
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000038.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-:\x00\xff'
+object 0: hex : 0x2d3a00ff
+object 0: int : -16762323
+object 0: uint: 4278204973
+object 0: text: -:..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000038.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-:" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-5ihG7r
+./sudoku: invalid option -- ':'
+sudoku: error: invalid option '-:'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-5ihG7r
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000039.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-:\x01\xff'
+object 0: hex : 0x2d3a01ff
+object 0: int : -16696787
+object 0: uint: 4278270509
+object 0: text: -:..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000039.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-:" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-aT17N3
+./sudoku: invalid option -- ':'
+sudoku: error: invalid option './sudoku'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-aT17N3
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000040.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-ua\xff'
+object 0: hex : 0x2d7561ff
+object 0: int : -10390227
+object 0: uint: 4284577069
+object 0: text: -ua.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000040.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-ua" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-3YqG35
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-3YqG35
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000041.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-v\x00\xff'
+object 0: hex : 0x2d7600ff
+object 0: int : -16746963
+object 0: uint: 4278220333
+object 0: text: -v..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000041.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-v" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-JbTyqI
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-JbTyqI
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000042.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-va\xff'
+object 0: hex : 0x2d7661ff
+object 0: int : -10389971
+object 0: uint: 4284577325
+object 0: text: -va.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000042.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-va" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-SXpXMO
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-SXpXMO
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000043.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'/\x00\xff\xff'
+object 0: hex : 0x2f00ffff
+object 0: int : -65489
+object 0: uint: 4294901807
+object 0: text: /...
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000043.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "/" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-p4K7ws
+sudoku: error : the file cannot be opened correctly
+
+KLEE-REPLAY: NOTE: EXIT STATUS: CRASHED signal 11 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-p4K7ws
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000044.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-a\x01\xff'
+object 0: hex : 0x2d6101ff
+object 0: int : -16686803
+object 0: uint: 4278280493
+object 0: text: -a..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000044.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-a" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-r8NgBh
+./sudoku: invalid option -- ''
+sudoku: error: invalid option '-a'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-r8NgBh
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000045.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-g2\xff'
+object 0: hex : 0x2d6732ff
+object 0: int : -13474003
+object 0: uint: 4281493293
+object 0: text: -g2.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000045.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-g2" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-mejDaf
+sudoku: error : invalid size of grid
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-mejDaf
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000046.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-uu\xff'
+object 0: hex : 0x2d7575ff
+object 0: int : -9079507
+object 0: uint: 4285887789
+object 0: text: -uu.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000046.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-uu" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-96d4e9
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-96d4e9
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000047.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-uv\xff'
+object 0: hex : 0x2d7576ff
+object 0: int : -9013971
+object 0: uint: 4285953325
+object 0: text: -uv.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000047.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-uv" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-Bt5dHV
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-Bt5dHV
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000048.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-vu\xff'
+object 0: hex : 0x2d7675ff
+object 0: int : -9079251
+object 0: uint: 4285888045
+object 0: text: -vu.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000048.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-vu" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-qMZ8Jf
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-qMZ8Jf
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000049.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-vv\xff'
+object 0: hex : 0x2d7676ff
+object 0: int : -9013715
+object 0: uint: 4285953581
+object 0: text: -vv.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000049.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-vv" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-TD7w0u
+sudoku: error : no input grid given !
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-TD7w0u
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000050.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-g\x0b\xff'
+object 0: hex : 0x2d670bff
+object 0: int : -16029907
+object 0: uint: 4278937389
+object 0: text: -g..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000050.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-g" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-t4IVen
+sudoku: error : the argument pass to the option 'generate' is not an integer
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-t4IVen
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000051.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-uo\xff'
+object 0: hex : 0x2d756fff
+object 0: int : -9472723
+object 0: uint: 4285494573
+object 0: text: -uo.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000051.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-uo" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-XJw6O5
+./sudoku: option requires an argument -- 'o'
+sudoku: error: invalid option '-uo'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-XJw6O5
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000052.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-g-\xff'
+object 0: hex : 0x2d672dff
+object 0: int : -13801683
+object 0: uint: 4281165613
+object 0: text: -g-.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000052.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-g-" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-rLCqHJ
+sudoku: error : the argument pass to the option 'generate' is not an integer
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-rLCqHJ
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000053.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-g+\xff'
+object 0: hex : 0x2d672bff
+object 0: int : -13932755
+object 0: uint: 4281034541
+object 0: text: -g+.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000053.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-g+" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-SjXvqf
+sudoku: error : the argument pass to the option 'generate' is not an integer
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-SjXvqf
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000054.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-g0\xff'
+object 0: hex : 0x2d6730ff
+object 0: int : -13605075
+object 0: uint: 4281362221
+object 0: text: -g0.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000054.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-g0" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-3sTXXd
+sudoku: error : the argument pass to the option 'generate' is not an integer
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-3sTXXd
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000055.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-g\x01\xff'
+object 0: hex : 0x2d6701ff
+object 0: int : -16685267
+object 0: uint: 4278282029
+object 0: text: -g..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000055.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-g" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-835L4I
+sudoku: error : the argument pass to the option 'generate' is not an integer
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-835L4I
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000056.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-gA\xff'
+object 0: hex : 0x2d6741ff
+object 0: int : -12490963
+object 0: uint: 4282476333
+object 0: text: -gA.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000056.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-gA" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-cWuAta
+sudoku: error : the argument pass to the option 'generate' is not an integer
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-cWuAta
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000057.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-u:\xff'
+object 0: hex : 0x2d753aff
+object 0: int : -12946131
+object 0: uint: 4282021165
+object 0: text: -u:.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000057.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-u:" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-L8Kyzs
+./sudoku: invalid option -- ':'
+sudoku: error: invalid option '-u:'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-L8Kyzs
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000058.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-\x01\x00\xff'
+object 0: hex : 0x2d0100ff
+object 0: int : -16776915
+object 0: uint: 4278190381
+object 0: text: -...
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000058.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-FLxVVc
+./sudoku: invalid option -- ''
+sudoku: error: invalid option '-'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-FLxVVc
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000059.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-vo\xff'
+object 0: hex : 0x2d766fff
+object 0: int : -9472467
+object 0: uint: 4285494829
+object 0: text: -vo.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000059.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-vo" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-05mQXI
+./sudoku: option requires an argument -- 'o'
+sudoku: error: invalid option '-vo'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-05mQXI
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000060.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-\x01\x01\xff'
+object 0: hex : 0x2d0101ff
+object 0: int : -16711379
+object 0: uint: 4278255917
+object 0: text: -...
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000060.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-KD5lHo
+./sudoku: invalid option -- ''
+sudoku: error: invalid option './sudoku'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-KD5lHo
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000061.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-v:\xff'
+object 0: hex : 0x2d763aff
+object 0: int : -12945875
+object 0: uint: 4282021421
+object 0: text: -v:.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000061.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-v:" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-Yw5FQt
+./sudoku: invalid option -- ':'
+sudoku: error: invalid option '-v:'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-Yw5FQt
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000062.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-u\x01\xff'
+object 0: hex : 0x2d7501ff
+object 0: int : -16681683
+object 0: uint: 4278285613
+object 0: text: -u..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000062.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-u" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-k9UsFu
+./sudoku: invalid option -- ''
+sudoku: error: invalid option '-u'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-k9UsFu
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000063.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-v\x01\xff'
+object 0: hex : 0x2d7601ff
+object 0: int : -16681427
+object 0: uint: 4278285869
+object 0: text: -v..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000063.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-v" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-KGKhsi
+./sudoku: invalid option -- ''
+sudoku: error: invalid option '-v'!
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-KGKhsi
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000064.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-g1\xff'
+object 0: hex : 0x2d6731ff
+object 0: int : -13539539
+object 0: uint: 4281427757
+object 0: text: -g1.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000064.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-g1" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-xnZ4k2
+1 
+
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-xnZ4k2
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000065.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'--g\xff'
+object 0: hex : 0x2d2d67ff
+object 0: int : -10015443
+object 0: uint: 4284951853
+object 0: text: --g.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000065.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "--g" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-nEaiir
+2 5 1 _ 4 8 6 7 _ 
+_ 3 9 6 7 1 5 2 8 
+6 8 7 2 5 9 3 4 1 
+_ 9 8 4 6 2 _ _ 7 
+1 4 2 9 _ 7 8 5 _ 
+_ 7 _ 1 8 5 _ 9 _ 
+8 _ _ _ 2 4 9 6 5 
+7 _ _ 8 9 3 _ 1 2 
+9 2 4 _ 1 6 _ 8 _ 
+
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-nEaiir
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000066.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-ag\xff'
+object 0: hex : 0x2d6167ff
+object 0: int : -10002131
+object 0: uint: 4284965165
+object 0: text: -ag.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000066.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-ag" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-4imjwW
+sudoku: warning : option 'all' conflict with generate mode, disabling it !
+1 5 8 _ 3 7 _ 4 _ 
+3 6 _ _ 4 5 9 7 1 
+9 _ 7 1 6 2 3 _ 8 
+4 8 _ 2 7 6 5 1 9 
+2 1 9 5 8 4 6 3 7 
+_ _ 6 3 9 1 _ _ 4 
+_ 2 5 6 1 _ _ _ 3 
+8 _ 4 7 _ 3 1 _ 5 
+6 3 1 _ 5 9 7 _ 2 
+
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-4imjwW
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000067.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-ug\xff'
+object 0: hex : 0x2d7567ff
+object 0: int : -9997011
+object 0: uint: 4284970285
+object 0: text: -ug.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000067.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-ug" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-4oOQLx
+1 5 6 2 4 3 9 _ _ 
+_ 2 9 _ 8 5 _ 1 4 
+_ 7 _ _ 6 1 5 2 _ 
+_ 6 3 1 9 _ 4 5 2 
+2 9 _ 3 _ 4 8 _ 1 
+4 8 1 5 2 6 7 3 9 
+5 4 _ _ _ _ 3 9 7 
+9 3 2 4 5 7 1 8 _ 
+6 1 7 8 3 9 _ _ 5 
+
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-4oOQLx
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000068.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-vg\xff'
+object 0: hex : 0x2d7667ff
+object 0: int : -9996755
+object 0: uint: 4284970541
+object 0: text: -vg.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000068.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-vg" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-U9G3IA
+4 _ 5 3 _ 2 9 1 7 
+9 2 1 8 4 7 _ 3 6 
+_ 7 6 1 5 9 4 2 _ 
+_ 9 2 _ 7 3 8 _ 1 
+_ 4 8 6 _ _ 3 9 5 
+_ 5 3 _ 9 _ 7 6 2 
+5 6 7 9 1 _ 2 8 3 
+8 1 _ _ _ 5 6 7 4 
+2 3 4 _ _ 6 1 5 _ 
+
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-U9G3IA
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000069.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-g`\xff'
+object 0: hex : 0x2d6760ff
+object 0: int : -10459347
+object 0: uint: 4284507949
+object 0: text: -g`.
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000069.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-g`" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-5H5oof
+sudoku: error : the argument pass to the option 'generate' is not an integer
+
+KLEE-REPLAY: NOTE: EXIT STATUS: ABNORMAL 1 (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-5H5oof
+ 
+ 
+Analyse  :
+ktest file : 'klee-out-0/test000070.ktest'
+args       : ['sudoku_final.bc', '-sym-arg', '3']
+num objects: 1
+object 0: name: 'arg00'
+object 0: size: 4
+object 0: data: b'-g\x00\xff'
+object 0: hex : 0x2d6700ff
+object 0: int : -16750803
+object 0: uint: 4278216493
+object 0: text: -g..
+ 
+KLEE-REPLAY: NOTE: Test file: klee-out-0/test000070.ktest
+KLEE-REPLAY: NOTE: Arguments: "./sudoku" "-g" 
+KLEE-REPLAY: NOTE: Storing KLEE replay files in /tmp/klee-replay-qNRzgR
+7 _ 1 2 4 _ 3 5 8 
+6 2 5 8 3 _ _ _ _ 
+4 _ _ 1 5 9 6 _ 7 
+9 5 4 7 1 3 8 6 2 
+8 3 _ 9 2 _ _ 7 1 
+_ _ _ 6 8 5 _ 3 4 
+1 7 8 3 6 2 4 _ 5 
+5 6 9 4 7 _ 2 1 3 
+3 4 _ 5 _ _ 7 8 6 
+
+KLEE-REPLAY: NOTE: EXIT STATUS: NORMAL (0 seconds)
+KLEE-REPLAY: NOTE: removing /tmp/klee-replay-qNRzgR
+ 
+ 

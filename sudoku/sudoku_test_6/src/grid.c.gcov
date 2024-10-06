@@ -1,0 +1,373 @@
+        -:    0:Source:grid.c
+        -:    0:Graph:grid.gcno
+        -:    0:Data:grid.gcda
+        -:    0:Runs:891
+        -:    1:#include "grid.h"
+        -:    2:
+        -:    3:#include <stdlib.h>
+        -:    4:#include <unistd.h>
+        -:    5:
+        -:    6:#include <assert.h>
+        -:    7:#include <math.h>
+        -:    8:#include <time.h>
+        -:    9:
+        -:   10:/* Internal structure (hidden from outside) for a sudoku grid */
+        -:   11:struct _grid_t {
+        -:   12:  size_t size;
+        -:   13:  colors_t **cells;
+        -:   14:};
+        -:   15:
+        -:   16:/************ GRID_CHECK_SIZE ************/
+    15797:   17:bool grid_check_size (const size_t size) {
+    15797:   18:  return size == 1 || size == 4 || size == 9 || size == 16 || size == 25 ||
+    15797:   19:         size == 36 || size == 49 || size == 64;
+        -:   20:}
+        -:   21:
+        -:   22:/************ GRID_ALLOC ************/
+    14419:   23:grid_t *grid_alloc (size_t size) {
+    14419:   24:  if (!grid_check_size (size)) {
+        -:   25:    return NULL;
+        -:   26:  }
+        -:   27:
+    14419:   28:  grid_t *grid = malloc (sizeof (grid_t));
+    14419:   29:  if (grid == NULL) {
+        -:   30:    return NULL;
+        -:   31:  }
+        -:   32:
+    14419:   33:  grid->size = size;
+        -:   34:
+    14419:   35:  grid->cells = malloc (size * sizeof (colors_t *));
+    14419:   36:  if (grid->cells == NULL) {
+    #####:   37:    free (grid);
+    #####:   38:    return NULL;
+        -:   39:  }
+        -:   40:
+   153096:   41:  for (size_t i = 0; i < size; i++) {
+   138677:   42:    grid->cells[i] = malloc (size * sizeof (colors_t));
+        -:   43:
+   138677:   44:    if (grid->cells[i] == NULL) {
+    #####:   45:      for (size_t j = 0; j < i; j++) {
+    #####:   46:        free (grid->cells[i]);
+        -:   47:      }
+        -:   48:
+    #####:   49:      free (grid->cells);
+    #####:   50:      free (grid);
+    #####:   51:      return NULL;
+        -:   52:    }
+        -:   53:  }
+        -:   54:  return grid;
+        -:   55:}
+        -:   56:
+        -:   57:/************ GRID_FREE ************/
+    19646:   58:void grid_free (grid_t *grid) {
+    19646:   59:  if (grid == NULL) {
+        -:   60:    return;
+        -:   61:  }
+        -:   62:
+    14419:   63:  if (grid->cells == NULL) {
+    #####:   64:    free (grid);
+    #####:   65:    return;
+        -:   66:  }
+        -:   67:
+   153096:   68:  for (size_t i = 0; i < grid->size; i++) {
+   138677:   69:    free (grid->cells[i]);
+        -:   70:  }
+        -:   71:
+    14419:   72:  free (grid->cells);
+    14419:   73:  free (grid);
+        -:   74:}
+        -:   75:
+        -:   76:/************ GRID_PRINT ************/
+     1176:   77:void grid_print (const grid_t *grid, FILE *fd) {
+     1176:   78:  if (grid == NULL) {
+        -:   79:    return;
+        -:   80:  }
+        -:   81:
+     9304:   82:  for (size_t row = 0; row < grid->size; row++) {
+   103544:   83:    for (size_t column = 0; column < grid->size; column++) {
+        -:   84:
+    95416:   85:      if (colors_is_singleton (grid->cells[row][column])) {
+  1150594:   86:        for (size_t index = 0; index < grid->size; index++) {
+  1079580:   87:          if (colors_is_in (grid->cells[row][column], index)) {
+    71014:   88:            fputc (color_table[index], fd);
+        -:   89:          }
+        -:   90:        }
+        -:   91:
+        -:   92:      } else {
+    24402:   93:        fputc ('_', fd);
+        -:   94:      }
+        -:   95:
+    95416:   96:      fputc (' ', fd);
+        -:   97:    }
+        -:   98:
+     8128:   99:    fputc ('\n', fd);
+        -:  100:  }
+        -:  101:
+     1176:  102:  fputc ('\n', fd);
+        -:  103:}
+        -:  104:
+        -:  105:/************ GIRD_CHECK_CHAR ************/
+   137160:  106:bool grid_check_char (const grid_t *grid, const char c) {
+  137160*:  107:  assert (grid != NULL);
+        -:  108:
+   137160:  109:  if (c == EMPTY_CELL) {
+        -:  110:    return true;
+        -:  111:  }
+        -:  112:
+   720960:  113:  for (size_t i = 0; i < grid->size; i++) {
+   720840:  114:    if (c == color_table[i]) {
+        -:  115:      return true;
+        -:  116:    }
+        -:  117:  }
+        -:  118:
+        -:  119:  return false;
+        -:  120:}
+        -:  121:
+        -:  122:/************ GRID_COPY ************/
+    12973:  123:grid_t *grid_copy (const grid_t *grid) {
+    12973:  124:  if (grid == NULL) {
+        -:  125:    return NULL;
+        -:  126:  }
+        -:  127:
+    12973:  128:  grid_t *grid_copy = grid_alloc (grid->size);
+    12973:  129:  if (grid_copy == NULL) {
+        -:  130:    return NULL;
+        -:  131:  }
+        -:  132:
+   139072:  133:  for (size_t row = 0; row < grid_copy->size; row++) {
+  1498602:  134:    for (size_t column = 0; column < grid_copy->size; column++) {
+  1372503:  135:      grid_copy->cells[row][column] = grid->cells[row][column];
+        -:  136:    }
+        -:  137:  }
+        -:  138:
+        -:  139:  return grid_copy;
+        -:  140:}
+        -:  141:
+        -:  142:/************ GRID_GET_CELL ************/
+    #####:  143:char *grid_get_cell (const grid_t *grid, const size_t row,
+        -:  144:                     const size_t column) {
+    #####:  145:  if (grid == NULL || row >= grid->size || column >= grid->size) {
+        -:  146:    return NULL;
+        -:  147:  }
+        -:  148:
+    #####:  149:  char *buffer = malloc ((grid->size + 1) * sizeof (char));
+    #####:  150:  if (buffer == NULL) {
+        -:  151:    return NULL;
+        -:  152:  }
+        -:  153:
+        -:  154:  int buffer_size = 0;
+    #####:  155:  for (size_t index = 0; index < grid->size; index++) {
+    #####:  156:    if (colors_is_in (grid->cells[row][column], index)) {
+    #####:  157:      buffer[buffer_size] = color_table[index];
+    #####:  158:      buffer_size++;
+        -:  159:    }
+        -:  160:  }
+        -:  161:
+    #####:  162:  buffer[buffer_size] = '\0';
+        -:  163:
+    #####:  164:  return buffer;
+        -:  165:}
+        -:  166:
+        -:  167:/************ GRID_GET_CELL_COLORS ************/
+     7124:  168:colors_t grid_get_cell_colors (const grid_t *grid, const size_t row,
+        -:  169:                               const size_t column) {
+     7124:  170:  return grid->cells[row][column];
+        -:  171:}
+        -:  172:
+        -:  173:/************ GRID_SIZE ************/
+     5540:  174:size_t grid_get_size (const grid_t *grid) {
+     5540:  175:  if (grid == NULL) {
+        -:  176:    return 0;
+        -:  177:  }
+     5540:  178:  return grid->size;
+        -:  179:}
+        -:  180:
+        -:  181:/************ GRID_SET_CELL ************/
+   165995:  182:void grid_set_cell (grid_t *grid, const size_t row, const size_t column,
+        -:  183:                    const char color) {
+   165995:  184:  if (grid == NULL || row >= grid->size || column >= grid->size) {
+        -:  185:    return;
+        -:  186:  }
+        -:  187:
+  2693698:  188:  for (size_t index = 0; index <= grid->size; index++) {
+  2587523:  189:    if (color_table[index] == color) {
+    59820:  190:      grid->cells[row][column] = colors_set (index);
+    59820:  191:      return;
+        -:  192:    }
+        -:  193:  }
+        -:  194:
+   106175:  195:  grid->cells[row][column] = colors_full (grid->size);
+        -:  196:}
+        -:  197:
+        -:  198:/************ GRID_SET_CELL_RANDOM ************/
+     9744:  199:void grid_set_cell_random (grid_t *grid, const size_t row,
+        -:  200:                           const size_t column) {
+     9744:  201:  if (grid == NULL || row >= grid->size || column >= grid->size) {
+        -:  202:    return;
+        -:  203:  }
+        -:  204:
+     9744:  205:  grid->cells[row][column] = colors_random (grid->cells[row][column]);
+        -:  206:}
+        -:  207:
+        -:  208:/************ GRID_SET_CELL_COLORS ************/
+       15:  209:void grid_set_cell_colors (grid_t *grid, const size_t row, const size_t column,
+        -:  210:                           const colors_t colors) {
+       15:  211:  if (grid == NULL || row >= grid->size || column >= grid->size) {
+        -:  212:    return;
+        -:  213:  }
+        -:  214:
+       15:  215:  grid->cells[row][column] = colors;
+        -:  216:}
+        -:  217:
+        -:  218:/************ SUBGRID_APPLY ************/
+    91381:  219:bool subgrid_apply (grid_t *grid,
+        -:  220:                    bool (*func) (colors_t *subgrid[], const size_t size),
+    91381:  221:                    bool is_heuristic) {
+   91381*:  222:  assert (grid != NULL);
+    91381:  223:  size_t size = grid->size;
+    91381:  224:  colors_t *subgrid_row[size];
+    91381:  225:  colors_t *subgrid_column[size];
+    91381:  226:  colors_t *subgrid_block[size];
+    91381:  227:  bool test = false;
+        -:  228:
+    91381:  229:  size_t cpt = 0;
+    91381:  230:  size_t sqrt_size = sqrt (size);
+    91381:  231:  size_t x_block;
+    91381:  232:  size_t y_block;
+        -:  233:
+   974958:  234:  for (size_t row = 0; row < size; row++) {
+ 11393556:  235:    for (size_t column = 0; column < size; column++) {
+        -:  236:
+ 10505571:  237:      subgrid_row[column] = &grid->cells[row][column];
+ 10505571:  238:      subgrid_column[column] = &grid->cells[column][row];
+        -:  239:
+ 10505571:  240:      if (column == sqrt_size * (1 + cpt)) {
+  2112920:  241:        cpt++;
+        -:  242:      }
+        -:  243:
+ 10505571:  244:      x_block = (row / sqrt_size) * sqrt_size;
+ 10505571:  245:      y_block = (row % sqrt_size) * sqrt_size;
+        -:  246:
+ 10505571:  247:      subgrid_block[column] =
+ 10505571:  248:          &grid->cells[x_block + cpt][y_block + column % sqrt_size];
+        -:  249:    }
+        -:  250:
+   887985:  251:    cpt = 0;
+        -:  252:
+   887985:  253:    if (is_heuristic) {
+   562612:  254:      test = func (subgrid_row, size) || test;
+   562612:  255:      test = func (subgrid_column, size) || test;
+   888555:  256:      test = func (subgrid_block, size) || test;
+        -:  257:    }
+        -:  258:
+  1213358:  259:    if (!is_heuristic &&
+   969611:  260:        (!func (subgrid_row, size) || !func (subgrid_column, size) ||
+   321124:  261:         !func (subgrid_block, size))) {
+     4408:  262:      return true;
+        -:  263:    }
+        -:  264:  }
+        -:  265:  return test;
+        -:  266:}
+        -:  267:
+        -:  268:/************ GRID_IS_SOLVED ************/
+    19798:  269:bool grid_is_solved (grid_t *grid) {
+   19798*:  270:  assert (grid != NULL);
+        -:  271:
+    58321:  272:  for (size_t row = 0; row < grid->size; row++) {
+   434942:  273:    for (size_t column = 0; column < grid->size; column++) {
+   396419:  274:      if (!colors_is_singleton (grid->cells[row][column])) {
+        -:  275:        return false;
+        -:  276:      }
+        -:  277:    }
+        -:  278:  }
+        -:  279:
+        -:  280:  return true;
+        -:  281:}
+        -:  282:
+        -:  283:/************ GRID_IS_CONSISTENT ************/
+    38716:  284:bool grid_is_consistent (grid_t *grid) {
+   38716*:  285:  assert (grid != NULL);
+        -:  286:
+    38716:  287:  return !subgrid_apply (grid, subgrid_consistency, false);
+        -:  288:}
+        -:  289:
+        -:  290:/************ GRID_HEURISTICS ************/
+    21456:  291:status_t grid_heuristic (grid_t *grid) {
+    21456:  292:  if (grid == NULL) {
+        -:  293:    return grid_inconsistent;
+        -:  294:  }
+        -:  295:
+    52665:  296:  while (subgrid_apply (grid, subgrid_heuristics, true))
+        -:  297:    ;
+        -:  298:
+    21336:  299:  if (!grid_is_consistent (grid)) {
+        -:  300:    return grid_inconsistent;
+        -:  301:  }
+        -:  302:
+    19102:  303:  if (grid_is_solved (grid)) {
+     3636:  304:    return grid_solved;
+        -:  305:  }
+        -:  306:
+        -:  307:  return grid_unsolved;
+        -:  308:}
+        -:  309:
+        -:  310:/************ GRID_CHOICE_IS_EMPTY ************/
+    11668:  311:bool grid_choice_is_empty (const choice_t choice) { return choice.color == 0; }
+        -:  312:
+        -:  313:/************ GRID_CHOICE_APPLY ************/
+    10476:  314:void grid_choice_apply (grid_t *grid, const choice_t choice) {
+   10476*:  315:  assert (grid != NULL);
+        -:  316:
+    10476:  317:  grid->cells[choice.row][choice.column] = choice.color;
+    10476:  318:}
+        -:  319:
+        -:  320:/************ GRID_CHOICE_DISCARD ************/
+     3261:  321:void grid_choice_discard (grid_t *grid, const choice_t choice) {
+    3261*:  322:  assert (grid != NULL);
+        -:  323:
+     3261:  324:  colors_t new_color =
+     3261:  325:      colors_subtract (grid->cells[choice.row][choice.column], choice.color);
+     3261:  326:  grid->cells[choice.row][choice.column] = new_color;
+     3261:  327:}
+        -:  328:
+        -:  329:/************ GRID_CHOICE_PRINT ************/
+    #####:  330:void grid_choice_print (const choice_t choice, FILE *fd) {
+    #####:  331:  fprintf (fd, "The choice is row = %li, column = %li and color = %li.\n",
+    #####:  332:           choice.row, choice.column, choice.color);
+    #####:  333:}
+        -:  334:
+        -:  335:/************ GRID_CHOICE ************/
+    11668:  336:choice_t *grid_choice (grid_t *grid) {
+   11668*:  337:  assert (grid != NULL);
+        -:  338:
+    11668:  339:  choice_t *choice = calloc (1, sizeof (choice_t));
+    11668:  340:  if (choice == NULL) {
+        -:  341:    return NULL;
+        -:  342:  }
+        -:  343:
+    11668:  344:  choice->color = colors_full (grid->size);
+        -:  345:
+    11668:  346:  size_t min = grid->size;
+    11668:  347:  size_t count_color;
+        -:  348:
+    76839:  349:  for (size_t i = 0; i < grid->size; i++) {
+   855712:  350:    for (size_t j = 0; j < grid->size; j++) {
+        -:  351:
+   790541:  352:      if (!colors_is_singleton (grid->cells[i][j])) {
+        -:  353:
+   208832:  354:        count_color = colors_count (grid->cells[i][j]);
+   208832:  355:        if (count_color <= min) {
+    73531:  356:          choice->row = i;
+    73531:  357:          choice->column = j;
+    73531:  358:          choice->color = colors_random (grid->cells[i][j]);
+    73531:  359:          min = count_color;
+        -:  360:
+    73531:  361:          if (min == 2) {
+        -:  362:            return choice;
+        -:  363:          }
+        -:  364:        }
+        -:  365:      }
+        -:  366:    }
+        -:  367:  }
+        -:  368:  return choice;
+        -:  369:}

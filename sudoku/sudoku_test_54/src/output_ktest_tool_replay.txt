@@ -1,0 +1,747 @@
+Analyse klee-out-0/test000001.ktest :
+ktest file : 'klee-out-0/test000001.ktest'
+args       : ['sudoku_final.bc', '../test/grid-solver/grid-09x09-02.sku']
+num objects: 3
+object 0: name: 'unique'
+object 0: size: 1
+object 0: data: b'\x00'
+object 0: hex : 0x00
+object 0: int : 0
+object 0: uint: 0
+object 0: text: .
+object 1: name: 'size_grid'
+object 1: size: 4
+object 1: data: b'\x02\x00\x00\x00'
+object 1: hex : 0x02000000
+object 1: int : 2
+object 1: uint: 2
+object 1: text: ....
+object 2: name: 'mode_value'
+object 2: size: 1
+object 2: data: b'\x00'
+object 2: hex : 0x00
+object 2: int : 0
+object 2: uint: 0
+object 2: text: .
+ 
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Solution:
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+
+=================================================================
+==17103==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 1440 byte(s) in 90 object(s) allocated from:
+    #0 0x7f86ddeb89cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x55eed0359e5f in grid_alloc /home/thomas/Documents/Cours/ter/sudoku/sudoku_test_54/src/grid.c:28
+
+SUMMARY: AddressSanitizer: 1440 byte(s) leaked in 90 allocation(s).
+ 
+ 
+Analyse klee-out-0/test000002.ktest :
+ktest file : 'klee-out-0/test000002.ktest'
+args       : ['sudoku_final.bc', '../test/grid-solver/grid-09x09-02.sku']
+num objects: 3
+object 0: name: 'unique'
+object 0: size: 1
+object 0: data: b'\x00'
+object 0: hex : 0x00
+object 0: int : 0
+object 0: uint: 0
+object 0: text: .
+object 1: name: 'size_grid'
+object 1: size: 4
+object 1: data: b'\x00\x00\x00\x00'
+object 1: hex : 0x00000000
+object 1: int : 0
+object 1: uint: 0
+object 1: text: ....
+object 2: name: 'mode_value'
+object 2: size: 1
+object 2: data: b'\x00'
+object 2: hex : 0x00
+object 2: int : 0
+object 2: uint: 0
+object 2: text: .
+ 
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Solution:
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+
+=================================================================
+==17107==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 1408 byte(s) in 88 object(s) allocated from:
+    #0 0x7fc54c2b89cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x55cb7f454e5f in grid_alloc /home/thomas/Documents/Cours/ter/sudoku/sudoku_test_54/src/grid.c:28
+
+SUMMARY: AddressSanitizer: 1408 byte(s) leaked in 88 allocation(s).
+ 
+ 
+Analyse klee-out-0/test000003.ktest :
+ktest file : 'klee-out-0/test000003.ktest'
+args       : ['sudoku_final.bc', '../test/grid-solver/grid-09x09-02.sku']
+num objects: 3
+object 0: name: 'unique'
+object 0: size: 1
+object 0: data: b'\x01'
+object 0: hex : 0x01
+object 0: int : 1
+object 0: uint: 1
+object 0: text: .
+object 1: name: 'size_grid'
+object 1: size: 4
+object 1: data: b'\x00\x00\x00\x00'
+object 1: hex : 0x00000000
+object 1: int : 0
+object 1: uint: 0
+object 1: text: ....
+object 2: name: 'mode_value'
+object 2: size: 1
+object 2: data: b'\x00'
+object 2: hex : 0x00
+object 2: int : 0
+object 2: uint: 0
+object 2: text: .
+ 
+sudoku: warning : option 'unique' conflict with solver mode, disabling it !
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Solution:
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+
+=================================================================
+==17111==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 752 byte(s) in 47 object(s) allocated from:
+    #0 0x7f0f254b89cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x55fd22295e5f in grid_alloc /home/thomas/Documents/Cours/ter/sudoku/sudoku_test_54/src/grid.c:28
+
+SUMMARY: AddressSanitizer: 752 byte(s) leaked in 47 allocation(s).
+ 
+ 
+Analyse klee-out-0/test000004.ktest :
+ktest file : 'klee-out-0/test000004.ktest'
+args       : ['sudoku_final.bc', '../test/grid-solver/grid-09x09-02.sku']
+num objects: 3
+object 0: name: 'unique'
+object 0: size: 1
+object 0: data: b'\x01'
+object 0: hex : 0x01
+object 0: int : 1
+object 0: uint: 1
+object 0: text: .
+object 1: name: 'size_grid'
+object 1: size: 4
+object 1: data: b'\x01\x00\x00\x00'
+object 1: hex : 0x01000000
+object 1: int : 1
+object 1: uint: 1
+object 1: text: ....
+object 2: name: 'mode_value'
+object 2: size: 1
+object 2: data: b'\x00'
+object 2: hex : 0x00
+object 2: int : 0
+object 2: uint: 0
+object 2: text: .
+ 
+1 
+
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Solution:
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+
+=================================================================
+==17115==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 208 byte(s) in 13 object(s) allocated from:
+    #0 0x7f5e4a6b89cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x56325bab8e5f in grid_alloc /home/thomas/Documents/Cours/ter/sudoku/sudoku_test_54/src/grid.c:28
+
+SUMMARY: AddressSanitizer: 208 byte(s) leaked in 13 allocation(s).
+ 
+ 
+Analyse klee-out-0/test000005.ktest :
+ktest file : 'klee-out-0/test000005.ktest'
+args       : ['sudoku_final.bc', '../test/grid-solver/grid-09x09-02.sku']
+num objects: 3
+object 0: name: 'unique'
+object 0: size: 1
+object 0: data: b'\x00'
+object 0: hex : 0x00
+object 0: int : 0
+object 0: uint: 0
+object 0: text: .
+object 1: name: 'size_grid'
+object 1: size: 4
+object 1: data: b'\x01\x00\x00\x00'
+object 1: hex : 0x01000000
+object 1: int : 1
+object 1: uint: 1
+object 1: text: ....
+object 2: name: 'mode_value'
+object 2: size: 1
+object 2: data: b'\x00'
+object 2: hex : 0x00
+object 2: int : 0
+object 2: uint: 0
+object 2: text: .
+ 
+1 
+
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Solution:
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+
+=================================================================
+==17119==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 992 byte(s) in 62 object(s) allocated from:
+    #0 0x7ffb734b89cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x5570badd7e5f in grid_alloc /home/thomas/Documents/Cours/ter/sudoku/sudoku_test_54/src/grid.c:28
+
+SUMMARY: AddressSanitizer: 992 byte(s) leaked in 62 allocation(s).
+ 
+ 
+Analyse klee-out-0/test000006.ktest :
+ktest file : 'klee-out-0/test000006.ktest'
+args       : ['sudoku_final.bc', '../test/grid-solver/grid-09x09-02.sku']
+num objects: 3
+object 0: name: 'unique'
+object 0: size: 1
+object 0: data: b'\x00'
+object 0: hex : 0x00
+object 0: int : 0
+object 0: uint: 0
+object 0: text: .
+object 1: name: 'size_grid'
+object 1: size: 4
+object 1: data: b'\x04\x00\x00\x00'
+object 1: hex : 0x04000000
+object 1: int : 4
+object 1: uint: 4
+object 1: text: ....
+object 2: name: 'mode_value'
+object 2: size: 1
+object 2: data: b'\x00'
+object 2: hex : 0x00
+object 2: int : 0
+object 2: uint: 0
+object 2: text: .
+ 
+3 1 _ 4 
+2 4 1 _ 
+1 3 4 _ 
+4 _ 3 _ 
+
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Solution:
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+
+=================================================================
+==17123==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 816 byte(s) in 51 object(s) allocated from:
+    #0 0x7f572d4b89cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x56282c88ce5f in grid_alloc /home/thomas/Documents/Cours/ter/sudoku/sudoku_test_54/src/grid.c:28
+
+SUMMARY: AddressSanitizer: 816 byte(s) leaked in 51 allocation(s).
+ 
+ 
+Analyse klee-out-0/test000007.ktest :
+ktest file : 'klee-out-0/test000007.ktest'
+args       : ['sudoku_final.bc', '../test/grid-solver/grid-09x09-02.sku']
+num objects: 3
+object 0: name: 'unique'
+object 0: size: 1
+object 0: data: b'\x01'
+object 0: hex : 0x01
+object 0: int : 1
+object 0: uint: 1
+object 0: text: .
+object 1: name: 'size_grid'
+object 1: size: 4
+object 1: data: b'\x04\x00\x00\x00'
+object 1: hex : 0x04000000
+object 1: int : 4
+object 1: uint: 4
+object 1: text: ....
+object 2: name: 'mode_value'
+object 2: size: 1
+object 2: data: b'\x00'
+object 2: hex : 0x00
+object 2: int : 0
+object 2: uint: 0
+object 2: text: .
+ 
+3 1 _ 2 
+2 4 _ 1 
+_ _ 2 4 
+4 _ 1 3 
+
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Solution:
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+
+=================================================================
+==17127==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 1584 byte(s) in 99 object(s) allocated from:
+    #0 0x7f9918ab89cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x55eb999b0e5f in grid_alloc /home/thomas/Documents/Cours/ter/sudoku/sudoku_test_54/src/grid.c:28
+
+SUMMARY: AddressSanitizer: 1584 byte(s) leaked in 99 allocation(s).
+ 
+ 
+Analyse klee-out-0/test000008.ktest :
+ktest file : 'klee-out-0/test000008.ktest'
+args       : ['sudoku_final.bc', '../test/grid-solver/grid-09x09-02.sku']
+num objects: 3
+object 0: name: 'unique'
+object 0: size: 1
+object 0: data: b'\x00'
+object 0: hex : 0x00
+object 0: int : 0
+object 0: uint: 0
+object 0: text: .
+object 1: name: 'size_grid'
+object 1: size: 4
+object 1: data: b'\x00\x00\x00\x00'
+object 1: hex : 0x00000000
+object 1: int : 0
+object 1: uint: 0
+object 1: text: ....
+object 2: name: 'mode_value'
+object 2: size: 1
+object 2: data: b'\x01'
+object 2: hex : 0x01
+object 2: int : 1
+object 2: uint: 1
+object 2: text: .
+ 
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Solution #1
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+# Number of solutions: 1
+
+
+=================================================================
+==17131==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 1584 byte(s) in 99 object(s) allocated from:
+    #0 0x7f00bfcb89cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x556fdf03de5f in grid_alloc /home/thomas/Documents/Cours/ter/sudoku/sudoku_test_54/src/grid.c:28
+
+SUMMARY: AddressSanitizer: 1584 byte(s) leaked in 99 allocation(s).
+ 
+ 
+Analyse klee-out-0/test000009.ktest :
+ktest file : 'klee-out-0/test000009.ktest'
+args       : ['sudoku_final.bc', '../test/grid-solver/grid-09x09-02.sku']
+num objects: 3
+object 0: name: 'unique'
+object 0: size: 1
+object 0: data: b'\x01'
+object 0: hex : 0x01
+object 0: int : 1
+object 0: uint: 1
+object 0: text: .
+object 1: name: 'size_grid'
+object 1: size: 4
+object 1: data: b'\x00\x00\x00\x00'
+object 1: hex : 0x00000000
+object 1: int : 0
+object 1: uint: 0
+object 1: text: ....
+object 2: name: 'mode_value'
+object 2: size: 1
+object 2: data: b'\x01'
+object 2: hex : 0x01
+object 2: int : 1
+object 2: uint: 1
+object 2: text: .
+ 
+sudoku: warning : option 'unique' conflict with solver mode, disabling it !
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Solution #1
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+# Number of solutions: 1
+
+
+=================================================================
+==17135==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 1584 byte(s) in 99 object(s) allocated from:
+    #0 0x7f22ab2b89cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x55958a2b0e5f in grid_alloc /home/thomas/Documents/Cours/ter/sudoku/sudoku_test_54/src/grid.c:28
+
+SUMMARY: AddressSanitizer: 1584 byte(s) leaked in 99 allocation(s).
+ 
+ 
+Analyse klee-out-0/test000010.ktest :
+ktest file : 'klee-out-0/test000010.ktest'
+args       : ['sudoku_final.bc', '../test/grid-solver/grid-09x09-02.sku']
+num objects: 3
+object 0: name: 'unique'
+object 0: size: 1
+object 0: data: b'\x00'
+object 0: hex : 0x00
+object 0: int : 0
+object 0: uint: 0
+object 0: text: .
+object 1: name: 'size_grid'
+object 1: size: 4
+object 1: data: b'\x02\x00\x00\x00'
+object 1: hex : 0x02000000
+object 1: int : 2
+object 1: uint: 2
+object 1: text: ....
+object 2: name: 'mode_value'
+object 2: size: 1
+object 2: data: b'\x01'
+object 2: hex : 0x01
+object 2: int : 1
+object 2: uint: 1
+object 2: text: .
+ 
+sudoku: warning : option 'all' conflict with generate mode, disabling it !
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Solution #1
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+# Number of solutions: 1
+
+
+=================================================================
+==17139==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 1584 byte(s) in 99 object(s) allocated from:
+    #0 0x7f525e0b89cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x56176c2c5e5f in grid_alloc /home/thomas/Documents/Cours/ter/sudoku/sudoku_test_54/src/grid.c:28
+
+SUMMARY: AddressSanitizer: 1584 byte(s) leaked in 99 allocation(s).
+ 
+ 
+Analyse klee-out-0/test000011.ktest :
+ktest file : 'klee-out-0/test000011.ktest'
+args       : ['sudoku_final.bc', '../test/grid-solver/grid-09x09-02.sku']
+num objects: 3
+object 0: name: 'unique'
+object 0: size: 1
+object 0: data: b'\x01'
+object 0: hex : 0x01
+object 0: int : 1
+object 0: uint: 1
+object 0: text: .
+object 1: name: 'size_grid'
+object 1: size: 4
+object 1: data: b'\x01\x00\x00\x00'
+object 1: hex : 0x01000000
+object 1: int : 1
+object 1: uint: 1
+object 1: text: ....
+object 2: name: 'mode_value'
+object 2: size: 1
+object 2: data: b'\x01'
+object 2: hex : 0x01
+object 2: int : 1
+object 2: uint: 1
+object 2: text: .
+ 
+sudoku: warning : option 'all' conflict with generate mode, disabling it !
+1 
+
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Solution #1
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+# Number of solutions: 1
+
+
+=================================================================
+==17143==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 1632 byte(s) in 102 object(s) allocated from:
+    #0 0x7f07cd0b89cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x559c6c282e5f in grid_alloc /home/thomas/Documents/Cours/ter/sudoku/sudoku_test_54/src/grid.c:28
+
+SUMMARY: AddressSanitizer: 1632 byte(s) leaked in 102 allocation(s).
+ 
+ 
+Analyse klee-out-0/test000012.ktest :
+ktest file : 'klee-out-0/test000012.ktest'
+args       : ['sudoku_final.bc', '../test/grid-solver/grid-09x09-02.sku']
+num objects: 3
+object 0: name: 'unique'
+object 0: size: 1
+object 0: data: b'\x00'
+object 0: hex : 0x00
+object 0: int : 0
+object 0: uint: 0
+object 0: text: .
+object 1: name: 'size_grid'
+object 1: size: 4
+object 1: data: b'\x01\x00\x00\x00'
+object 1: hex : 0x01000000
+object 1: int : 1
+object 1: uint: 1
+object 1: text: ....
+object 2: name: 'mode_value'
+object 2: size: 1
+object 2: data: b'\x01'
+object 2: hex : 0x01
+object 2: int : 1
+object 2: uint: 1
+object 2: text: .
+ 
+sudoku: warning : option 'all' conflict with generate mode, disabling it !
+1 
+
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Solution #1
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+# Number of solutions: 1
+
+
+=================================================================
+==17147==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 1616 byte(s) in 101 object(s) allocated from:
+    #0 0x7f1d1bcb89cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x557eed773e5f in grid_alloc /home/thomas/Documents/Cours/ter/sudoku/sudoku_test_54/src/grid.c:28
+
+SUMMARY: AddressSanitizer: 1616 byte(s) leaked in 101 allocation(s).
+ 
+ 
+Analyse klee-out-0/test000013.ktest :
+ktest file : 'klee-out-0/test000013.ktest'
+args       : ['sudoku_final.bc', '../test/grid-solver/grid-09x09-02.sku']
+num objects: 3
+object 0: name: 'unique'
+object 0: size: 1
+object 0: data: b'\x00'
+object 0: hex : 0x00
+object 0: int : 0
+object 0: uint: 0
+object 0: text: .
+object 1: name: 'size_grid'
+object 1: size: 4
+object 1: data: b'\x04\x00\x00\x00'
+object 1: hex : 0x04000000
+object 1: int : 4
+object 1: uint: 4
+object 1: text: ....
+object 2: name: 'mode_value'
+object 2: size: 1
+object 2: data: b'\x01'
+object 2: hex : 0x01
+object 2: int : 1
+object 2: uint: 1
+object 2: text: .
+ 
+sudoku: warning : option 'all' conflict with generate mode, disabling it !
+3 1 4 _ 
+_ _ _ 1 
+4 2 1 3 
+1 _ 2 4 
+
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Solution #1
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+# Number of solutions: 1
+
+
+=================================================================
+==17151==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 1632 byte(s) in 102 object(s) allocated from:
+    #0 0x7f58188b89cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x5592d0f9fe5f in grid_alloc /home/thomas/Documents/Cours/ter/sudoku/sudoku_test_54/src/grid.c:28
+
+SUMMARY: AddressSanitizer: 1632 byte(s) leaked in 102 allocation(s).
+ 
+ 
+Analyse klee-out-0/test000014.ktest :
+ktest file : 'klee-out-0/test000014.ktest'
+args       : ['sudoku_final.bc', '../test/grid-solver/grid-09x09-02.sku']
+num objects: 3
+object 0: name: 'unique'
+object 0: size: 1
+object 0: data: b'\x01'
+object 0: hex : 0x01
+object 0: int : 1
+object 0: uint: 1
+object 0: text: .
+object 1: name: 'size_grid'
+object 1: size: 4
+object 1: data: b'\x04\x00\x00\x00'
+object 1: hex : 0x04000000
+object 1: int : 4
+object 1: uint: 4
+object 1: text: ....
+object 2: name: 'mode_value'
+object 2: size: 1
+object 2: data: b'\x01'
+object 2: hex : 0x01
+object 2: int : 1
+object 2: uint: 1
+object 2: text: .
+ 
+sudoku: warning : option 'all' conflict with generate mode, disabling it !
+3 1 4 _ 
+_ _ _ 1 
+4 2 1 3 
+1 _ 2 4 
+
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Solution #1
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+# Number of solutions: 1
+
+
+=================================================================
+==17155==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 1728 byte(s) in 108 object(s) allocated from:
+    #0 0x7f64b96b89cf in __interceptor_malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x558f78a66e5f in grid_alloc /home/thomas/Documents/Cours/ter/sudoku/sudoku_test_54/src/grid.c:28
+
+SUMMARY: AddressSanitizer: 1728 byte(s) leaked in 108 allocation(s).

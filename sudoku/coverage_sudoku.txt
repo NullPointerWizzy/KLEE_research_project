@@ -1,0 +1,38 @@
+Coverage Sudoku	
+
+Test 3
+Commande " klee --posix-runtime -libc=uclibc sudoku_final.bc -sym-arg 2"
+Colors.c = 89,4 % sur 151
+Grid.c = 74,46 % sur 158
+Sudoku.c = 37,46 % sur 291
+Klee make symbolic sur les entré directement avec sym-args et sym-files
+
+
+Test 4
+Klee make symbolic après la partie où on regarde les arguments et sur unique, mode, et size_grid
+Commande utilisé "klee --posix-runtime -libc=uclibc sudoku_final.bc ../test/grid-parser/grid-09x09_02.sku"
+Colors.c = 90.73 % sur 151
+Grid.c =  83,54 % sur 158
+Sudoku.c = 67.45  % sur 291
+
+Test 5
+Coverage obtenu en lançant des tests manuels, chaque option, et avec tous les grilles de grid-parser et grid-test
+Colors.c = 90.73 % sur 151
+Grid.c =  83,54 % sur 158
+Sudoku.c =  93,81 % sur 291 
+
+Test 6
+Klee make symbolic sur le nb_d'argument, et sur les arguments possibles
+Commande utilisé "klee --posix-runtime -libc=uclibc sudoku_final.bc"
+Colors.c = 90.73 % sur 151
+Grid.c =  85.44 % sur 158
+Sudoku.c = 89.09 % sur 291
+(Temps pris = 15h24 min)
+
+
+Test 7
+Commande " klee --posix-runtime -libc=uclibc sudoku_final.bc -sym-arg 3"
+Colors.c = 90.73 % sur 151
+Grid.c = 74,68 % sur 158
+Sudoku.c = 44,33 % sur 291
+Klee make symbolic sur les entré directement avec sym-args et sym-files

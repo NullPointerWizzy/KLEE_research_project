@@ -1,0 +1,1616 @@
+# Solving '../test/grid-solver/grid-01x01-01.sku'...
+
+# Initial grid:
+1 
+
+# Solution:
+1 
+
+# Statistics for the current run
+# Initial fill ratio: 0%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-04x04-01.sku'...
+
+# Initial grid:
+_ 2 4 _ 
+_ _ _ 2 
+3 _ _ _ 
+_ 1 3 _ 
+
+# Solution:
+1 2 4 3 
+4 3 1 2 
+3 4 2 1 
+2 1 3 4 
+
+# Statistics for the current run
+# Initial fill ratio: 37%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-04x04-02.sku'...
+
+# Initial grid:
+_ 4 3 _ 
+2 _ _ 4 
+3 _ _ 1 
+_ 1 2 _ 
+
+# Solution:
+1 4 3 2 
+2 3 1 4 
+3 2 4 1 
+4 1 2 3 
+
+# Statistics for the current run
+# Initial fill ratio: 50%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-04x04-03.sku'...
+
+# Initial grid:
+_ _ 4 _ 
+1 _ _ _ 
+_ _ _ 3 
+_ 1 _ _ 
+
+# Solution:
+2 3 4 1 
+1 4 3 2 
+4 2 1 3 
+3 1 2 4 
+
+# Statistics for the current run
+# Initial fill ratio: 25%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-04x04-04.sku'...
+
+# Initial grid:
+_ 1 2 _ 
+_ 2 _ 4 
+_ _ _ _ 
+_ _ 4 1 
+
+# Solution:
+4 1 2 3 
+3 2 1 4 
+1 4 3 2 
+2 3 4 1 
+
+# Statistics for the current run
+# Initial fill ratio: 37%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-04x04-05.sku'...
+
+# Initial grid:
+1 _ _ _ 
+_ 2 _ _ 
+_ _ 3 _ 
+_ _ _ 4 
+
+# Solution:
+1 3 4 2 
+4 2 1 3 
+2 4 3 1 
+3 1 2 4 
+
+# Statistics for the current run
+# Initial fill ratio: 25%
+# Number of choices: 1
+# Number of backtracks: 1
+
+# Solving '../test/grid-solver/grid-09x09-01.sku'...
+
+# Initial grid:
+_ _ _ _ _ 5 9 _ 6 
+_ _ _ _ _ _ _ 7 _ 
+_ 9 _ 4 6 _ 5 2 _ 
+_ 6 _ _ _ _ _ 9 _ 
+1 _ _ _ 8 6 _ _ 5 
+_ 8 _ 3 _ _ _ _ 1 
+_ 1 4 _ _ _ _ _ 7 
+3 _ _ _ 5 _ _ _ _ 
+_ _ 6 9 _ _ _ _ 3 
+
+# Solution:
+2 4 8 7 1 5 9 3 6 
+6 3 5 8 9 2 1 7 4 
+7 9 1 4 6 3 5 2 8 
+4 6 3 5 7 1 8 9 2 
+1 7 9 2 8 6 3 4 5 
+5 8 2 3 4 9 7 6 1 
+9 1 4 6 3 8 2 5 7 
+3 2 7 1 5 4 6 8 9 
+8 5 6 9 2 7 4 1 3 
+
+# Statistics for the current run
+# Initial fill ratio: 32%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-09x09-02.sku'...
+
+# Initial grid:
+1 _ _ _ _ 7 _ 9 _ 
+_ 3 _ _ 2 _ _ _ 8 
+_ _ 9 6 _ _ 5 _ _ 
+_ _ 5 3 _ _ 9 _ _ 
+_ 1 _ _ 8 _ _ _ 2 
+6 _ _ _ _ 4 _ _ _ 
+3 _ _ _ _ _ _ 1 _ 
+_ 4 _ _ _ _ _ _ 7 
+_ _ 7 _ _ _ 3 _ _ 
+
+# Solution:
+1 6 2 8 5 7 4 9 3 
+5 3 4 1 2 9 6 7 8 
+7 8 9 6 4 3 5 2 1 
+4 7 5 3 1 2 9 8 6 
+9 1 3 5 8 6 7 4 2 
+6 2 8 7 9 4 1 3 5 
+3 5 6 4 7 8 2 1 9 
+2 4 1 9 3 5 8 6 7 
+8 9 7 2 6 1 3 5 4 
+
+# Statistics for the current run
+# Initial fill ratio: 28%
+# Number of choices: 9
+# Number of backtracks: 12
+
+# Solving '../test/grid-solver/grid-09x09-03.sku'...
+
+# Initial grid:
+_ _ _ _ _ _ _ 1 2 
+_ _ _ _ _ _ _ _ 3 
+_ _ 2 3 _ _ _ 4 _ 
+_ _ 1 8 _ _ _ _ 5 
+_ 6 _ _ 7 _ 8 _ _ 
+_ _ _ _ _ 9 _ _ _ 
+_ _ 8 5 _ _ _ _ _ 
+9 _ _ _ 4 _ 5 _ _ 
+4 7 _ _ _ 6 _ _ _ 
+
+# Solution:
+3 4 6 7 8 5 9 1 2 
+1 8 9 6 2 4 7 5 3 
+7 5 2 3 9 1 6 4 8 
+2 9 1 8 6 3 4 7 5 
+5 6 4 1 7 2 8 3 9 
+8 3 7 4 5 9 1 2 6 
+6 2 8 5 1 7 3 9 4 
+9 1 3 2 4 8 5 6 7 
+4 7 5 9 3 6 2 8 1 
+
+# Statistics for the current run
+# Initial fill ratio: 25%
+# Number of choices: 5
+# Number of backtracks: 5
+
+# Solving '../test/grid-solver/grid-09x09-04.sku'...
+
+# Initial grid:
+8 _ _ _ _ _ _ _ _ 
+_ _ 3 6 _ _ _ _ _ 
+_ 7 _ _ 9 _ 2 _ _ 
+_ 5 _ _ _ 7 _ _ _ 
+_ _ _ _ 4 5 7 _ _ 
+_ _ _ 1 _ _ _ 3 _ 
+_ _ 1 _ _ _ _ 6 8 
+_ _ 8 5 _ _ _ 1 _ 
+_ 9 _ _ _ _ 4 _ _ 
+
+# Solution:
+8 1 2 7 5 3 6 4 9 
+9 4 3 6 8 2 1 7 5 
+6 7 5 4 9 1 2 8 3 
+1 5 4 2 3 7 8 9 6 
+3 6 9 8 4 5 7 2 1 
+2 8 7 1 6 9 5 3 4 
+5 2 1 9 7 4 3 6 8 
+4 3 8 5 2 6 9 1 7 
+7 9 6 3 1 8 4 5 2 
+
+# Statistics for the current run
+# Initial fill ratio: 25%
+# Number of choices: 35
+# Number of backtracks: 63
+
+# Solving '../test/grid-solver/grid-16x16-01.sku'...
+
+# Initial grid:
+_ F _ _ _ _ _ _ _ _ _ _ C G _ _ 
+_ _ 5 _ C G 4 9 _ F _ D _ _ _ _ 
+_ _ E 7 _ F _ _ _ A 1 _ _ B 4 _ 
+8 _ _ D _ _ _ _ _ _ 9 _ _ A _ _ 
+9 _ _ _ 5 _ G _ B 7 _ _ E _ _ _ 
+_ _ _ _ 2 7 _ _ A 6 E _ _ D _ _ 
+_ 6 _ _ 4 E F _ 1 _ 3 5 _ _ B _ 
+_ _ _ _ _ _ B _ _ _ 2 _ _ _ _ _ 
+_ D _ 3 _ _ 6 2 _ _ F _ _ _ _ E 
+6 _ C E _ _ _ _ 9 _ _ _ _ _ 2 _ 
+_ B _ 4 E _ 3 _ _ _ D _ _ _ 8 7 
+_ _ _ 8 _ 9 _ G _ B 7 A 5 _ _ _ 
+D 4 _ 9 _ _ 8 F _ _ _ _ _ 6 A 2 
+_ 8 B _ _ _ _ 7 _ _ _ _ _ 3 1 _ 
+_ 1 _ _ _ _ 9 6 4 2 _ F _ _ _ 8 
+C _ _ _ _ _ 2 _ _ _ _ B _ 7 E _ 
+
+# Solution:
+B F 2 1 6 A 7 E 3 8 5 4 C G 9 D 
+3 A 5 6 C G 4 9 2 F B D 8 E 7 1 
+G 9 E 7 8 F D 3 C A 1 6 2 B 4 5 
+8 C 4 D 1 2 5 B G E 9 7 6 A F 3 
+9 3 1 F 5 6 G D B 7 4 8 E 2 C A 
+4 G 8 B 2 7 1 C A 6 E 9 3 D 5 F 
+2 6 A C 4 E F 8 1 D 3 5 7 9 B G 
+7 E D 5 9 3 B A F G 2 C 1 8 6 4 
+5 D 9 3 7 B 6 2 8 4 F 1 A C G E 
+6 7 C E F 8 A 4 9 5 G 3 D 1 2 B 
+A B G 4 E 1 3 5 6 C D 2 9 F 8 7 
+1 2 F 8 D 9 C G E B 7 A 5 4 3 6 
+D 4 3 9 B 5 8 F 7 1 C E G 6 A 2 
+F 8 B 2 A D E 7 5 9 6 G 4 3 1 C 
+E 1 7 G 3 C 9 6 4 2 A F B 5 D 8 
+C 5 6 A G 4 2 1 D 3 8 B F 7 E 9 
+
+# Statistics for the current run
+# Initial fill ratio: 36%
+# Number of choices: 14
+# Number of backtracks: 26
+
+# Solving '../test/grid-solver/grid-16x16-02.sku'...
+
+# Initial grid:
+1 _ _ 2 3 4 _ _ C _ 6 _ _ _ 7 _ 
+_ _ 8 _ _ _ 7 _ _ 3 _ _ 9 A 6 B 
+_ C _ _ A _ _ 1 _ D _ B _ _ E _ 
+3 _ _ F 2 _ _ E _ _ _ 9 _ _ C _ 
+D _ _ _ 8 _ _ A _ C 2 _ 1 F _ _ 
+_ B 7 6 _ _ _ G _ _ _ F _ _ 5 D 
+_ _ _ A _ 5 F _ _ 4 _ 8 _ _ B _ 
+G _ _ 5 9 C _ _ 1 _ _ _ _ _ 8 _ 
+_ 2 _ _ _ _ _ D _ _ C 5 8 _ _ 3 
+_ D _ _ F _ 3 _ _ E 8 _ G _ _ _ 
+5 8 _ _ 1 _ _ _ 2 _ _ _ D 9 F _ 
+_ _ C 4 _ 6 G _ D _ _ 7 _ _ _ 5 
+_ 3 _ _ C _ _ _ 6 _ _ 4 B _ _ G 
+_ 7 _ _ G _ 5 _ E _ _ 1 _ _ 2 _ 
+B 1 F 9 _ _ D _ _ 2 _ _ _ E _ _ 
+_ E _ _ _ B _ 2 _ _ D 3 5 _ _ C 
+
+# Solution:
+1 5 A 2 3 4 9 B C G 6 E F D 7 8 
+E G 8 D 5 F 7 C 4 3 1 2 9 A 6 B 
+9 C 4 7 A G 6 1 8 D F B 3 5 E 2 
+3 6 B F 2 D 8 E 7 5 A 9 4 G C 1 
+D 4 E 3 8 7 B A 5 C 2 6 1 F G 9 
+8 B 7 6 4 1 2 G 9 A E F C 3 5 D 
+C 9 1 A D 5 F 6 3 4 G 8 E 2 B 7 
+G F 2 5 9 C E 3 1 B 7 D A 6 8 4 
+6 2 G E B 9 4 D F 1 C 5 8 7 A 3 
+7 D 9 1 F 2 3 5 B E 8 A G C 4 6 
+5 8 3 B 1 A C 7 2 6 4 G D 9 F E 
+F A C 4 E 6 G 8 D 9 3 7 2 B 1 5 
+2 3 5 8 C E A F 6 7 9 4 B 1 D G 
+A 7 D C G 3 5 9 E 8 B 1 6 4 2 F 
+B 1 F 9 6 8 D 4 G 2 5 C 7 E 3 A 
+4 E 6 G 7 B 1 2 A F D 3 5 8 9 C 
+
+# Statistics for the current run
+# Initial fill ratio: 40%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-16x16-03.sku'...
+
+# Initial grid:
+8 F _ C _ _ _ _ _ A _ _ _ _ _ 6 
+_ _ _ A _ _ _ F _ _ _ B 7 4 D _ 
+B _ 4 _ _ _ D 6 _ 7 _ _ G _ 5 _ 
+1 _ _ _ _ _ _ G 3 _ 9 2 _ _ _ _ 
+_ _ _ _ _ 1 F D _ 3 G _ _ E 7 4 
+_ 1 _ 6 _ _ _ C _ B _ _ A _ 3 _ 
+_ C _ D _ _ 6 3 _ 5 _ _ 9 2 _ _ 
+9 _ 3 4 E _ 2 _ _ _ 7 D _ _ _ _ 
+_ _ _ _ 5 7 _ _ _ 8 _ C 3 G _ A 
+_ _ E 2 _ _ 4 _ 7 1 _ _ F _ 6 _ 
+_ 5 _ 3 _ _ 8 _ 9 _ _ _ E _ C _ 
+7 G 6 _ _ C 9 _ D E 3 _ _ _ _ _ 
+_ _ _ _ D E _ 4 G _ _ _ _ _ _ 2 
+_ 7 _ 8 _ _ C _ 4 2 _ _ _ B _ 5 
+_ 2 9 E B _ _ _ 5 _ _ _ 4 _ _ _ 
+6 _ _ _ _ _ 7 _ _ _ _ _ 1 _ 8 3 
+
+# Solution:
+8 F G C 1 B 5 7 E A D 4 2 3 9 6 
+3 6 2 A 8 9 E F 1 G 5 B 7 4 D C 
+B E 4 9 2 3 D 6 F 7 C 8 G A 5 1 
+1 D 5 7 C 4 A G 3 6 9 2 B 8 F E 
+2 B 8 5 9 1 F D A 3 G 6 C E 7 4 
+E 1 F 6 7 8 G C 2 B 4 9 A 5 3 D 
+G C 7 D 4 A 6 3 8 5 1 E 9 2 B F 
+9 A 3 4 E 5 2 B C F 7 D 8 6 1 G 
+4 9 D 1 5 7 B E 6 8 F C 3 G 2 A 
+C 8 E 2 3 G 4 A 7 1 B 5 F D 6 9 
+F 5 A 3 6 D 8 1 9 4 2 G E 7 C B 
+7 G 6 B F C 9 2 D E 3 A 5 1 4 8 
+5 3 B F D E 1 4 G 9 8 7 6 C A 2 
+A 7 1 8 G F C 9 4 2 6 3 D B E 5 
+D 2 9 E B 6 3 8 5 C A 1 4 F G 7 
+6 4 C G A 2 7 5 B D E F 1 9 8 3 
+
+# Statistics for the current run
+# Initial fill ratio: 39%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-16x16-04.sku'...
+
+# Initial grid:
+_ B _ 5 _ _ E _ _ _ _ _ _ _ 6 _ 
+_ _ _ _ 4 _ G 2 9 _ 1 7 _ _ _ 5 
+D _ _ _ _ _ 6 _ _ _ _ _ _ E _ _ 
+_ _ 9 _ 5 7 _ 8 F _ _ B _ _ _ A 
+_ D _ _ 1 _ 4 _ _ _ _ _ _ _ _ 8 
+8 _ A _ _ 2 _ 3 _ 1 _ _ _ 5 E 7 
+7 4 _ C F _ B _ 5 G D _ 6 _ _ _ 
+_ _ _ _ 8 _ _ _ _ _ 2 6 _ _ _ _ 
+5 _ _ _ _ D 7 9 _ 4 _ _ _ _ _ _ 
+_ _ 2 G _ _ _ A _ _ F 5 _ 8 _ _ 
+6 _ _ _ _ _ _ _ 2 _ _ 3 F _ 9 _ 
+3 _ _ B _ _ _ _ A _ 8 _ _ _ _ _ 
+B _ D _ 3 _ _ _ 4 C _ G _ 6 _ E 
+1 _ 8 2 _ _ _ _ _ _ _ D _ _ _ 4 
+F _ _ _ _ _ _ _ _ 8 E _ 9 _ D _ 
+_ _ 5 E _ 8 _ _ 7 9 _ A 1 _ _ _ 
+
+# Solution:
+4 B 7 5 9 F E 1 D 2 A C 8 3 6 G 
+A E 6 8 4 C G 2 9 3 1 7 B D F 5 
+D F C 1 A 3 6 B 8 5 G 4 7 E 2 9 
+G 2 9 3 5 7 D 8 F E 6 B C 4 1 A 
+2 D B 6 1 5 4 7 3 A 9 E G F C 8 
+8 G A 9 6 2 C 3 B 1 4 F D 5 E 7 
+7 4 3 C F 9 B E 5 G D 8 6 1 A 2 
+E 5 1 F 8 G A D C 7 2 6 3 9 4 B 
+5 8 F A 2 D 7 9 G 4 C 1 E B 3 6 
+9 1 2 G B 6 3 A E D F 5 4 8 7 C 
+6 C E D G 4 8 5 2 B 7 3 F A 9 1 
+3 7 4 B E 1 F C A 6 8 9 5 2 G D 
+B 9 D 7 3 A 1 F 4 C 5 G 2 6 8 E 
+1 3 8 2 7 E 9 G 6 F B D A C 5 4 
+F A G 4 C B 5 6 1 8 E 2 9 7 D 3 
+C 6 5 E D 8 2 4 7 9 3 A 1 G B F 
+
+# Statistics for the current run
+# Initial fill ratio: 35%
+# Number of choices: 13
+# Number of backtracks: 13
+
+# Solving '../test/grid-solver/grid-16x16-05.sku'...
+
+# Initial grid:
+_ E _ _ 9 _ _ 5 B _ _ 8 _ 4 6 _ 
+_ 5 G B _ _ _ _ _ _ 6 _ D F E _ 
+F _ 4 _ _ C 6 _ _ 9 A _ _ 7 _ 5 
+_ _ A _ 1 E 7 _ _ 4 5 D _ 9 _ _ 
+_ _ _ C _ 6 D _ _ 5 B _ 2 _ _ _ 
+8 9 _ _ B 3 G _ _ A F 2 _ _ C E 
+D _ _ 2 8 _ 1 A 3 _ _ C 9 _ _ 7 
+_ 1 B A _ _ _ 9 7 _ _ _ _ 3 4 _ 
+_ 4 8 F _ _ _ 6 2 _ _ _ 5 C A _ 
+2 _ _ 5 7 _ 4 G _ _ _ 6 1 _ _ 3 
+C A _ _ 5 B 8 _ _ 3 G 1 _ _ F _ 
+_ _ _ 7 _ A 2 _ _ 8 E _ 4 _ _ _ 
+_ _ F _ E 7 B _ _ D 9 A _ 2 _ _ 
+4 _ C _ _ D A _ _ G 2 _ _ 5 _ F 
+_ 6 1 3 _ 2 _ _ _ _ 7 _ E G D _ 
+_ _ D _ _ _ _ F E _ _ 4 _ A 7 _ 
+
+# Solution:
+7 E 2 D 9 G F 5 B 1 3 8 A 4 6 C 
+9 5 G B A 4 3 8 C 2 6 7 D F E 1 
+F 3 4 1 D C 6 B G 9 A E 8 7 2 5 
+6 C A 8 1 E 7 2 F 4 5 D G 9 3 B 
+3 F 7 C 4 6 D E 1 5 B 9 2 8 G A 
+8 9 5 4 B 3 G 7 D A F 2 6 1 C E 
+D G 6 2 8 F 1 A 3 E 4 C 9 B 5 7 
+E 1 B A 2 5 C 9 7 6 8 G F 3 4 D 
+G 4 8 F 3 1 E 6 2 7 D B 5 C A 9 
+2 B E 5 7 9 4 G A F C 6 1 D 8 3 
+C A 9 6 5 B 8 D 4 3 G 1 7 E F 2 
+1 D 3 7 F A 2 C 9 8 E 5 4 6 B G 
+5 8 F G E 7 B 3 6 D 9 A C 2 1 4 
+4 7 C E 6 D A 1 8 G 2 3 B 5 9 F 
+A 6 1 3 C 2 9 4 5 B 7 F E G D 8 
+B 2 D 9 G 8 5 F E C 1 4 3 A 7 6 
+
+# Statistics for the current run
+# Initial fill ratio: 48%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-16x16-06-twice_char_8_in_line-inconsistent.sku'...
+
+# Initial grid:
+_ _ 8 _ _ _ _ 8 _ _ _ 4 7 _ D _ 
+3 _ _ _ 1 2 _ _ _ _ 8 B _ _ _ _ 
+2 9 _ _ 6 _ B _ F D 1 _ _ _ _ _ 
+D _ _ _ G _ _ _ 9 5 _ 6 B 1 _ _ 
+_ 4 _ B _ _ _ _ D 8 7 _ C A 3 _ 
+5 8 _ 6 _ A _ _ 3 _ _ _ _ B _ _ 
+_ 3 _ C _ _ _ _ A _ _ G 5 _ _ 9 
+_ 2 E _ _ 5 G _ _ _ F _ _ _ 6 _ 
+_ 7 _ _ _ 8 _ _ _ F A _ _ 2 9 _ 
+F _ _ 3 A _ _ 6 _ _ _ _ G _ 7 _ 
+_ _ 6 _ _ _ _ D _ _ 4 _ F _ B 5 
+_ G 9 D _ 4 2 F _ _ _ _ A _ 8 _ 
+_ _ 7 E B _ C A _ _ _ F _ _ _ 1 
+_ _ _ _ _ 6 E 7 _ 3 _ 9 _ _ 5 2 
+_ _ _ _ 5 9 _ _ _ _ 6 C _ _ _ E 
+_ 1 _ 9 D _ _ _ 7 _ _ _ _ G _ _ 
+
+The grid hasn't been solved !
+The initial grid isn't consistent!
+
+# Statistics for the current run
+# Initial fill ratio: 39%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-16x16-07-twice_char_A_in_columns-inconsistent.sku'...
+
+# Initial grid:
+_ _ 8 _ _ _ _ 5 _ _ _ 4 7 _ D _ 
+3 _ _ _ 1 2 _ _ _ _ 8 B _ _ _ _ 
+2 9 _ _ 6 _ B _ F D 1 _ _ _ _ _ 
+D _ _ _ G _ _ _ 9 5 _ 6 B 1 _ _ 
+_ 4 _ B _ _ _ _ D 8 7 _ C A 3 _ 
+5 8 _ 6 _ A _ _ 3 _ _ _ _ B _ _ 
+_ 3 _ C A _ _ _ A _ _ G 5 _ _ 9 
+_ 2 E _ _ 5 G _ _ _ F _ _ _ 6 _ 
+_ 7 _ _ _ 8 _ _ _ F A _ _ 2 9 _ 
+F _ _ 3 A _ _ 6 _ _ _ _ G _ 7 _ 
+_ _ 6 _ _ _ _ D _ _ 4 _ F _ B 5 
+_ G 9 D _ 4 2 F _ _ _ _ A _ 8 _ 
+_ _ 7 E B _ C A _ _ _ F _ _ _ 1 
+_ _ _ _ _ 6 E 7 _ 3 _ 9 _ _ 5 2 
+_ _ _ _ 5 9 _ _ _ _ 6 C _ _ _ E 
+_ 1 _ 9 D _ _ _ 7 _ _ _ _ G _ _ 
+
+The grid hasn't been solved !
+The initial grid isn't consistent!
+
+# Statistics for the current run
+# Initial fill ratio: 39%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-16x16-08-twice_char_B_in_a_block-inconsistent.sku'...
+
+# Initial grid:
+_ _ 8 _ _ _ _ 5 _ _ _ 4 7 _ D B 
+3 _ _ _ 1 2 _ _ _ _ 8 B _ _ _ _ 
+2 9 _ _ 6 _ _ _ F D 1 _ B _ _ _ 
+D _ _ _ G _ _ _ 9 5 _ 6 1 _ _ _ 
+_ 4 _ B _ _ _ _ D 8 7 _ C A 3 _ 
+5 8 _ 6 _ A _ _ 3 _ _ _ _ D _ _ 
+_ 3 _ C _ _ _ _ A _ _ G 5 _ _ 9 
+_ 2 E _ _ 5 G _ _ _ F _ _ _ 6 _ 
+_ 7 _ _ _ 8 _ _ _ F A _ _ 2 9 _ 
+F _ _ 3 A _ _ 6 _ _ _ _ G _ 7 _ 
+_ _ 6 _ _ _ _ D _ _ 4 _ F _ B 5 
+_ G 9 D _ 4 2 F _ _ _ _ A _ 8 _ 
+_ _ 7 E B _ C A _ _ _ F _ _ _ 1 
+_ _ _ _ _ 6 E 7 _ 3 _ 9 _ _ 5 2 
+_ _ _ _ 5 9 _ _ _ _ 6 C _ _ _ E 
+_ 1 _ 9 D _ _ _ 7 _ _ _ _ G _ _ 
+
+The grid hasn't been solved !
+The initial grid isn't consistent!
+
+# Statistics for the current run
+# Initial fill ratio: 39%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-25x25-01.sku'...
+
+# Initial grid:
+J 4 N _ _ _ _ _ _ _ _ C _ B 2 M P _ _ _ E _ H _ O 
+H D _ O _ 6 _ _ _ _ _ 8 _ _ 1 A B G C E 5 L _ _ F 
+_ 8 _ I _ A K O 3 B M _ L F 5 1 _ H 7 _ C _ _ 6 J 
+B _ _ A _ _ _ G L _ N J _ H 6 8 _ _ _ _ D M 1 2 7 
+_ L 1 5 _ M _ 4 2 N _ _ P _ _ _ D J _ 6 9 B 8 A _ 
+F H _ N O 4 5 _ _ _ D _ _ _ M J _ I _ _ 6 _ 9 C 8 
+5 _ _ _ M _ 6 F _ _ _ _ _ _ K 9 A C _ _ _ 1 _ L _ 
+_ 1 _ _ _ I 2 _ J K _ 7 _ A B _ _ _ _ N _ H O _ _ 
+6 A _ E G 9 _ _ C _ L _ _ O _ 2 5 7 1 8 F _ J K M 
+I J _ _ K D L _ _ _ _ 1 _ _ _ E G _ 3 H _ _ _ B 5 
+M 5 3 L 7 N A C I _ _ F B _ G _ _ K E _ _ O 2 J H 
+_ F _ _ _ B G _ O _ 1 9 _ _ E _ 7 _ L 5 K D 6 _ _ 
+K _ _ _ _ _ _ 1 _ _ 5 O H _ _ 6 _ _ 9 _ N _ _ _ _ 
+D G _ _ _ _ J 5 H 3 _ _ K P _ B _ _ N _ 1 C E 8 _ 
+1 _ C _ B 7 F 6 K D 2 _ M _ N _ _ 4 _ J _ _ _ 5 9 
+L I _ _ 5 _ _ A E _ B _ 1 7 _ F _ N J _ _ _ C _ D 
+8 6 A H _ _ _ _ _ C O _ _ _ _ _ I _ _ _ _ F 5 7 _ 
+3 C B 1 _ _ _ L _ F 9 _ _ _ A 4 _ _ _ 7 8 2 N _ 6 
+_ _ E G _ _ 7 _ 1 5 C _ _ L _ _ 2 _ _ _ H _ _ _ K 
+_ _ F _ _ O _ _ _ _ _ H J _ 4 C _ _ _ D 3 E I 1 L 
+_ N 6 F H _ _ _ _ M E K 3 _ _ _ 9 P _ _ _ _ G O 2 
+G O 5 3 C P _ E 8 _ F _ 6 _ _ _ _ _ _ 4 B J 7 _ I 
+_ 9 I D 8 L B _ 6 _ G _ _ 4 H 5 J _ _ C A _ F _ 1 
+_ _ J _ 1 G _ _ F 7 _ _ _ 5 9 N L _ 2 A _ 6 _ _ C 
+_ B _ _ _ C _ _ 9 _ _ _ A _ _ G _ 8 _ _ _ _ K D E 
+
+# Solution:
+J 4 N 7 6 1 9 D 5 8 A C G B 2 M P L F 3 E K H I O 
+H D M O 2 6 P I 7 J K 8 4 9 1 A B G C E 5 L 3 N F 
+9 8 G I E A K O 3 B M D L F 5 1 N H 7 2 C P 4 6 J 
+B 3 K A P F C G L E N J O H 6 8 4 9 5 I D M 1 2 7 
+C L 1 5 F M H 4 2 N 3 E P I 7 O D J K 6 9 B 8 A G 
+F H L N O 4 5 7 A 1 D 2 E G M J K I B P 6 3 9 C 8 
+5 7 8 B M E 6 F G P H 3 I J K 9 A C 4 O 2 1 D L N 
+4 1 9 C 3 I 2 8 J K 6 7 5 A B L M F D N G H O E P 
+6 A D E G 9 3 B C H L 4 N O P 2 5 7 1 8 F I J K M 
+I J P 2 K D L M N O 8 1 9 C F E G 6 3 H 7 4 A B 5 
+M 5 3 L 7 N A C I 9 4 F B 6 G D 8 K E 1 P O 2 J H 
+N F H J A B G P O 4 1 9 C 8 E I 7 2 L 5 K D 6 M 3 
+K 2 4 P I 8 E 1 M L 5 O H D J 6 C 3 9 G N 7 B F A 
+D G O 6 9 2 J 5 H 3 7 I K P L B F A N M 1 C E 8 4 
+1 E C 8 B 7 F 6 K D 2 A M 3 N H O 4 P J I G L 5 9 
+L I 2 M 5 3 4 A E 6 B G 1 7 8 F H N J K O 9 C P D 
+8 6 A H 4 K M 9 D C O N 2 E 3 P I 1 G L J F 5 7 B 
+3 C B 1 J H I L P F 9 5 D K A 4 E O M 7 8 2 N G 6 
+O P E G D J 7 N 1 5 C 6 F L I 3 2 B 8 9 H A M 4 K 
+7 K F 9 N O 8 2 B G P H J M 4 C 6 5 A D 3 E I 1 L 
+A N 6 F H 5 D J 4 M E K 3 1 C 7 9 P I B L 8 G O 2 
+G O 5 3 C P N E 8 A F L 6 2 D K 1 M H 4 B J 7 9 I 
+P 9 I D 8 L B K 6 2 G M 7 4 H 5 J E O C A N F 3 1 
+E M J K 1 G O 3 F 7 I B 8 5 9 N L D 2 A 4 6 P H C 
+2 B 7 4 L C 1 H 9 I J P A N O G 3 8 6 F M 5 K D E 
+
+# Statistics for the current run
+# Initial fill ratio: 52%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-25x25-02.sku'...
+
+# Initial grid:
+_ B A _ _ _ _ _ _ K D _ 8 C F 5 N J _ 7 L _ _ H _ 
+_ _ 1 _ D 5 _ _ L _ _ _ 7 _ _ _ _ E 6 _ _ _ 4 _ _ 
+K M _ _ _ _ N I _ E _ L _ _ _ _ 4 D F _ _ _ _ _ J 
+_ F _ L G _ _ A 6 _ _ _ _ K E _ C _ O _ 2 B P _ N 
+_ 9 5 _ 6 D _ 3 _ G N I _ A B 1 _ _ P _ E _ _ _ _ 
+A _ _ _ K 6 _ J I _ 3 _ C _ G H 2 _ _ O P 9 1 _ M 
+_ 6 _ 5 _ _ 1 4 _ B _ _ _ F _ L K 8 _ P D _ _ _ _ 
+_ _ 9 D _ _ _ _ _ L O K 1 _ _ G _ 4 C 6 F _ _ I _ 
+_ _ _ B H _ _ O P _ _ E _ I M _ D _ _ _ 7 J 2 K _ 
+1 _ 8 _ F E _ _ _ _ _ P _ _ D _ B 7 _ 5 C _ O _ _ 
+_ 5 _ _ L P _ 8 B _ _ C _ _ _ N _ _ 1 _ K D E _ _ 
+_ _ _ A _ _ M _ _ _ 5 D _ E _ _ _ _ _ 2 _ _ _ _ P 
+_ P C K _ A 4 2 _ _ G 6 _ O 8 _ _ I 5 D _ L J B _ 
+2 _ _ _ _ L _ _ _ _ _ 7 _ B N _ _ _ K _ _ 4 _ _ _ 
+_ _ 3 9 1 _ 5 _ _ 6 _ _ _ M _ _ E G _ B I _ _ 2 _ 
+_ _ I _ E O _ 7 4 _ F _ _ H _ _ _ _ _ N A _ 6 _ 8 
+_ 8 6 1 M _ _ _ D _ P 5 _ 7 _ _ J C _ _ O 2 _ _ _ 
+_ 3 _ _ 7 G 6 E _ 1 _ _ D N O 4 _ _ _ _ _ K F _ _ 
+_ _ _ _ J 9 _ F C 2 _ 3 _ _ _ P _ H B _ _ 1 _ G _ 
+9 _ O 4 P H _ _ 5 J C _ M _ A _ G 6 _ L B _ _ _ D 
+_ _ _ _ 3 _ 2 _ _ D K N _ L 9 8 _ P _ E G _ C J _ 
+J _ 2 F 9 _ P _ K _ 8 1 _ _ _ _ L B _ _ H 6 _ O _ 
+L _ _ _ _ _ E H F _ _ _ _ D _ C _ K 4 _ _ _ _ A 2 
+_ _ E _ _ _ O G _ _ _ _ H _ _ _ 7 _ _ 1 8 _ L _ _ 
+_ C _ _ 5 8 _ L 9 A M 4 P _ 3 O _ _ _ _ _ _ N E _ 
+
+# Solution:
+3 B A E 4 1 9 P O K D M 8 C F 5 N J 2 7 L I G H 6 
+N O 1 J D 5 C B L F 2 G 7 P H K A E 6 I 9 M 4 8 3 
+K M H P C 2 N I 8 E 9 L O 3 6 B 4 D F G 5 A 7 1 J 
+I F 7 L G M H A 6 4 1 J 5 K E 3 C 9 O 8 2 B P D N 
+8 9 5 2 6 D J 3 7 G N I 4 A B 1 M L P H E O K C F 
+A L N 7 K 6 D J I 5 3 B C 8 G H 2 F E O P 9 1 4 M 
+O 6 M 5 I C 1 4 G B 7 H 9 F 2 L K 8 J P D N A 3 E 
+P E 9 D 2 N 7 M A L O K 1 5 J G 3 4 C 6 F 8 B I H 
+C 4 G B H 3 F O P 8 L E 6 I M 9 D 1 N A 7 J 2 K 5 
+1 J 8 3 F E K 9 2 H A P N 4 D M B 7 I 5 C G O 6 L 
+6 5 F M L P G 8 B O J C 2 9 I N H 3 1 4 K D E 7 A 
+G I 4 A B K M C J 7 5 D L E 1 6 8 O 9 2 N H 3 F P 
+E P C K N A 4 2 H 9 G 6 3 O 8 7 F I 5 D M L J B 1 
+2 D J 8 O L I 1 E 3 H 7 F B N A P M K C 6 4 9 5 G 
+7 H 3 9 1 F 5 D N 6 4 A K M P J E G L B I C 8 2 O 
+B G I C E O L 7 4 P F 9 J H K 2 1 5 D N A 3 6 M 8 
+F 8 6 1 M B A N D I P 5 G 7 4 E J C 3 K O 2 H L 9 
+5 3 L H 7 G 6 E M 1 B 2 D N O 4 I A 8 9 J K F P C 
+D A K N J 9 8 F C 2 E 3 I 6 L P O H B M 4 1 5 G 7 
+9 2 O 4 P H 3 K 5 J C 8 M 1 A F G 6 7 L B E I N D 
+M 7 B O 3 4 2 6 1 D K N A L 9 8 5 P H E G F C J I 
+J N 2 F 9 7 P 5 K M 8 1 E G C I L B A 3 H 6 D O 4 
+L 1 P G 8 I E H F N 6 O B D 7 C 9 K 4 J 3 5 M A 2 
+4 K E 6 A J O G 3 C I F H 2 5 D 7 N M 1 8 P L 9 B 
+H C D I 5 8 B L 9 A M 4 P J 3 O 6 2 G F 1 7 N E K 
+
+# Statistics for the current run
+# Initial fill ratio: 46%
+# Number of choices: 126
+# Number of backtracks: 246
+
+# Solving '../test/grid-solver/grid-25x25-03.sku'...
+
+# Initial grid:
+_ _ G M _ _ _ _ B _ _ H _ I 8 _ _ _ P D _ _ _ _ 7 
+N 8 _ _ J 4 _ _ _ E L D _ _ P _ _ K 1 _ _ _ _ F _ 
+7 _ _ E 1 _ _ _ _ K _ J O 3 _ N _ 5 _ _ _ D _ _ H 
+P _ _ 3 _ M _ H _ _ _ N G _ _ J _ _ _ F _ _ _ 1 _ 
+_ _ I H A F _ G _ D _ _ 4 E K _ O _ _ _ 3 C B P M 
+_ _ P _ K B E _ I _ 1 _ _ _ _ _ _ _ _ J _ _ _ _ 6 
+2 _ _ G N 9 8 _ _ _ _ I _ _ _ E 3 _ H 6 _ _ _ _ L 
+M J A 4 _ G _ _ 5 3 _ _ P _ _ D _ _ _ _ _ _ F _ _ 
+_ C E _ _ 2 _ _ _ _ _ _ _ D 6 8 _ _ 7 _ B _ _ K _ 
+_ _ _ O _ _ _ K _ _ 2 7 N _ F _ B _ _ P _ _ _ 4 8 
+_ _ _ C H _ _ 3 _ _ _ _ 7 _ M P D _ 8 _ _ O _ B _ 
+A M _ _ B _ _ 4 J P _ _ _ _ _ F N _ _ _ _ _ _ _ 9 
+_ _ 7 9 _ _ _ _ _ _ _ P _ _ 2 _ _ L _ C _ _ G _ _ 
+3 6 _ _ D _ _ E _ B _ _ C 4 J _ _ _ _ K _ _ _ _ 5 
+_ _ _ _ _ 6 _ 8 9 _ _ 5 3 K _ _ _ H _ B _ _ L 7 F 
+D 7 M _ G 5 _ J _ _ _ 3 _ _ _ 4 _ _ _ O _ B E _ K 
+C P _ 5 L 3 _ B _ _ _ _ 2 1 _ _ _ _ _ _ 8 F I _ O 
+K _ 6 N _ _ _ D _ _ 4 _ B L _ _ 1 J A _ _ _ 5 C _ 
+_ _ _ B 4 _ _ _ P N O K _ _ _ 6 _ 8 9 _ G _ 7 D 2 
+E F _ _ _ _ _ _ 6 _ _ M 5 _ _ _ _ D _ 3 1 _ _ 9 _ 
+_ G 1 _ C _ 4 _ _ _ D L _ B 3 _ 2 _ _ 5 _ 9 _ _ E 
+4 E 2 _ _ _ _ _ _ 7 8 _ _ _ 9 3 F _ _ _ N A J _ _ 
+I _ D K 5 _ 6 M _ G 7 _ _ A _ _ E _ _ N _ P 3 _ 1 
+B _ 3 _ _ _ _ L 1 J _ F _ _ 4 _ _ M _ _ _ 5 D H _ 
+_ _ O _ _ _ I _ _ _ _ 6 _ _ 5 C _ A _ _ _ M 8 _ _ 
+
+# Solution:
+9 4 G M 2 O C 1 B 5 F H 6 I 8 L A 3 P D J K N E 7 
+N 8 C 6 J 4 3 9 7 E L D A 2 P B H K 1 M 5 G O F I 
+7 B F E 1 I P 2 L K M J O 3 C N 4 5 G 9 A D 6 8 H 
+P D K 3 O M A H 8 6 5 N G 7 B J I C E F L 2 9 1 4 
+L 5 I H A F J G N D 9 1 4 E K 7 O 6 2 8 3 C B P M 
+8 L P D K B E 7 I A 1 4 9 5 H O C N F J 2 3 M G 6 
+2 1 B G N 9 8 P M F J I K O A E 3 4 H 6 D 7 C 5 L 
+M J A 4 7 G H 6 5 3 C B P 8 E D K I L 2 9 1 F O N 
+5 C E I F 2 O N 4 1 3 G L D 6 8 M 9 7 A B J H K P 
+6 H 9 O 3 J L K D C 2 7 N M F G B 1 5 P I E A 4 8 
+J I N C H L 5 3 F 2 G 9 7 6 M P D E 8 4 K O 1 B A 
+A M 5 1 B C K 4 J P I 8 D H L F N G O 7 E 6 2 3 9 
+O K 7 9 8 1 N I A M B P E F 2 5 6 L 3 C H 4 G J D 
+3 6 L F D H 7 E G B A O C 4 J 1 9 2 I K M 8 P N 5 
+G 2 4 P E 6 D 8 9 O N 5 3 K 1 A J H M B C I L 7 F 
+D 7 M 2 G 5 1 J H I P 3 8 9 N 4 L F C O 6 B E A K 
+C P J 5 L 3 9 B E 4 6 A 2 1 D K G 7 N H 8 F I M O 
+K O 6 N 9 7 F D 2 8 4 E B L G M 1 J A I P H 5 C 3 
+1 3 H B 4 A M C P N O K F J I 6 5 8 9 E G L 7 D 2 
+E F 8 A I K G O 6 L H M 5 C 7 2 P D B 3 1 N 4 9 J 
+F G 1 8 C N 4 A O H D L M B 3 I 2 P J 5 7 9 K 6 E 
+4 E 2 L M D B 5 K 7 8 C H P 9 3 F O 6 1 N A J I G 
+I 9 D K 5 8 6 M C G 7 2 J A O H E B 4 N F P 3 L 1 
+B A 3 7 6 P 2 L 1 J E F I N 4 9 8 M K G O 5 D H C 
+H N O J P E I F 3 9 K 6 1 G 5 C 7 A D L 4 M 8 2 B 
+
+# Statistics for the current run
+# Initial fill ratio: 42%
+# Number of choices: 8
+# Number of backtracks: 13
+
+# Solving '../test/grid-solver/grid-36x36-01.sku'...
+
+# Initial grid:
+_ _ _ 6 _ 3 W _ J _ 7 _ _ H S T 4 _ L X 8 O @ _ K _ R M 5 _ E _ 1 B A P 
+_ Y _ _ V T _ _ M L _ _ _ G F E C B H D _ _ 7 5 8 6 _ _ 2 1 _ _ S _ Q O 
+S R Q _ _ M Y X H G E @ U N _ K _ _ Z W V T F 1 _ I _ A _ 7 _ C 5 _ _ 2 
+L K J I _ F _ 8 _ _ _ 1 _ Q M _ 9 7 G _ _ B 6 _ _ U S P O N @ Y X W _ _ 
+E D C B A 9 Z _ U S R Q O I 5 3 2 1 P N _ K J 4 @ Y _ _ T _ _ _ F 8 7 6 
+8 7 5 4 2 1 T _ B _ 9 6 @ Z _ W V _ _ U _ _ _ 3 _ G F E D C N M _ _ J I 
+Z @ _ X I W _ 9 _ _ _ P 5 O N M Q _ 4 3 H C _ _ 7 _ _ _ _ R 2 1 _ _ _ _ 
+_ _ 8 _ 9 V _ B E _ _ D 4 3 2 @ U Z A Y _ F T _ 6 L _ X W K J _ P _ _ _ 
+4 _ _ L _ J _ _ _ @ _ _ B _ _ D _ _ _ Z _ _ _ R _ _ _ _ Y S 6 X 9 U _ 8 
+F G _ E D B 8 M _ _ O N K _ _ P X S 9 V _ _ I L C _ 3 U @ A _ H W _ T _ 
+_ M _ S U _ _ C _ _ _ A F _ E V Y T _ 5 7 1 W J D _ _ _ P _ R Z I _ G K 
+N Q A R T P I 7 _ Y _ J 8 6 C _ W G _ @ D X B U _ _ _ O _ _ 5 4 _ L F _ 
+_ B L @ X Z _ H W 9 V S I _ D _ F C _ 4 P E 3 T N M A _ _ _ G 6 _ _ K Q 
+D 4 P _ 6 A L E I _ _ _ G _ K H _ U C _ _ J _ V Q X _ _ 8 F S _ O _ R _ 
+T V K _ _ C @ R _ M F _ _ _ 3 _ 1 2 _ 6 _ 8 S Y G W _ J _ B A N _ _ _ X 
+U O _ H _ S Q _ _ _ _ X L M A Y J _ K _ Z _ _ _ 3 R V _ 1 I F E _ D @ 9 
+R _ M _ 3 _ O K _ _ 4 U _ P Q _ 7 V F 1 X L _ _ _ @ E D S _ _ I Y C 2 Z 
+I E F 7 W _ N _ _ 3 _ T Z X 6 _ _ @ D B _ A R M Y O H C _ 9 _ V U J L 5 
+_ Z S M 8 R _ Q @ _ _ 7 P 4 _ J G E T _ 6 U _ A L 3 D B C W 1 F _ N O H 
+P L N T _ Q _ _ Z O W B _ 5 @ 6 K _ S H _ _ 8 _ 1 2 7 G F Y _ R _ _ _ _ 
+1 F @ V J G K L X _ _ 5 _ S _ I O N 2 Q _ _ _ B R 9 _ 6 4 H T A _ Z 8 Y 
+2 I W _ Y _ H _ T _ N 4 _ _ Z 9 B F X M R G E _ _ Q O S A P K 5 _ _ _ L 
+_ H 7 _ _ 4 F _ S _ M 3 T _ U _ R X W P 9 _ 1 _ I E _ Z N 5 V _ J Q _ _ 
+_ _ B O 5 6 E _ R 1 G _ _ C Y _ D H V L 4 _ Z F X _ _ @ _ J I _ 3 7 S W 
+W _ H U _ @ 7 _ 9 V J O Y L _ S 6 _ _ _ K Q M 8 2 D N 1 E G 4 3 A I Z _ 
+6 T E D _ O 4 2 _ W _ _ H @ 9 _ P K 3 _ _ S V N 5 7 M I Q _ U 8 R X 1 C 
+5 C _ 8 R L U 6 _ _ D E 7 V _ 2 M 3 @ A _ W _ Z F _ _ _ B X O _ Q G 9 S 
+Q _ 9 G _ K S _ P F @ _ _ 8 _ Z _ _ U _ _ _ Y X _ _ _ T V O M D _ 2 _ _ 
+B A 3 J 4 _ X _ G Q _ M C U O _ I R 7 _ _ _ L E 9 S W H _ _ Y _ @ T P V 
+V _ Z 2 _ _ C _ _ _ B 8 X _ _ _ A W _ O _ _ _ _ P _ _ R U 3 L 7 _ 5 H E 
+M 8 V Y L U _ Z 7 P _ _ A _ _ _ E J 5 S O @ C D B N 2 _ _ _ 3 Q 4 F 6 1 
+_ P D Q G X B _ 6 T 5 _ W F I 7 @ O _ 8 _ 3 9 H _ _ 1 L R E C _ M A N U 
+_ 6 _ _ _ E M 4 3 _ X _ _ Y H U L D _ _ W _ A _ S _ C _ I _ _ _ _ 9 _ _ 
+H _ 4 F 1 I G @ O J U _ S B 8 _ 5 Q N R L _ X _ W _ 6 _ _ _ 7 _ Z V E _ 
+_ _ R A S _ 2 _ Q D 8 9 _ 1 _ N 3 _ B T _ Z U _ O _ J 7 _ V X _ _ P I @ 
+3 2 O _ @ _ A 1 L E C H V T P R Z 9 Q F I M 4 6 U K _ _ _ _ B W _ S _ _ 
+
+# Solution:
+G N U 6 Z 3 W F J 2 7 C D H S T 4 Y L X 8 O @ I K V R M 5 Q E 9 1 B A P 
+@ Y X W V T P N M L K I J G F E C B H D A 9 7 5 8 6 4 3 2 1 Z U S R Q O 
+S R Q P O M Y X H G E @ U N L K 8 6 Z W V T F 1 J I B A 9 7 D C 5 4 3 2 
+L K J I H F D 8 5 4 3 1 R Q M A 9 7 G E C B 6 2 Z U S P O N @ Y X W V T 
+E D C B A 9 Z V U S R Q O I 5 3 2 1 P N M K J 4 @ Y X W T L H G F 8 7 6 
+8 7 5 4 2 1 T O B A 9 6 @ Z X W V P Y U S R Q 3 H G F E D C N M L K J I 
+Z @ Y X I W 6 9 F U T P 5 O N M Q L 4 3 H C K S 7 8 G V J R 2 1 B E D A 
+7 5 8 C 9 V 1 B E R H D 4 3 2 @ U Z A Y G F T Q 6 L I X W K J S P O M N 
+4 3 2 L K J 5 W V @ Q G B A 7 D H I E Z N P O R M 1 T F Y S 6 X 9 U C 8 
+F G 1 E D B 8 M 4 Z O N K J R P X S 9 V 2 6 I L C 5 3 U @ A Q H W Y T 7 
+O M 6 S U H 3 C 2 X L A F 9 E V Y T 8 5 7 1 W J D B Q N P 4 R Z I @ G K 
+N Q A R T P I 7 K Y S J 8 6 C 1 W G M @ D X B U E H 9 O Z 2 5 4 V L F 3 
+Y B L @ X Z J H W 9 V S I R D 5 F C O 4 P E 3 T N M A 2 7 U G 6 8 1 K Q 
+D 4 P 1 6 A L E I 7 2 Y G W K H T U C 9 @ J N V Q X Z 5 8 F S B O 3 R M 
+T V K 5 Q C @ R D M F Z 9 E 3 O 1 2 I 6 U 8 S Y G W P J L B A N 7 H 4 X 
+U O G H N S Q P C B 6 X L M A Y J 8 K 7 Z 5 2 W 3 R V 4 1 I F E T D @ 9 
+R J M 9 3 8 O K A 5 4 U N P Q B 7 V F 1 X L H G T @ E D S 6 W I Y C 2 Z 
+I E F 7 W 2 N G 8 3 1 T Z X 6 4 S @ D B Q A R M Y O H C K 9 P V U J L 5 
+X Z S M 8 R 9 Q @ I Y 7 P 4 V J G E T K 6 U 5 A L 3 D B C W 1 F 2 N O H 
+P L N T E Q V U Z O W B 3 5 @ 6 K A S H J I 8 C 1 2 7 G F Y 9 R D M X 4 
+1 F @ V J G K L X C P 5 M S W I O N 2 Q 3 7 D B R 9 U 6 4 H T A E Z 8 Y 
+2 I W 3 Y D H J T 8 N 4 1 7 Z 9 B F X M R G E @ V Q O S A P K 5 C 6 U L 
+A H 7 K C 4 F D S 6 M 3 T 2 U L R X W P 9 Y 1 O I E 8 Z N 5 V @ J Q B G 
+9 U B O 5 6 E A R 1 G 2 Q C Y 8 D H V L 4 N Z F X T K @ M J I P 3 7 S W 
+W X H U P @ 7 T 9 V J O Y L B S 6 5 R C K Q M 8 2 D N 1 E G 4 3 A I Z F 
+6 T E D F O 4 2 Y W A L H @ 9 G P K 3 J B S V N 5 7 M I Q Z U 8 R X 1 C 
+5 C I 8 R L U 6 N H D E 7 V 1 2 M 3 @ A T W P Z F 4 Y K B X O J Q G 9 S 
+Q 1 9 G 7 K S 3 P F @ R E 8 J Z N 4 U I 5 H Y X A C L T V O M D 6 2 W B 
+B A 3 J 4 N X 5 G Q Z M C U O F I R 7 2 1 D L E 9 S W H 6 8 Y K @ T P V 
+V S Z 2 M Y C I 1 K B 8 X D T Q A W 6 O F 4 G 9 P J @ R U 3 L 7 N 5 H E 
+M 8 V Y L U R Z 7 P I W A K G X E J 5 S O @ C D B N 2 9 H T 3 Q 4 F 6 1 
+K P D Q G X B S 6 T 5 V W F I 7 @ O J 8 Y 3 9 H 4 Z 1 L R E C 2 M A N U 
+J 6 T Z B E M 4 3 N X F 2 Y H U L D 1 G W V A 7 S P C Q I @ 8 O K 9 5 R 
+H 9 4 F 1 I G @ O J U K S B 8 C 5 Q N R L 2 X P W A 6 Y 3 M 7 T Z V E D 
+C W R A S 5 2 Y Q D 8 9 6 1 4 N 3 M B T E Z U K O F J 7 G V X L H P I @ 
+3 2 O N @ 7 A 1 L E C H V T P R Z 9 Q F I M 4 6 U K 5 8 X D B W G S Y J 
+
+# Statistics for the current run
+# Initial fill ratio: 66%
+# Number of choices: 2
+# Number of backtracks: 2
+
+# Solving '../test/grid-solver/grid-36x36-02.sku'...
+
+# Initial grid:
+_ 4 R 8 _ P Z Q _ _ F 1 W V _ 3 E 7 _ K B L _ _ 2 _ D 9 X 6 T _ S _ _ _ 
+@ Z Y _ _ V G _ _ _ _ _ I H F D C _ T _ R Q P O U N _ L _ J _ _ 4 _ 2 1 
+_ T S Q _ N W V M L K _ @ _ Y _ _ P 9 6 4 3 2 _ _ B A 8 _ 5 I H _ F _ D 
+M L K _ _ G @ _ X R P _ U _ S _ 6 _ _ J F E D 7 _ W O 4 _ _ _ _ _ A _ 8 
+F E _ _ B _ O I _ _ _ 3 M _ 8 4 2 1 _ _ Y _ _ V T _ R Q P _ U _ _ _ J 7 
+_ 6 5 3 2 _ U _ _ D B _ O _ _ K _ 9 _ I G C A 8 @ Y _ H _ E Z X W R Q P 
+Z O _ Y X W 5 4 G V U T _ 2 _ _ S R B 9 _ F J N E _ C P D _ 8 _ _ 6 M I 
+2 A 4 B 5 U 9 8 K _ L M 7 C J _ _ @ _ _ E R _ _ _ 3 T V _ N _ _ X P W H 
+V J _ P C T Y X W _ 3 _ 9 D A _ _ _ H M I 6 G K 7 5 4 _ _ F 2 L _ _ _ _ 
+N _ _ M 8 S 7 1 _ A _ R 6 _ _ V F X _ 2 5 4 @ T I _ L Y W _ C K _ _ U J 
+I F 7 _ 6 _ H J _ E _ P Z Y W _ O _ X U 8 V S Q K G _ A 9 2 1 4 D 5 T 3 
+H D 3 K 1 _ 6 N 2 Z I _ 5 _ T L _ E _ A 7 W O _ X @ _ M _ S G R Y _ V 9 
+Y @ _ _ _ X _ _ _ F W V E B _ R U K _ O S G _ _ _ _ 5 3 _ T M _ _ I _ _ 
+E _ I 9 K _ B 7 _ 5 _ _ _ M 1 6 W 3 _ _ Q T N F O _ J C 2 _ _ @ Z X 8 Y 
+_ _ C 1 U 7 3 H I 2 T Q G P _ F N Y R 8 Z 9 5 _ M _ _ K B A D _ V _ 6 L 
+Q M B _ V 8 _ @ E 1 _ Z _ 7 X _ T J Y H _ D 4 3 W _ _ N 6 _ A _ _ _ _ K 
+5 _ _ _ _ L A 6 _ 8 M _ V I H @ Q Z E B _ _ 7 J 1 _ S G U Y 9 F T _ 4 _ 
+O H G _ _ 6 K _ _ 4 _ _ C 9 D 5 A _ W @ U 1 M I L F _ _ V P _ E _ N _ B 
+_ Y Q _ J C _ D _ @ Z A _ K 6 P _ _ _ _ 2 O _ 9 5 H _ B M W R _ 3 1 _ S 
+8 W _ R F 5 M G _ I V _ J X C _ Y _ _ _ N K _ @ _ 9 1 _ Q _ O Z _ _ _ 2 
+_ V Z H 9 E T F 5 K _ _ 4 @ _ 8 _ _ _ _ X _ Y A _ _ _ _ I R P W C _ _ U 
+_ K 6 S _ _ E _ 8 J 7 H R _ _ T _ Q 5 C V _ I U 3 L _ @ A _ _ Y _ M B _ 
+L _ O 7 M _ 2 _ 1 C 9 Y B U _ I _ H _ 4 W Z R _ G K E F T _ @ _ J 8 A 6 
+G P _ _ I 4 R U _ X Q W _ _ _ _ M N _ _ J _ B 6 _ V Z _ C 8 E D 9 _ _ 5 
+_ 7 _ Z S O I R V T 4 E N 8 @ _ _ 6 _ Q _ A _ _ B P H 1 G K _ 2 5 _ Y X 
+A _ H _ _ M Q _ U B _ _ _ _ _ _ _ F K R @ _ V L J _ W _ S C N _ 8 _ _ E 
+R 1 _ _ G K 8 3 _ H 2 D _ E M S _ C 6 W T _ X 4 A O _ I N Z B 9 Q @ L F 
+_ 8 _ T 4 _ S _ _ M _ G _ L 7 Y B _ P N O J U E 9 _ _ 5 _ 3 W _ _ V _ A 
+_ _ _ N _ @ _ L _ _ 1 C _ R I W _ D 2 G _ 5 9 _ V U 8 E 4 M S _ _ 7 Z T 
+9 B X 5 E I P _ N 7 _ @ _ _ Q _ 3 _ _ Y _ _ 1 Z F T _ 6 R _ 4 U _ H _ O 
+K _ V _ _ B L _ Q _ Y _ _ 3 _ 9 H I O _ M S 8 G _ J _ D _ @ 5 _ N T 7 Z 
+D U 1 4 N Y X M F O R 8 _ _ E _ _ T V 7 _ @ K H S A I 2 L _ _ B 6 _ _ _ 
+6 _ _ G _ _ 4 Z T _ H S 8 F _ 7 L _ _ _ _ _ _ _ Q _ K U _ V Y _ E 9 _ _ 
+T I P O _ Z 1 _ D G _ _ _ 6 R M _ 4 J X 9 _ L 2 N 8 3 W 5 B _ _ _ C F V 
+S 9 _ _ _ _ V 2 7 3 @ 5 _ J B 1 G A Z _ 6 N _ R H C _ _ Y O _ 8 I U D 4 
+_ _ 8 E Q H J B 9 U N _ D O V _ K S 4 _ 1 Y F _ R 6 G _ Z _ L A P 2 @ M 
+
+# Solution:
+J 4 R 8 A P Z Q C N F 1 W V G 3 E 7 U K B L H 5 2 I D 9 X 6 T M S Y O @ 
+@ Z Y X W V G E A 9 8 7 I H F D C B T S R Q P O U N M L K J 6 5 4 3 2 1 
+U T S Q O N W V M L K J @ Z Y X R P 9 6 4 3 2 1 C B A 8 7 5 I H G F E D 
+M L K I H G @ Y X R P 2 U T S Q 6 5 N J F E D 7 Z W O 4 3 1 V C B A 9 8 
+F E D C B 9 O I H 6 5 3 M A 8 4 2 1 @ Z Y X W V T S R Q P G U N L K J 7 
+7 6 5 3 2 1 U T S D B 4 O N L K J 9 M I G C A 8 @ Y V H F E Z X W R Q P 
+Z O @ Y X W 5 4 G V U T 3 2 K H S R B 9 L F J N E 1 C P D Q 8 7 A 6 M I 
+2 A 4 B 5 U 9 8 K S L M 7 C J G I @ 1 D E R Z Y 6 3 T V O N F Q X P W H 
+V J E P C T Y X W Q 3 O 9 D A B 1 U H M I 6 G K 7 5 4 R 8 F 2 L @ Z S N 
+N G 9 M 8 S 7 1 B A D R 6 Q P V F X 3 2 5 4 @ T I Z L Y W H C K O E U J 
+I F 7 L 6 R H J @ E C P Z Y W N O M X U 8 V S Q K G B A 9 2 1 4 D 5 T 3 
+H D 3 K 1 Q 6 N 2 Z I F 5 4 T L 8 E C A 7 W O P X @ U M J S G R Y B V 9 
+Y @ N J Z X D 9 L F W V E B 4 R U K A O S G 6 C 8 7 5 3 H T M P 2 I 1 Q 
+E R I 9 K A B 7 P 5 G U S M 1 6 W 3 L V Q T N F O 4 J C 2 D H @ Z X 8 Y 
+4 S C 1 U 7 3 H I 2 T Q G P O F N Y R 8 Z 9 5 X M E @ K B A D J V W 6 L 
+Q M B F V 8 C @ E 1 O Z L 7 X 2 T J Y H P D 4 3 W R 9 N 6 I A G U S 5 K 
+5 3 W D P L A 6 R 8 M N V I H @ Q Z E B K 2 7 J 1 X S G U Y 9 F T O 4 C 
+O H G 2 T 6 K S Y 4 J X C 9 D 5 A 8 W @ U 1 M I L F Q Z V P 7 E R N 3 B 
+X Y Q U J C N D 4 @ Z A F K 6 P V G 8 L 2 O E 9 5 H 7 B M W R T 3 1 I S 
+8 W A R F 5 M G 6 I V B J X C E Y L D 3 N K T @ P 9 1 S Q U O Z 7 4 H 2 
+B V Z H 9 E T F 5 K S L 4 @ 3 8 7 O G 1 X M Y A D 2 6 J I R P W C Q N U 
+1 K 6 S D 2 E O 8 J 7 H R W 9 T Z Q 5 C V P I U 3 L N @ A 4 X Y F M B G 
+L N O 7 M 3 2 P 1 C 9 Y B U 5 I D H Q 4 W Z R S G K E F T X @ V J 8 A 6 
+G P T @ I 4 R U 3 X Q W 1 S 2 A M N 7 F J H B 6 Y V Z O C 8 E D 9 L K 5 
+W 7 L Z S O I R V T 4 E N 8 @ U 9 6 F Q 3 A C M B P H 1 G K J 2 5 D Y X 
+A 2 H 6 Y M Q 5 U B X 9 T 1 Z O 4 F K R @ I V L J D W 7 S C N 3 8 G P E 
+R 1 U V G K 8 3 J H 2 D P E M S 5 C 6 W T 7 X 4 A O Y I N Z B 9 Q @ L F 
+C 8 F T 4 D S K Z M 6 G H L 7 Y B 2 P N O J U E 9 Q X 5 @ 3 W I 1 V R A 
+P Q J N 3 @ F L O Y 1 C A R I W X D 2 G H 5 9 B V U 8 E 4 M S 6 K 7 Z T 
+9 B X 5 E I P W N 7 A @ K G Q J 3 V S Y D 8 1 Z F T 2 6 R L 4 U M H C O 
+K X V A R B L C Q W Y 6 2 3 U 9 H I O P M S 8 G 4 J F D E @ 5 1 N T 7 Z 
+D U 1 4 N Y X M F O R 8 Q 5 E Z P T V 7 C @ K H S A I 2 L 9 3 B 6 J G W 
+6 C 2 G @ J 4 Z T P H S 8 F N 7 L W I 5 A B 3 D Q M K U 1 V Y O E 9 X R 
+T I P O 7 Z 1 A D G E K Y 6 R M @ 4 J X 9 U L 2 N 8 3 W 5 B Q S H C F V 
+S 9 M W L F V 2 7 3 @ 5 X J B 1 G A Z E 6 N Q R H C P T Y O K 8 I U D 4 
+3 5 8 E Q H J B 9 U N I D O V C K S 4 T 1 Y F W R 6 G X Z 7 L A P 2 @ M 
+
+# Statistics for the current run
+# Initial fill ratio: 66%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-36x36-03-inconsistent.sku'...
+
+# Initial grid:
+_ _ _ 2 _ R Z _ P _ 3 _ A _ _ _ D 5 7 8 _ _ _ F _ S _ E _ 4 C _ N _ _ _ 
+_ V O _ A _ Q L _ _ _ Y _ _ _ _ S E Z I _ _ _ _ F _ _ _ R 3 _ 5 _ U P _ 
+_ 7 I K 8 D O _ R _ _ U _ Q B Z _ _ _ _ 3 X G _ 1 _ _ T _ Y 6 W L F @ _ 
+P _ T C 6 Z _ W _ A F H K 7 I V 3 _ _ L Y E 1 R @ D X _ J _ M B G 4 _ Q 
+_ 4 S W 5 _ _ D _ 7 8 E T O _ _ 1 _ _ M _ _ Q J G V 9 _ 6 _ _ R K Z 2 _ 
+F _ H Q _ @ _ J _ G 4 _ U _ C _ R X W K _ D _ 6 _ 2 Z _ P _ S _ 8 V _ E 
+T N R _ _ _ _ Q 9 _ 5 O _ A _ _ 7 W E F _ _ 8 _ J B _ V K _ _ _ _ 1 Y 6 
+_ H _ S U Q 1 _ _ W _ N _ _ J _ T _ _ V _ C _ _ M _ L _ _ Z B 4 E _ A _ 
+Z _ 2 _ _ _ G _ 4 @ _ K I _ S _ _ _ _ _ _ 1 _ B 3 _ O N _ 5 _ _ _ R _ 8 
+_ _ _ F E 3 _ U D R _ J _ _ H B _ Z N _ 6 O _ _ X _ 8 P T _ W 2 C _ _ _ 
+8 _ _ G D C I _ _ _ B _ N U R _ _ O S _ _ 2 3 Q _ 4 _ _ _ 1 V J X _ _ Z 
+_ J K B 9 _ H Z 8 V _ P 5 _ Q _ C M R D _ W _ 4 A _ Y F 2 @ _ S O N T _ 
+I _ _ @ Y 9 _ _ 1 _ N 4 _ K D 3 H G 8 B L P V _ E T _ R _ _ 5 F M _ _ 2 
+_ _ Q 7 W _ 8 _ _ _ U _ Y N 4 T 2 _ _ J I G K 5 _ L _ _ _ A _ X 9 3 _ _ 
+_ _ G J _ S _ 2 3 K W L @ F _ _ _ R 1 _ _ _ H C U P Q 4 7 _ Y _ I 8 _ _ 
+_ _ E P _ _ _ _ _ Z _ _ O W _ S A _ _ 9 X _ Y T _ _ 2 _ _ _ _ _ 4 H _ _ 
+A 8 _ L 4 K 6 R _ _ _ V C B _ Q _ _ _ _ 2 _ W _ 5 _ _ _ F X 1 U S _ D N 
+C F _ _ _ 2 9 _ _ X T I 6 _ 1 _ _ _ _ _ _ Q _ 3 N Y K _ _ G R _ _ _ W B 
+Q 1 _ _ _ 7 W _ _ O I M 8 _ E _ _ _ _ _ _ T _ L Y N V _ _ R P _ _ _ Z 5 
+S W _ A H P J 3 _ _ _ T R D _ K _ _ _ _ 8 _ C V O _ _ _ Z Q 7 E B _ 4 I 
+_ _ 4 E _ _ _ _ _ D _ _ B X _ O I _ _ 1 9 _ N Z _ _ 3 _ _ _ _ _ 6 G _ _ 
+_ _ B X _ T _ C N 1 S 2 Z 4 _ _ _ @ O _ _ _ I W K J F 9 E _ A _ 3 Y _ _ 
+_ _ 9 Z N _ 4 _ _ _ V _ 1 J 3 7 M _ _ R E K @ H _ X _ _ _ B _ C U D _ _ 
+M _ _ 8 J V _ _ Z _ E R _ T F 5 W Y P 4 A U S _ I 6 _ L _ _ Q N 1 _ _ @ 
+_ L N H K _ U I _ 4 _ S 9 _ W _ @ 3 B 5 _ J _ 1 D _ E Q V 7 _ Y Z O C _ 
+R _ _ 3 I E X _ _ _ K _ L V Y _ _ T 4 _ _ F U G _ O _ _ _ 2 J M Q _ _ 1 
+_ _ _ 9 7 B _ N A F _ @ _ _ M J _ K T _ C Y _ _ P _ 1 Z 5 _ 8 6 V _ _ _ 
+V _ 8 _ _ _ Y _ W 9 _ 1 X _ 5 _ _ _ _ _ _ L _ 2 4 _ T @ _ M _ _ _ A _ H 
+_ T _ Y 2 1 V _ _ M _ 7 _ _ O _ 6 _ _ Z _ S _ _ R _ J _ _ U N D W _ G _ 
+W P J _ _ _ _ T 5 _ D Z _ S _ _ B 7 A @ _ _ X _ 6 I _ Y L _ _ _ _ E U K 
+N _ V 1 _ 8 _ A _ H X _ 3 _ 7 _ 4 D Y U _ Z _ O _ M I _ Q _ E _ @ W _ C 
+_ 2 W U O _ _ 8 _ L Z G Q M _ _ X _ _ C _ _ F A S @ R _ 3 _ _ P D B N _ 
+L _ A T Z J _ 4 _ I Y 3 G C 6 H 8 _ _ X S 9 P @ 7 U N _ W _ K Q 5 2 _ O 
+_ 3 X 6 C G D _ @ _ _ 9 _ R K P _ _ _ _ W B 5 _ 2 _ _ A _ E I 8 F L 1 _ 
+_ @ P _ F _ C 1 _ _ _ W _ _ _ _ L N 6 7 _ _ _ _ T _ _ _ O 8 _ 9 _ S V _ 
+_ _ _ I _ 4 S _ K _ R _ W _ _ _ O F L 2 _ _ _ M _ 9 _ G _ J 3 _ A _ _ _ 
+
+The grid hasn't been solved !
+The initial grid isn't consistent!
+
+# Statistics for the current run
+# Initial fill ratio: 56%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-49x49-01.sku'...
+
+# Initial grid:
+N P 1 _ d _ V 8 _ c _ _ _ j _ F _ I D 7 f Z _ K H R 9 T _ O 4 _ 2 X L i C 3 S _ _ W b A E g _ m @ 
+@ m _ _ j i _ U _ R P O N _ _ _ _ c _ a _ _ Y _ W V S Q K _ I H G _ E _ _ _ _ 9 8 7 _ 6 _ 4 _ 2 _ 
+g f e _ b _ Y _ Q L _ _ H G E C B A _ _ 6 _ _ 5 4 3 2 1 i a W V U _ _ @ _ l k _ _ _ R P _ N M _ _ 
+X _ U T _ R Q g _ V F _ D _ @ m l k j i h _ O N _ _ J I _ A _ _ 7 6 _ _ H _ 5 4 _ _ f _ d c _ Z Y 
+O M L _ _ I H _ 9 _ _ _ 2 1 _ W V _ T S R _ E _ _ A 8 6 @ m _ d P _ 5 g _ e _ b _ Z _ j i h Q _ _ 
+F E D _ _ A _ _ _ l _ _ W _ _ G 5 4 3 2 1 _ i h _ _ _ _ _ _ Z Y R _ M X V U _ _ N J T S L _ _ 8 7 
+_ 7 6 _ _ _ _ i e d a Z S A _ O N _ L _ J @ m _ _ c b _ j _ g f _ C 1 Y T _ Q I F E _ _ _ _ H B 9 
+_ Y _ l k j _ C _ B _ g _ _ 5 N _ O _ T K E A _ L f e _ 4 3 _ _ c b a _ I _ R _ Q M 1 _ 8 7 6 P _ 
+_ _ _ 7 _ 6 B H F @ m L R K b a _ Y X Z l 2 1 O j _ _ k _ E D i h g e 3 W _ T U P _ J _ _ M d S _ 
+_ _ R _ G Q M _ 1 6 _ N V J _ _ 3 2 i _ j 9 C _ l _ _ Y P _ A Z _ @ _ _ X O F g _ e h 5 m T b a U 
+_ N F V T O _ k j _ _ _ b Y _ _ S @ e c g H J G P I _ _ L _ 6 _ _ m _ 5 _ 4 _ 8 1 _ 9 B 3 _ R W A 
+D _ d 4 f S _ M 3 A _ 8 7 9 G R _ H J C Q U g _ c T 6 _ I _ 5 W O l Y _ _ N Z m k _ E i _ j _ F L 
+5 b _ h a J _ c f e _ X T P D L _ F I _ M S _ i K _ R 3 H _ _ U _ k V B 9 A j G 7 C Y O _ l _ 4 Q 
+c _ 3 _ 2 K E O I _ S _ _ 5 m _ P _ _ _ 9 a Z b h W N _ _ 7 1 _ M _ R _ Y L _ _ 6 _ k f _ G V _ C 
+_ _ _ M m _ j B _ K _ _ _ h L _ f T 7 d C J F _ 6 S _ _ Q W Y _ g 1 _ _ _ X 4 H _ _ _ G A 9 8 _ b 
+C _ K _ _ N _ 6 _ 2 8 4 d @ O E a _ H _ i _ G W 5 _ _ e k j _ F 9 _ h S _ T g R b Y M Q I _ f U _ 
+S 6 _ _ _ _ g Z _ _ 7 _ O X _ _ _ e 5 R Y h j U C 2 1 B _ d c _ L H N G 8 W _ _ f l K E T @ D _ 4 
+_ 5 _ F h a _ _ k _ U G _ l _ S g _ 8 Q W d M 4 T E I @ _ Z b O V e C A _ K _ D B c _ J 6 Y 7 X 2 
+_ _ G _ Z V _ W Y _ _ T g c _ D h _ K _ @ L H _ 3 8 X _ U l M E f J i a 6 2 O 5 m k S _ 1 B N _ _ 
+_ 2 E _ Y U _ _ V 5 1 _ f _ _ _ _ G 4 M B i _ _ Q D k O _ @ _ S K 8 X _ 7 J h C Z j _ g a P F _ e 
+J _ _ 8 W _ c E _ _ _ A a S _ X _ l 2 _ F R N _ _ Y f K 6 I _ 5 _ 3 7 _ d Q _ M _ @ L h k m j _ _ 
+k l b _ F 7 _ J X _ _ j m O U _ _ K _ h 4 _ P 9 D Q M W 1 _ V g a I _ 8 e i H Y _ _ 2 _ _ 6 L E c 
+_ _ i R C _ m _ _ _ c _ 1 8 _ l 7 6 k _ 3 _ d B I _ _ _ _ M _ 4 @ K b _ N _ X _ _ _ U _ H _ _ _ g 
+_ h g O 9 P _ _ d H V F 3 _ _ b C 5 _ E D 4 f Y J _ _ 8 2 _ N _ 6 _ c T S m G 7 _ _ j X K 1 @ M l 
+_ J _ N 8 M Z _ _ k @ _ e i _ 1 _ X R _ I K _ 6 _ _ _ _ O 5 L _ H _ _ D 3 g _ c 4 2 _ b _ C m _ V 
+_ I c B 5 L W D 7 C G M 6 _ a j i _ Q H N g l e 2 F h R A _ _ m X E 9 _ b d f Z @ O 4 8 P _ _ k 3 
+G _ Y 6 _ H _ l 4 N _ _ _ _ M J 2 P m @ c X a _ _ _ L 5 8 i 7 C d _ B _ k _ _ _ I 9 O Z W A S e R 
+4 _ X 2 _ E _ L P Z b 9 K W _ Y _ g G _ d C c @ m _ H V _ _ T k _ _ _ 6 _ M l _ j _ Q _ _ _ i 7 I 
+_ X m _ _ g 5 _ J _ _ W c I f _ _ Q N _ A _ 3 _ _ _ K h _ D l _ i 2 6 _ _ S C L H G a _ U R 1 _ B 
+a _ J _ V l L _ Z _ _ 5 8 g j h Y _ _ G X M _ _ 9 _ O D _ T _ b A d _ m B 6 _ _ K _ N _ 4 _ c @ P 
+T S _ f U h _ 2 a j X B L E K _ _ 8 _ l O _ W _ _ 1 Y c M k _ _ 3 _ _ J A _ 7 i 9 F H _ b e g 6 _ 
+M K A _ _ d _ 1 _ G N _ k 4 3 i _ C W 9 H m 6 2 _ _ V F _ S B _ 5 c J j @ _ U X _ 8 _ Y Z L _ T f 
+_ _ 9 _ Q c 6 R _ m _ D A _ B 7 F E _ P _ _ k _ @ j Z U W X 8 _ _ V _ f 4 Y N _ l a d M _ i 5 C _ 
+E C 8 _ O _ 4 9 @ Y _ 6 U 7 T d b L _ I 5 l _ J i g B A f _ m N _ _ _ k _ _ V _ c _ D 3 G X 2 _ _ 
+1 _ 2 Y N F _ d K i h C P V c Z M _ _ m a 5 _ f G _ T H 9 _ _ @ I L _ _ g E b e R D A _ _ k O Q 8 
+i _ a S _ 2 _ e _ 4 C _ _ k l _ L b _ V _ Y _ A O h U m Z 6 f _ j 7 W H _ c _ _ _ _ 3 _ _ D _ I M 
+Y U _ _ H _ K Q D 9 A c _ R 6 2 O _ _ 3 m V B k X _ _ _ _ F @ M e _ _ _ i _ _ a G _ 8 L N Z W b _ 
+W V h _ D C _ b _ 3 _ _ Z L _ _ G _ F X k Q 9 _ e M j _ J H a K T 4 2 N _ 8 @ _ 5 _ 7 m _ S U g E 
+f _ _ j X 9 _ m _ _ _ _ M H J c _ Z _ 1 e G 8 R S _ g b _ _ d _ _ _ _ F h D _ W U _ 6 4 C a _ _ _ 
+_ R Z G @ 5 8 h g 1 6 S _ a Q _ H i Y D U _ 4 _ F _ W _ V L X _ _ 9 _ e j _ _ _ 3 m _ 2 l d P _ _ 
+e _ _ _ _ B F 7 _ f J K _ _ _ _ _ a M _ _ 6 D _ _ H P _ R g i l _ _ _ _ _ _ Y 2 X 4 _ 1 _ Q _ A T 
+6 _ _ L l m J N U X Y V 5 T d g _ _ _ _ P 1 2 3 E a @ C b c _ G 8 D Q _ _ 9 I f A S F R j H _ i _ 
+A _ _ g _ Y R _ c h O _ C e N B I D _ f b _ Q H U X _ j d 2 _ 6 l _ _ _ F k _ _ S V _ T _ 8 4 5 G 
+7 H N U I _ G S A 8 _ k X Q 4 M T _ l e V c h _ R O F _ 5 9 K _ b _ j C _ _ i B W _ _ @ _ E J 1 6 
+2 Z V _ _ _ k _ E g 9 _ @ m _ A J _ c j L _ S a _ _ _ P X _ H I B R T _ 5 7 6 l _ U e d M _ _ Y W 
+_ 9 _ _ M X _ _ H _ j _ _ _ C _ _ R h Y _ e K 1 8 @ A J E V _ D _ _ F _ c _ _ _ T b g k f 3 l L S 
+3 F _ m c f _ V 6 W T a Y D 2 @ X _ 1 _ _ _ I _ _ 9 _ _ h N O L Z G P M _ j 8 Q e H B _ R b A K i 
+_ _ S J e @ b G _ M 3 _ l F _ _ _ _ _ _ _ _ _ D _ _ 4 _ 7 1 _ c _ _ g _ _ I d _ Y X V _ 9 O C N _ 
+h _ j E _ _ _ 5 N U Z d 4 b k H _ 9 O F 7 B _ M Y i 3 2 C _ e J W S 8 R _ @ m A g _ P c Q _ X D _ 
+
+# Solution:
+N P 1 a d G V 8 B c 5 h J j Y F Q I D 7 f Z U K H R 9 T l O 4 e 2 X L i C 3 S 6 M W b A E g k m @ 
+@ m l k j i h U T R P O N M g e d c b a Z D Y X W V S Q K J I H G F E L f B A 9 8 7 C 6 5 4 3 2 1 
+g f e c b Z Y X Q L K I H G E C B A 9 8 6 F 7 5 4 3 2 1 i a W V U T S @ m l k j h d R P O N M J D 
+X W U T S R Q g b V F E D C @ m l k j i h P O N M L J I B A 9 8 7 6 3 K H G 5 4 2 1 f e d c a Z Y 
+O M L K J I H Y 9 7 4 3 2 1 X W V U T S R f E C B A 8 6 @ m k d P N 5 g D e c b a Z l j i h Q G F 
+F E D C B A 9 @ m l k f W 6 H G 5 4 3 2 1 j i h g e d a c b Z Y R Q M X V U P O N J T S L K I 8 7 
+8 7 6 5 4 3 2 i e d a Z S A P O N M L K J @ m l k c b G j h g f D C 1 Y T R Q I F E X W V U H B 9 
+m Y @ l k j i C G B W g h Z 5 N U O V T K E A F L f e d 4 3 J 9 c b a 2 I H R S Q M 1 D 8 7 6 P X 
+9 8 C 7 A 6 B H F @ m L R K b a 4 Y X Z l 2 1 O j 5 Q k G E D i h g e 3 W V T U P f J I c M d S N 
+I L R H G Q M 4 1 6 E N V J 7 k 3 2 i W j 9 C 8 l B D Y P K A Z S @ f c X O F g d e h 5 m T b a U 
+Z N F V T O U k j a l i b Y h f S @ e c g H J G P I 7 M L C 6 X Q m d 5 E 4 D 8 1 K 9 B 3 2 R W A 
+D e d 4 f S P M 3 A 2 8 7 9 G R 1 H J C Q U g V c T 6 X I B 5 W O l Y b a N Z m k h E i @ j K F L 
+5 b W h a J 1 c f e d X T P D L E F I 6 M S @ i K m R 3 H 8 2 U N k V B 9 A j G 7 C Y O g l Z 4 Q 
+c g 3 X 2 K E O I D S U Q 5 m 8 P B d A 9 a Z b h W N 4 F 7 1 T M j R l Y L J @ 6 i k f e G V H C 
+l @ O M m k j B R K I e i h L 3 f T 7 d C J F P 6 S a Z Q W Y 2 g 1 D E U X 4 H V N 5 G A 9 8 c b 
+C 3 K D 7 N X 6 L 2 8 4 d @ O E a m H J i A G W 5 l c e k j P F 9 B h S 1 T g R b Y M Q I V f U Z 
+S 6 Q I i b g Z M J 7 m O X V P k e 5 R Y h j U C 2 1 B a d c A L H N G 8 W 9 F f l K E T @ D 3 4 
+R 5 H F h a f j k P U G 9 l 1 S g N 8 Q W d M 4 T E I @ m Z b O V e C A L K 3 D B c i J 6 Y 7 X 2 
+P 4 G A Z V e W Y F Q T g c I D h j K b @ L H 7 3 8 X 9 U l M E f J i a 6 2 O 5 m k S C 1 B N R d 
+L 2 E 9 Y U d 3 V 5 1 H f N A 6 c G 4 M B i b m Q D k O T @ R S K 8 X I 7 J h C Z j W g a P F l e 
+J 1 B 8 W T c E C b D A a S 9 X Z l 2 U F R N g V Y f K 6 I G 5 4 3 7 P d Q e M i @ L h k m j O H 
+k l b d F 7 @ J X S R j m O U T A K f h 4 3 P 9 D Q M W 1 G V g a I Z 8 e i H Y C 5 2 N B 6 L E c 
+V j i R C e m A 5 T c 2 1 8 W l 7 6 k L 3 O d B I Z G S D M F 4 @ K b Q N a X J E P U 9 H f Y h g 
+U h g O 9 P a I d H V F 3 B e b C 5 Z E D 4 f Y J k i 8 2 Q N R 6 W c T S m G 7 L A j X K 1 @ M l 
+Q J f N 8 M Z a h k @ Y e i S 1 9 X R B I K T 6 A U E 7 O 5 L j H P l D 3 g W c 4 2 G b F C m d V 
+K I c B 5 L W D 7 C G M 6 U a j i V Q H N g l e 2 F h R A Y S m X E 9 1 b d f Z @ O 4 8 P J T k 3 
+G D Y 6 3 H T l 4 N g Q E f M J 2 P m @ c X a j 1 b L 5 8 i 7 C d h B U k F K V I 9 O Z W A S e R 
+4 A X 2 1 E S L P Z b 9 K W F Y 8 g G O d C c @ m N H V 3 e T k J f U 6 R M l h j B Q a D 5 i 7 I 
+j X m @ P g 5 T J O M W c I f V e Q N k A 8 3 E b 4 K h Y D l 7 i 2 6 d Z S C L H G a F U R 1 9 B 
+a k J i V l L F Z Q f 5 8 g j h Y 1 U G X M R S 9 C O D e T E b A d H m B 6 2 3 K I N 7 4 W c @ P 
+T S I f U h D 2 a j X B L E K 4 R 8 @ l O N W Q d 1 Y c M k C P 3 Z G J A 5 7 i 9 F H V b e g 6 m 
+M K A e R d 7 1 l G N b k 4 3 i D C W 9 H m 6 2 a P V F g S B Q 5 c J j @ h U X O 8 I Y Z L E T f 
+H G 9 b Q c 6 R S m e D A 3 B 7 F E g P 2 I k L @ j Z U W X 8 h 1 V O f 4 Y N T l a d M J i 5 C K 
+E C 8 Z O W 4 9 @ Y H 6 U 7 T d b L S I 5 l e J i g B A f R m N F a K k M P V 1 c Q D 3 G X 2 j h 
+1 B 2 Y N F 3 d K i h C P V c Z M J 6 m a 5 X f G 7 T H 9 U j @ I L 4 W g E b e R D A l S k O Q 8 
+i d a S g 2 N e 8 4 C @ F k l 9 L b E V T Y 5 A O h U m Z 6 f 1 j 7 W H Q c B P J R 3 K X D G I M 
+Y U T P H 4 K Q D 9 A c j R 6 2 O h C 3 m V B k X d l f S F @ M e 5 I 7 i 1 E a G g 8 L N Z W b J 
+W V h 1 D C A b O 3 B P Z L R I G f F X k Q 9 c e M j i J H a K T 4 2 N l 8 @ d 5 6 7 m Y S U g E 
+f Q 7 j X 9 I m 2 E i l M H J c @ Z A 1 e G 8 R S K g b N P d 3 Y O k F h D L W U T 6 4 C a B V 5 
+b R Z G @ 5 8 h g 1 6 S I a Q K H i Y D U 7 4 T F J W N V L X B E 9 A e j C M k 3 m c 2 l d P f O 
+e c k 3 E B F 7 W f J K G d 8 5 j a M N S 6 D I Z H P L R g i l C U m V O b Y 2 X 4 @ 1 h Q 9 A T 
+6 O M L l m J N U X Y V 5 T d g W 7 B 4 P 1 2 3 E a @ C b c h G 8 D Q Z K 9 I f A S F R j H e i k 
+A i P g L Y R K c h O J C e N B I D a f b W Q H U X m j d 2 3 6 l M @ 9 F k 1 E S V Z T 7 8 4 5 G 
+7 H N U I D G S A 8 L k X Q 4 M T d l e V c h Z R O F g 5 9 K a b Y j C P f i B W 3 m @ 2 E J 1 6 
+2 Z V Q K 8 k f E g 9 1 @ m i A J 3 c j L b S a N G C P X 4 H I B R T O 5 7 6 l D U e d M F h Y W 
+d 9 5 W M X O P H I j 7 B 2 C U 6 R h Y G e K 1 8 @ A J E V Q D m i F 4 c Z a N T b g k f 3 l L S 
+3 F 4 m c f C V 6 W T a Y D 2 @ X S 1 g E k I d 7 9 5 l h N O L Z G P M J j 8 Q e H B U R b A K i 
+B a S J e @ b G i M 3 R l F Z Q m W P 5 8 T L D f 6 4 E 7 1 U c k A g h 2 I d K Y X V H 9 O C N j 
+h T j E 6 1 l 5 N U Z d 4 b k H K 9 O F 7 B V M Y i 3 2 C f e J W S 8 R G @ m A g L P c Q I X D a 
+
+# Statistics for the current run
+# Initial fill ratio: 66%
+# Number of choices: 5
+# Number of backtracks: 5
+
+# Solving '../test/grid-solver/grid-49x49-02.sku'...
+
+# Initial grid:
+K E _ D 9 G 3 _ d 6 _ V L R I J _ 2 B _ P _ @ a e _ _ A _ k _ l i _ _ b 7 M N f H O Q Y C j U _ _ 
+@ m l k j _ h g Y _ _ T S _ f _ _ c _ _ Z O N M _ H _ F _ D _ B _ _ _ X V _ P _ K J _ _ 5 4 3 2 _ 
+_ f e d c b _ B 8 5 4 3 2 _ _ D C A 9 7 6 V R Q _ L _ J _ m j h _ Y _ l k i W _ _ _ O _ M _ H G F 
+Z Y X W _ _ T O N M J I _ G _ m _ k j i h _ _ d _ _ _ _ Q F 7 6 4 _ 2 C B A 9 8 5 1 _ c a _ P L K 
+S _ Q P O N M m j a Z K F _ Y X W V _ T _ C B _ _ 7 _ 2 g f e _ c H 1 I G E _ _ 4 3 _ l _ i h _ J 
+L J I H _ B _ e c _ E D 9 7 K G F _ _ 3 1 l k _ Y _ T 6 _ _ _ _ O N M @ m j _ Z Q _ g f _ X _ S 8 
+_ _ _ 5 _ 2 1 @ l k _ f b C S _ Q O N _ H _ j h _ X W 3 _ P L _ J I G _ _ d _ a Y F V _ _ _ B A 9 
+m M @ _ k _ i _ _ S L h _ f _ H _ Q T _ U F 5 _ d e b _ 4 3 E I _ a Z 2 _ 1 C D _ Y _ _ O _ _ R _ 
+4 6 _ 7 D 5 C 2 @ m K X M W e 1 _ l d _ _ _ _ E 9 _ I _ 8 _ _ _ P _ _ _ N Q H h b a B _ _ U Z g _ 
+R P O _ K T _ 6 _ E 9 _ _ a m _ 3 X i _ _ S _ H D l C V F B _ U G Q g A f @ Z j _ c _ 5 h J I e d 
+G c U F b _ V _ i _ _ _ P d h N f W S I _ a _ _ g _ Z @ 9 6 _ A H T _ 7 _ O B _ L k _ _ D E C 4 3 
+Q I h a 8 J f _ e _ O _ N V Z _ Y D C F _ A 7 6 _ K 1 _ _ b _ _ W 2 k 3 g _ _ _ 9 T P L i _ M _ G 
+X _ d Z _ Y _ 4 _ F I _ J _ 7 6 5 _ 8 A _ B h 3 _ _ _ O D _ _ f C _ _ E i e R V _ G _ m _ Q N _ a 
+A 9 2 1 B E g _ Z _ _ _ G T a O R _ _ j _ _ W f U i Q N _ V m e L K 7 8 _ 6 _ J I 4 H b F l c _ _ 
+_ @ J _ _ k j _ _ b _ B _ _ 5 a I C _ Q f W A _ _ 8 h Z K E 6 _ _ e L _ 4 D _ 2 _ P U F _ H T 9 O 
+6 _ 9 8 S 4 e P _ _ _ 5 _ Z _ i _ H h d _ U _ L K E f _ O C G D _ c _ V 1 T Q A _ M J _ N a _ k _ 
+H K a _ U W d _ _ 9 T 4 Q _ _ k A _ X _ S j 1 _ V 3 _ m P 7 B _ M _ @ h F Z f _ _ b _ C _ c 8 _ D 
+D _ V h I Q c _ J N X 1 _ S O j _ 8 Y U E k i l _ b d P _ 4 9 2 _ f _ H C _ 6 5 3 7 _ Z W M _ @ L 
+_ _ _ g _ P _ U _ _ _ _ k _ 9 @ 7 _ l D c 6 _ 5 _ 2 4 H N 1 _ j _ Z S _ Y K O _ _ m _ X V _ Q _ B 
+7 2 _ f _ _ Z K _ d Y C a m 6 V _ 4 _ 1 _ _ Q g S _ 9 B _ J H k X _ i W U L _ I c 8 3 e A b E _ 5 
+5 _ L X E M Y _ D _ R 8 f 2 W _ Z K _ _ _ _ T C 7 J _ _ _ A F _ _ d _ N @ _ l _ i 9 _ _ 4 h j _ I 
+_ _ _ _ a c @ _ M _ V _ O j _ I X N _ L i _ U R m G g e 2 Y _ H h F 9 _ _ 5 _ P _ d T _ _ 3 1 6 _ 
+d _ 8 _ W 1 _ c P A _ a _ B _ Q h _ M _ @ H 3 k E N _ _ 5 e _ L g _ 6 j J Y F S _ f Z G _ 9 X D i 
+F e b M 5 _ 2 l _ Y _ _ h H _ C U Z K E 4 D 9 _ B 6 8 _ _ j P T f J c _ _ X _ R _ N _ _ m A 7 _ _ 
+f i _ _ Z _ G T _ 8 _ _ _ F j _ P 7 J 9 a _ _ 4 _ _ @ _ _ _ A N m M _ U _ _ _ O 2 _ S Q _ V _ I R 
+U _ _ E A _ _ _ _ 7 f _ R _ H _ S 1 F 6 3 i X V T c a _ _ _ K 8 @ G I _ b h e _ M L d W _ _ 2 _ 4 
+N _ m S L 9 7 J 2 _ _ _ I 6 _ 8 k Y _ G 5 f O _ A _ _ _ i d _ _ _ _ _ _ _ _ _ H B C M j l g _ F h 
+T V j K Y _ _ G _ 3 _ _ _ 5 l _ e _ _ O g I _ F _ _ 2 M X S 4 Q a _ b D 9 c k i A 6 N H _ _ @ _ P 
+j k S e _ V J _ U f 5 d _ _ _ _ _ _ I Y _ G g _ @ T B _ C K _ P 1 _ H R Q _ _ _ O W a _ _ F 6 7 Z 
+Y T _ c _ _ _ _ _ _ B _ @ _ _ F K d _ _ X R S _ 3 V _ Q L W _ 9 7 _ a P 5 H m N _ _ _ _ j _ _ f E 
+W d _ _ l f F j X _ 7 H _ _ _ 5 a _ Z _ k 2 L e 1 I _ _ G Q _ b S R _ i h _ _ 3 D _ _ _ _ Y _ C _ 
+_ a 5 @ g L B _ T Q 6 _ Z _ b _ _ _ 1 J _ 8 l P _ M 7 _ _ i d E 2 _ F _ c _ Y K e _ _ 9 X m A _ H 
+i C 4 _ _ m U a _ _ 3 F Y 9 8 l 6 _ 2 W G Z _ c _ h N d _ _ k _ 5 A f T S J 7 _ _ _ 1 _ e _ _ B _ 
+I _ Z A M H 9 _ K _ 2 E W 8 P 7 @ _ _ C Q Y m _ _ 4 D i T _ O g _ X _ _ _ l 1 G 6 U R d _ k L _ c 
+_ G K Q _ 6 O R _ I _ A V _ T h H 3 E m e 9 _ _ 5 f _ _ _ 8 Z Y D B _ _ j _ L _ @ _ _ i _ _ S _ _ 
+h _ _ _ _ _ K _ _ Z H R _ _ 1 _ J P Q l _ M 6 2 _ C _ L B U _ G F j D _ _ _ _ _ m i _ 4 7 e d W _ 
+2 _ M _ 6 _ H d _ _ N _ _ _ 4 _ 8 i W _ j b D _ _ R O _ e _ f _ K V 5 9 L F a c _ g E _ P S G 1 A 
+a L _ 4 T I X _ h _ _ e 8 @ _ _ _ _ _ f d N Z 1 W B U 7 6 M g J k b A 5 E 2 V _ l R C K 9 _ F H j 
+B g _ G J _ 8 _ f _ _ b _ O X _ E a e R _ 3 P Y i A V _ H T _ C d _ 4 6 D I U W _ K _ 2 Q N _ h @ 
+_ _ _ j i _ _ Y a _ G _ 6 K M g N _ @ _ _ 5 _ _ c F H S I h 2 O E _ P e Z B d _ _ _ _ _ _ L D 3 _ 
+_ D A V _ _ k L _ U F 2 _ I _ _ b B _ h O _ E J _ g j _ m _ 3 i 9 @ N G _ 7 _ X S H Y _ _ Z _ _ 6 
+O 5 f _ _ _ E D _ B A _ _ _ c 2 _ 6 H _ 7 h _ m G d k 8 Y _ X W _ _ R 4 _ N J 1 _ @ b V I T i a U 
+E 4 g 2 N @ _ _ R _ _ O _ L _ 9 T h 6 X _ Q d A H Y S f _ G b 1 _ P e Z _ _ I k U D F _ _ K m _ V 
+e Z _ m 1 7 _ _ _ V S k _ _ U _ _ _ P K D E b _ 6 a F h _ 2 _ _ _ L _ _ R _ _ T N l 5 g _ _ 4 Y _ 
+c F k Y f K L 7 H g _ m U 3 N A O I a _ l _ e Z _ _ _ 5 _ _ T 4 V E h M 2 _ _ d J B D P 6 8 _ _ C 
+J _ G _ h _ l _ F X D _ _ Y _ f 1 b g S 8 T c I _ P _ 4 _ _ U a R W d K 6 m _ Q V j A @ _ _ _ _ e 
+V 8 i U 3 a 6 W _ _ P @ A h _ _ 4 _ L 5 _ _ 2 B J _ m _ Z _ Q _ j D C c H S b _ F e f I G 1 l _ N 
+9 b R T _ X I 1 5 G M 6 l c Q Z _ F 7 e _ K _ D _ @ _ U f H _ m B k Y L _ g _ 4 8 h _ J S d _ E _ 
+M _ D B _ _ S f _ 2 a _ _ _ G c V E m _ C _ 8 7 _ 9 R _ _ _ I F 6 i K _ X _ 3 @ 1 5 h _ Z W k U b 
+
+# Solution:
+K E F D 9 G 3 X d 6 h V L R I J g 2 B 8 P 4 @ a e 1 c A W k S l i 5 T b 7 M N f H O Q Y C j U Z m 
+@ m l k j i h g Y W U T S Q f e d c b a Z O N M I H G F E D C B A 9 8 X V R P L K J 7 6 5 4 3 2 1 
+g f e d c b a B 8 5 4 3 2 1 E D C A 9 7 6 V R Q P L K J @ m j h Z Y X l k i W U T S O N M I H G F 
+Z Y X W V U T O N M J I H G @ m l k j i h g f d b S E D Q F 7 6 4 3 2 C B A 9 8 5 1 e c a R P L K 
+S R Q P O N M m j a Z K F A Y X W V U T L C B 9 8 7 5 2 g f e d c H 1 I G E D 6 4 3 @ l k i h b J 
+L J I H C B A e c P E D 9 7 K G F 5 4 3 1 l k i Y U T 6 b a V R O N M @ m j h Z Q 2 g f d X W S 8 
+8 7 6 5 4 2 1 @ l k i f b C S R Q O N M H m j h Z X W 3 U P L K J I G g e d c a Y F V T E D B A 9 
+m M @ l k j i A B S L h g f J H G Q T P U F 5 8 d e b c 4 3 E I N a Z 2 K 1 C D X Y 9 7 O 6 V R W 
+4 6 3 7 D 5 C 2 @ m K X M W e 1 L l d c V J G E 9 k I T 8 R i S P O j F N Q H h b a B A f U Z g Y 
+R P O L K T N 6 k E 9 7 1 a m 4 3 X i b 2 S M H D l C V F B Y U G Q g A f @ Z j W c 8 5 h J I e d 
+G c U F b e V 8 i R Q j P d h N f W S I K a Y X g m Z @ 9 6 5 A H T J 7 l O B M L k 2 1 D E C 4 3 
+Q I h a 8 J f 5 e H O l N V Z E Y D C F B A 7 6 4 K 1 R d b c X W 2 k 3 g U S m 9 T P L i @ M j G 
+X S d Z H Y W 4 b F I c J U 7 6 5 g 8 A 9 B h 3 2 j L O D @ M f C 1 l E i e R V P G k m T Q N K a 
+A 9 2 1 B E g 3 Z D C Y G T a O R @ k j M P W f U i Q N h V m e L K 7 8 d 6 5 J I 4 H b F l c X S 
+l @ J R m k j V 7 b g B c i 5 a I C G Q f W A N M 8 h Z K E 6 3 Y e L S 4 D X 2 d P U F 1 H T 9 O 
+6 B 9 8 S 4 e P 3 @ l 5 j Z F i 2 H h d m U I L K E f X O C G D b c W V 1 T Q A g M J R N a Y k 7 
+H K a i U W d I 6 9 T 4 Q E L k A J X N S j 1 O V 3 Y m P 7 B 5 M g @ h F Z f e R b G C 2 c 8 l D 
+D A V h I Q c F J N X 1 e S O j B 8 Y U E k i l a b d P R 4 9 2 T f m H C G 6 5 3 7 K Z W M g @ L 
+C 3 T g G P b U A h W L k M 9 @ 7 e l D c 6 F 5 R 2 4 H N 1 8 j I Z S J Y K O E a m i X V f Q d B 
+7 2 N f F O Z K G d Y C a m 6 V M 4 R 1 T @ Q g S D 9 B l J H k X h i W U L j I c 8 3 e A b E P 5 
+5 1 L X E M Y H D O R 8 f 2 W P Z K 3 g b c T C 7 J e G a A F V U d Q N @ k l B i 9 6 S 4 h j m I 
+k l B J a c @ b M C V S O j D I X N A L i 7 U R m G g e 2 Y W H h F 9 Q 8 5 4 P Z d T E K 3 1 6 f 
+d O 8 I W 1 4 c P A m a K B V Q h T M 2 @ H 3 k E N l b 5 e R L g C 6 j J Y F S 7 f Z G U 9 X D i 
+F e b M 5 3 2 l Q Y @ i h H d C U Z K E 4 D 9 S B 6 8 W V j P T f J c 1 I X g R G N L a m A 7 O k 
+f i H 6 Z D G T L 8 k g X F j b P 7 J 9 a d C 4 h 5 @ Y 1 l A N m M B U 3 W K O 2 E S Q c V e I R 
+U Q C E A g P N 9 7 f Z R D H B S 1 F 6 3 i X V T c a j k O K 8 @ G I m b h e l M L d W Y 5 2 J 4 
+N X m S L 9 7 J 2 4 e W I 6 R 8 k Y c G 5 f O K A Q P 1 i d D Z 3 U E a T V @ H B C M j l g b F h 
+T V j K Y h R G 1 3 d U E 5 l W e m f O g I J F L Z 2 M X S 4 Q a 7 b D 9 c k i A 6 N H B C @ 8 P 
+j k S e X V J i U f 5 d D l A M c L I Y N G g b @ T B E C K h P 1 m H R Q 4 2 9 O W a 3 8 F 6 7 Z 
+Y T 1 c 2 8 D k g e B M @ b i F K d O 4 X R S U 3 V A Q L W l 9 7 6 a P 5 H m N C Z I h j G J f E 
+W d E N l f F j X c 7 H m P g 5 a 9 Z B k 2 L e 1 I 6 K G Q J b S R V i h 8 M 3 D A 4 U @ Y O C T 
+3 a 5 @ g L B h T Q 6 G Z N b U D S 1 J R 8 l P O M 7 C j i d E 2 4 F k c f Y K e I W 9 X m A V H 
+i C 4 b R m U a O L 3 F Y 9 8 l 6 j 2 W G Z H c X h N d M I k @ 5 A f T S J 7 g E V 1 D e P K B Q 
+I h Z A M H 9 S K J 2 E W 8 P 7 @ f V C Q Y m j F 4 D i T N O g e X 3 B a l 1 G 6 U R d b k L 5 c 
+P G K Q 7 6 O R C I 1 A V 4 T h H 3 E m e 9 a W 5 f J k c 8 Z Y D B U d j b L F @ X l i g 2 S N M 
+h N Y 9 @ S K E V Z H R 5 k 1 T J P Q l I M 6 2 f C X L B U a G F j D O A 3 8 b m i c 4 7 e d W g 
+2 U M 3 6 l H d m T N J C X 4 Y 8 i W k j b D @ Q R O I e Z f 7 K V 5 9 L F a c h g E B P S G 1 A 
+a L P 4 T I X Q h i c e 8 @ 3 S m G D f d N Z 1 W B U 7 6 M g J k b A 5 E 2 V Y l R C K 9 O F H j 
+B g c G J Z 8 M f l j b 7 O X L E a e R F 3 P Y i A V 9 H T 1 C d S 4 6 D I U W k K m 2 Q N 5 h @ 
+b W 7 j i R m Y a 1 G 9 6 K M g N U @ V A 5 4 T c F H S I h 2 O E 8 P e Z B d C f Q X k J L D 3 l 
+1 D A V Q d k L W U F 2 4 I C K b B 5 h O e E J l g j a m c 3 i 9 @ N G P 7 T X S H Y 8 R Z f M 6 
+O 5 f C e F E D S B A P 3 g c 2 9 6 H Z 7 h K m G d k 8 Y L X W Q l R 4 M N J 1 j @ b V I T i a U 
+E 4 g 2 N @ 5 C R j 8 O i L B 9 T h 6 X J Q d A H Y S f 7 G b 1 l P e Z W a I k U D F M 3 K m c V 
+e Z W m 1 7 Q 9 I V S k d J U 3 j M P K D E b G 6 a F h A 2 @ c 8 L O f R C i T N l 5 g H B 4 Y X 
+c F k Y f K L 7 H g b m U 3 N A O I a @ l 1 e Z j W i 5 S X T 4 V E h M 2 9 G d J B D P 6 8 R Q C 
+J H G O h C l Z F X D N B Y 2 f 1 b g S 8 T c I k P M 4 3 5 U a R W d K 6 m E Q V j A @ L 7 9 i e 
+V 8 i U 3 a 6 W E K P @ A h k d 4 R L 5 Y X 2 B J O m g Z 9 Q M j D C c H S b 7 F e f I G 1 l T N 
+9 b R T P X I 1 5 G M 6 l c Q Z i F 7 e W K V D C @ 3 U f H N m B k Y L O g A 4 8 h j J S d a E 2 
+M j D B d A S f 4 2 a Q T e G c V E m H C L 8 7 N 9 R l J g I F 6 i K Y X P 3 @ 1 5 h O Z W k U b 
+
+# Statistics for the current run
+# Initial fill ratio: 66%
+# Number of choices: 2
+# Number of backtracks: 2
+
+# Solving '../test/grid-solver/grid-49x49-03-inconsistent.sku'...
+
+# Initial grid:
+_ T N Y 3 _ m _ A 9 _ L j 6 E F R 1 g _ _ S W _ U 2 _ M I 8 _ Q _ G J d _ a l e _ B 5 V O _ _ i c 
+4 V A i 5 _ O f 1 J _ P _ T a H W 6 _ Z 9 j I @ d Y 3 k _ l _ _ _ _ _ Q 8 _ _ _ K _ b 7 B _ U X _ 
+_ h L 2 D _ _ _ M H _ k _ R j U _ G _ _ J _ c _ _ _ _ _ 4 1 T A S X _ C _ Z F _ g i _ 8 _ _ _ e 6 
+U j f I _ _ W _ h _ _ _ _ F 7 e 5 Q _ B M X 1 i R 8 G l _ H O @ b L _ _ A _ T 9 _ _ S k D K d g C 
+@ _ _ _ _ _ F G e l _ g _ _ _ _ _ k _ T _ _ _ H m _ _ _ _ 3 _ P W d _ U 6 h _ j 2 5 _ L J _ _ f M 
+a _ K _ Z _ R S _ D _ d U Q _ c _ _ _ _ _ g f 5 _ J A 4 _ 6 V _ 9 B e _ P H Y X _ _ E 3 _ T @ _ F 
+_ 9 1 _ Q _ l B Z _ _ E N 4 @ A _ b _ K 3 L _ e _ F _ _ 7 5 f _ _ a U O S c V _ R k 2 Y j I _ h H 
+j g _ _ a 1 6 _ _ 3 _ _ @ _ 4 _ D E Y _ 2 _ h Z f _ _ F _ R k I K A c b T Q X N L U i _ G _ 5 _ m 
+c N _ P S _ _ _ 5 _ _ _ 1 W A _ T @ F j _ K _ _ 3 I B _ _ _ 4 _ _ _ Y _ 2 _ C E H 9 8 M 6 J D d b 
+E m _ _ X R _ A V b 7 F 4 U M K f _ i _ _ 1 a Q L T Y g _ _ B 8 _ _ j c _ 5 _ _ e l _ 9 _ 2 C _ 3 
+Z _ Y _ _ _ 8 _ _ _ g _ c L C k _ W _ b H _ j _ _ 7 E _ 3 a 5 2 N i d M F K _ V 4 R _ h X _ T _ 1 
+H i 2 A J D f Y E R B K e G U g 3 a 8 h 5 d l _ C S b _ 6 9 1 L _ M _ _ W j _ _ _ I _ Z _ _ k V Q 
+_ _ M 9 _ _ C _ _ _ _ X 2 N _ _ _ _ _ e 1 W 8 6 _ 5 _ U G V m _ F Q _ _ i Y 3 a _ S _ H _ _ _ _ K 
+_ _ _ _ _ T _ _ H M _ m _ j _ B l _ Z N Q _ i V _ k 4 D _ _ e b f _ g h _ 8 P J _ G Y A a R E _ W 
+T H l R _ c _ O N 6 _ C g Z K _ @ _ _ J W _ _ j P _ L 9 A I U d _ 1 _ _ Q _ _ M E h B _ _ 8 _ _ _ 
+_ J S _ _ Z B d l _ _ _ _ a _ _ O _ _ L _ _ @ F Q 6 T i j k 8 M Y _ 4 5 H m W _ 3 _ h e 9 A b _ _ 
+_ 4 _ k A _ 9 m S e D I f Y l _ Q U _ _ _ _ _ c g W J _ H O X _ _ _ P K C _ B 2 _ Z 7 1 L d V j _ 
+Q 3 _ _ _ j _ J F h W b A K _ E 9 S _ D _ O 2 B 1 _ 7 C 5 c 6 V L g _ _ N U I d 8 Y M 4 _ _ R _ _ 
+N _ _ U _ _ _ 9 _ _ _ M X _ B _ 4 A k 2 _ _ _ K h e _ _ C G Q Z _ _ l D _ f _ i j _ m 5 3 a c I S 
+1 M I e 2 V d U P _ 3 j _ 5 _ X 8 _ _ c i k _ f H m _ Y _ B N K E h F l J _ R b _ A Q _ @ C O _ D 
+f _ _ K _ Y L _ _ B 8 7 Q _ 1 d M _ _ H h _ _ _ 5 _ U 3 _ S @ _ _ D _ 9 a T _ k _ _ g J F l G E _ 
+m f 5 S j C _ R d Y G U T A F P E K l 7 _ _ _ _ _ _ V X _ L 3 6 k e W _ c N @ 8 9 _ Z D _ i 2 _ B 
+_ 1 X _ i _ Z _ _ I P 8 _ _ 5 Q U _ _ _ m 4 E O _ _ C T K _ _ 7 G _ _ k D L M _ B 2 _ g _ f _ A d 
+_ b g T R 7 _ Q _ _ f _ V 3 _ G X B H 9 _ _ _ _ @ j S m U _ D Y _ 2 A _ O 6 _ 1 C W _ E 4 L M l J 
+G _ H _ _ _ _ X m W F _ _ M _ _ _ _ _ a _ _ 6 1 i _ 9 2 E h S C d c 8 7 I _ Q _ J f _ T 5 V e _ _ 
+_ 2 4 c 6 J _ _ _ i L l _ O T D _ _ 3 8 j _ _ U e _ F W M P H _ @ _ B m _ E _ _ Z X G _ h N K _ _ 
+e E Q a P _ _ 6 4 1 _ Z _ C I _ c 2 _ _ V _ _ _ _ B M d T j 9 f i _ X F U A G _ 5 _ _ _ k b 8 H O 
+9 _ V _ d 3 _ _ 7 _ _ 5 k E _ _ _ _ _ _ _ Z _ A 8 _ D K a _ _ N O l _ R g P i _ T _ W S m U _ C X 
+_ d 6 C V 2 j H _ f _ A _ P _ l _ i _ _ a b L S Y 4 h O _ _ _ 9 _ k 5 _ E X _ F D M _ I U _ N G 8 
+B Y _ M L _ @ b _ C J D I c _ _ _ N _ d _ _ _ k _ _ m j _ _ F _ _ _ _ P R 7 _ _ G e _ a _ _ _ Q i 
+_ I m E _ _ X _ W 2 _ _ B _ _ 8 7 _ _ _ D _ 3 _ J _ l 1 Z _ K 4 T R H 6 _ _ b Q O _ j f _ g _ F _ 
+_ _ _ b l _ P _ _ T M 1 h _ H j e m X g U 6 5 2 a 9 _ B i _ _ _ I _ 3 _ k d J f c C _ K S _ Y Z @ 
+_ k R _ 1 _ _ 4 _ X _ @ _ e 9 6 Z f _ O T _ D _ _ _ N A b 7 h l B j _ _ _ i _ _ a L _ W _ E 3 J 5 
+_ 7 i N _ f _ V 3 j l Y R 8 _ _ L I _ _ F _ d W _ Q _ _ D C E g a J M _ _ _ h _ _ m _ _ _ c _ 6 2 
+_ _ 9 J _ A T _ 6 _ _ i _ _ _ _ _ _ M R E F e 8 I c f 7 _ 2 d _ Q U _ _ l S Z W @ 3 _ B C h 4 m k 
+A F P h 9 _ J T k V I c _ _ G @ j d L Q S C R 7 O M 8 _ X b 2 B 5 K 6 3 _ _ _ D _ H U _ g _ m _ 4 
+Y _ d V G _ a L Q F @ W l _ _ h _ e _ 1 I J N D S g i _ f U j 3 4 _ C _ _ _ c R A 7 T _ H k X _ P 
+_ _ j _ _ m _ e K _ E _ Y _ _ _ _ _ _ _ _ _ G d k X _ _ _ _ Z _ c _ 7 L f C U P S _ J 2 W 3 _ 5 9 
+L _ e _ M _ S D _ N m a 5 _ 2 W _ 3 _ Y 7 _ 4 b B @ P H 8 _ J T A I E G X O k _ _ _ C c f 1 j R l 
+D _ 3 _ O _ g _ R _ H 9 8 _ J C _ l 4 P B U _ E _ _ 2 L F _ _ e _ _ k Z h I _ m 6 T A N Q _ _ b G 
+_ B _ W _ _ _ _ j 7 A _ 6 f _ _ k g U _ Z h F _ 9 _ _ _ Q m M G R Y _ _ b _ E _ 1 @ L _ _ _ _ _ e 
+7 X k 4 U b Q _ _ _ O _ G i _ _ _ D _ A N e m T j _ c _ W d _ h l P 1 V M 9 8 g _ a F _ Z 6 _ K _ 
+C _ 7 Z f P _ a X k S h i V D _ B _ Q _ @ H _ _ _ _ _ _ _ M Y _ _ 6 _ N _ 3 e U b E _ _ 2 9 J T _ 
+i D J j 8 9 U _ _ G 5 _ P _ O _ _ R _ _ 4 l T 3 N d k h m _ W H X f 2 g B F _ I _ 6 _ _ _ _ S Y _ 
+V O _ _ _ g G F _ _ j T b _ W 2 N Z I C d i K P _ f e 5 1 _ _ a U _ _ J @ _ S A _ _ _ m 8 M _ _ _ 
+6 a _ _ T _ e W _ A N H E J m _ G _ 1 U c 2 Z L M _ _ b _ _ l _ g 4 h Y d k _ C P 8 @ _ R 5 i 7 _ 
+R S c _ _ X E 1 8 L _ 2 _ _ _ _ _ _ J F _ Y _ G 6 U g _ B N P 5 C V i a _ l _ 7 h O _ b d W Z 3 _ 
+d A F _ N K 1 7 I _ C _ 3 _ e V 6 _ f M P 8 _ J X _ W c L _ b k j S @ 4 m _ _ _ _ _ O G E _ H _ _ 
+_ L b _ k @ _ Z _ O 9 6 d _ 8 i _ H j 3 g B 7 C 4 E _ S R Q _ _ e F G 1 K D _ _ W V X _ _ P l c a 
+
+The grid hasn't been solved !
+The initial grid isn't consistent!
+
+# Statistics for the current run
+# Initial fill ratio: 64%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-64x64-01.sku'...
+
+# Initial grid:
+F _ _ _ a A r _ z & y G Q _ _ _ _ 6 _ _ _ e K _ _ 4 _ 1 s T _ _ _ B E R _ p j c N _ _ J q Z _ d _ _ _ S _ f 2 _ _ _ 5 o _ _ _ _ 
+V f _ m _ _ D i _ u _ T _ _ _ _ q j v I U _ O 8 E _ _ _ c _ _ _ F _ _ H _ _ K Q z _ _ y s _ _ P l 9 p 3 @ _ _ 5 _ _ 6 _ _ _ J _ 
+_ _ U 1 _ _ Q Y _ E c d _ t D _ f C s _ & h L k w e _ _ _ 3 _ _ i m q _ _ J _ M _ _ _ S _ _ n _ _ 8 _ 6 _ H _ _ Z _ 4 _ F _ y r 
+E _ O _ v n j _ _ a _ p _ H 1 _ _ A 7 9 P z l _ _ F _ o 2 U _ r 3 _ _ Y _ g _ C M _ _ _ I _ _ _ _ _ N G _ * e t _ _ x 8 R _ i X 
+_ _ _ x S H J _ _ R 9 * C A N _ i _ d n a Q _ _ _ M _ I g X _ G _ _ _ _ 4 _ _ y _ _ _ h U _ _ @ E w j z T _ _ _ v q f _ _ b e Y 
+2 _ L 9 h w y @ _ U B _ _ P Z _ _ _ _ _ * _ m _ _ _ _ a _ 5 6 8 l x b 7 _ X _ S 3 F i j Q _ _ _ c _ _ _ _ _ I _ T _ N _ M _ V _ 
+_ b z I _ G P _ _ _ _ e _ _ S _ J _ Z _ _ 3 r o i y _ _ _ x O f v _ _ V t 2 _ a 6 m _ w H _ _ 7 _ _ _ _ C _ & _ d j _ k _ _ c _ 
+_ _ _ _ _ 3 _ _ 8 I _ _ _ 6 W Y _ _ _ _ c _ u _ _ _ J R _ * _ 7 n _ _ _ _ _ 5 _ 1 K v & B x a D _ i _ A F _ r M Q _ P g w E C U 
+_ _ v _ _ _ z _ A _ @ u T C _ w _ X x P o _ W _ a 9 _ _ _ _ _ _ U R * k L B t g _ _ 5 _ b _ _ Y h _ 1 E S _ _ _ y _ d _ _ M _ _ 
+J _ E V 2 _ _ s i _ j _ _ _ _ 1 l g z Z M _ _ _ F H x _ _ e B w _ _ y _ T f _ @ K _ p X _ _ _ c 7 _ m _ n u N b C R _ _ _ _ _ _ 
+G _ _ U H r 5 a _ _ S _ e _ _ h c s _ J F j w _ _ i V Y 4 _ z K O _ _ _ _ _ _ _ _ x m k _ _ _ T _ _ _ o W X 9 B _ _ v q I p n 2 
+M x i _ _ R q _ _ _ _ E _ f _ o _ _ B t r _ _ H c & Z _ h _ _ _ 4 _ 7 p b _ _ _ L l _ C O y _ n _ 5 K Y P T _ _ W u X s _ G _ j 
+_ _ u k _ _ _ A _ _ _ _ _ _ R X _ Q _ _ @ b _ q C g m _ M _ _ l _ _ o i _ V _ K e 7 U r _ _ 3 W _ 4 v x _ d H w Y P _ _ _ O _ B 
+_ 9 o O _ C _ B a x z H Z y _ M _ p _ U f _ _ i _ j _ _ 1 N _ R 8 3 S _ _ n _ m w _ _ * V d 4 _ A L @ g 6 _ _ _ _ F K c l 5 _ _ 
+_ W l _ _ _ _ _ d _ q _ b _ _ _ n D _ T C S _ _ _ P L _ o _ _ _ z 6 J c r _ h 2 9 _ f _ A _ 1 s y M * _ _ _ _ j U _ 7 4 k & _ x 
+T _ Z _ _ h X 3 _ _ L _ 4 _ v Q V _ O N G k _ _ 2 n t _ _ b _ _ & P _ _ Y H _ F _ _ j _ _ _ _ _ I f _ _ c q J _ _ _ 9 * _ _ @ _ 
+f r _ S 9 _ & _ 6 _ l _ L 2 _ B 3 4 _ Q W y c _ _ _ @ * K E _ _ N 7 _ _ P Z X _ _ R o U _ _ Y b t _ _ _ _ M w n m i g _ D h _ _ 
+3 _ n _ _ _ m D W _ i j d Z _ _ 8 I _ Y _ p 2 6 _ _ A x z y M _ V & l _ C _ S _ _ _ _ s _ c 5 _ _ _ X _ q B _ 7 a H b G r w _ 4 
+k _ _ u _ x 4 I _ _ _ P s G h N _ r * R _ _ _ _ _ _ _ q _ W t _ _ v _ F j e _ _ _ A T 6 _ _ _ J f _ g C m _ b i _ _ E Q _ _ o _ 
+H _ _ Q _ W Y o S _ k t _ w z c _ _ _ g 1 X _ s 6 _ v _ _ P _ D h 8 d _ _ _ _ * _ i C x p a j m @ A _ _ 3 _ _ R L _ J M f _ _ y 
+A g 8 N _ B _ y b p 3 _ _ u a D _ T n _ _ 7 C U _ _ _ r d _ G 5 _ Y _ _ _ O _ _ _ v S 4 w q Q 2 1 _ P _ _ K * _ I _ Z _ _ _ W F 
+5 X K _ c V _ _ y 8 H _ m _ _ U w E L z q _ _ _ _ b l j N s _ 4 _ A k _ _ t G _ _ u * n _ _ Z _ T Q _ d Y W _ S _ _ 3 _ @ _ v _ 
+p * M _ _ _ _ _ r f g _ _ _ _ _ _ O t _ b a @ 9 V _ I _ T F Y X D J B n x 5 i _ W 1 l 8 _ h _ _ N c G _ _ _ _ _ A _ 2 j _ s P _ 
+R _ _ i l _ d G J _ * A _ 9 _ _ _ & h _ _ _ D _ _ Z _ m 7 _ S p @ s a _ _ o _ 6 _ B _ f X _ M g 8 r _ v I k _ e O _ n K V N _ 1 
+_ _ j X _ p C _ U b E 4 _ _ _ 2 W _ _ _ _ _ o _ D 5 T _ m J _ @ _ _ L v 7 _ z _ _ _ _ _ t 3 _ i * 1 _ e Q n c _ f _ & _ N _ 6 Z 
+W 4 _ G E N V _ _ _ _ _ _ _ t _ _ 3 H u _ d A D l I M & _ n _ k _ _ h C c * R _ _ _ _ _ _ L z x _ _ _ T 7 _ U v o _ r _ _ Y 5 _ 
+w A _ _ 8 _ t F _ _ m _ M _ C _ E _ y e l G B R _ _ U _ _ v _ _ Y k 6 & _ q _ _ b _ 2 _ _ p u V _ _ _ W _ r _ _ _ _ _ _ _ _ _ _ 
+_ i f 2 L _ _ q _ _ u 1 _ g c _ t _ _ _ _ _ _ C y X * E _ _ _ _ _ _ _ O W _ _ 3 h Y _ _ v 8 _ 4 _ _ _ K & _ o _ _ _ a _ _ _ D _ 
+U _ P y 6 Q Z _ _ d _ I 3 _ _ T & _ _ 2 _ _ _ p H _ _ _ _ _ _ _ _ 9 V J u _ N X * _ W _ _ R m _ _ _ _ h _ _ G _ b w _ v j x E O 
+_ O m c b _ g J _ X Q x _ _ 8 _ 6 Z N _ j 9 F a _ _ _ 7 _ q C _ 2 E I r f _ l o A _ D M _ s _ k _ _ _ L t _ S _ h _ _ _ * B _ d 
+_ _ _ * _ _ 1 _ _ j _ v _ L K & S 8 b _ _ g _ _ R A _ _ _ Z _ h _ _ Q _ _ _ D _ X n _ P 9 G _ O 2 _ _ m z _ x _ _ e T _ 4 _ _ p 
+_ d _ s & _ _ _ e _ _ o _ l P _ @ _ _ _ k x T 4 z _ _ b _ _ r a _ _ i _ G _ _ _ _ _ _ Q 6 w _ N 9 u _ D H _ E O _ _ t X _ _ m _ 
+O P X Z p T H _ @ 7 M Y D _ _ n G K r _ _ _ _ _ s _ _ _ 3 _ _ * _ b 4 t y _ _ R J w _ q _ N d v z _ x _ E _ 5 & _ _ Q m _ a S 9 
+h k A Y _ f _ _ & P 8 s K _ m E d _ _ _ _ W Q t @ 1 i D w _ 4 F _ _ _ _ _ r _ _ p o O _ _ u c * b g n q G _ _ _ _ _ _ R _ H _ 5 
+_ _ _ _ z _ n * _ _ v 3 _ _ _ _ u _ _ _ e w 1 A o _ 9 _ l _ T b S _ _ _ a _ _ _ P s h D K F _ _ R C _ _ X _ p _ _ _ _ x _ _ _ _ 
+_ _ _ 5 _ b _ _ _ _ w _ _ _ q A _ m o @ H _ S X _ p c P t 2 Z E Q _ _ B _ U C W 4 _ _ Y k _ f _ F s _ l r _ _ D _ & M I u y _ g 
+l c _ _ F S G _ u y _ 9 r _ p 5 M n 2 C V L k J _ _ _ _ X _ _ x _ h _ _ H P _ _ _ Q 7 _ m W & A o Y _ _ v _ _ 4 t Z _ T q d _ w 
+d 6 _ J _ _ _ _ _ _ _ O _ _ _ t z _ _ _ _ _ _ _ & _ _ _ _ A h _ g T s l q v c f Z H 1 _ R b B _ K _ 9 y 2 _ _ _ e _ o Y _ * p k 
+C _ _ _ s m _ _ 4 h G _ j R B W y _ _ _ I q 3 _ v N 7 _ f O g n _ _ X K i _ _ e t _ _ _ _ T _ E _ _ _ _ A _ _ _ z _ _ r _ @ F _ 
+D U _ _ _ q 9 _ _ _ o c _ 1 _ _ T F _ _ _ O h _ _ G W S _ m _ _ x I M * n E 6 u 5 L @ _ _ z _ _ e _ _ _ k i _ _ K 8 _ J _ _ _ l 
+_ _ _ A m _ 8 K s k _ _ & I _ _ _ y _ _ z _ n P _ _ _ i Z _ _ _ j _ _ T 5 x e _ S E _ B f V _ _ _ N R b o w W _ _ _ _ _ O J M D 
+N _ & b _ y i _ D _ R _ _ 7 _ _ * c _ d _ _ Z u j _ X _ Q _ _ _ p a _ @ V w F 8 _ 6 _ _ _ P H _ v _ s _ _ E _ _ B U I e A g T m 
+_ _ g 4 _ E _ _ Z c p _ _ _ V _ H x _ A _ _ _ B _ S _ _ _ _ _ N _ _ _ D 6 Y _ 7 _ _ _ 2 * K R e M X u a 5 @ k y _ _ 1 & _ 9 _ _ 
+_ L 1 a _ D l M * _ A r i o 6 _ _ _ _ k v _ _ j p u z s I _ 8 _ _ S _ _ K _ _ d q O _ _ _ @ y & x _ _ P _ h C _ 4 3 _ _ _ _ _ W 
+_ _ Y n _ 9 R r _ B _ _ f U j _ _ b _ _ L _ _ 5 1 d D _ V C q _ _ _ _ _ _ 3 Q H _ h _ _ _ _ W _ _ * S Z J 2 g _ w 7 @ a X z t c 
+q _ * _ _ _ _ p _ 9 N n _ 3 e @ X Y K m g r _ O _ x _ c U R _ _ _ o _ 4 Z l b _ _ _ 8 _ D Q v _ _ T B _ _ I _ _ _ _ _ 2 H _ _ C 
+s Z w e _ U v u _ 1 W b X Y _ _ h a _ _ 2 8 V S _ _ B f * K J _ I _ g _ z m _ _ _ _ 9 l G r A _ _ t d 4 L Q _ _ 6 _ _ _ _ _ _ i 
+@ z B h _ 7 _ _ _ _ _ F _ x _ H 4 e i p s o _ 3 g 2 5 L P M k _ _ O _ 9 _ _ f r m _ d _ _ I J u _ n l _ _ & _ c V _ _ _ _ _ _ S 
+_ 1 D H Z i B j Q 3 _ _ @ m _ L p _ Y _ h J _ _ b O o U _ _ I _ 5 * _ N _ _ _ _ 2 _ z _ r _ _ w _ _ _ u _ t l _ 7 _ c _ x 6 _ 8 
+L 3 _ w _ * O _ _ 5 _ W U & _ R 2 _ g X 9 _ _ _ h m 1 _ _ Y A B K d _ u _ 7 _ n _ k c _ Z _ _ _ i p C _ s z V E P 4 _ H J _ a @ 
+_ t Q q R _ s 2 _ _ _ C _ X b f _ z V y _ _ _ _ n * G _ i _ _ _ r w O _ _ _ _ x 7 8 _ _ o B _ L m K J @ M j h P 1 W _ _ & _ _ 3 
+& M V _ _ P _ _ _ t _ 8 u i g _ R _ C _ 3 N * _ e T _ k W j a _ A Z _ _ _ s _ _ l _ y O 1 m @ p n _ F r _ _ _ X _ 5 _ _ v S _ G 
+_ _ y _ d v _ T _ r _ _ B j x K L P E 5 w M 7 1 _ 3 R _ _ _ _ _ 9 t _ m _ _ _ _ _ q _ _ W 4 _ G _ _ k _ g A Z f p O u n 2 C Y o 
+_ G S C r z _ U 2 v O M p _ _ _ _ _ _ c _ T _ _ N 8 y _ _ _ _ _ B 4 _ _ l & V j _ b n _ e i t Q _ _ H R _ _ _ L _ A _ _ _ _ q _ 
+n _ 9 _ _ F _ x V Y _ _ E * w y v o I 4 _ _ _ Z _ _ u _ _ 6 f _ J _ _ X 2 c P b g S 3 _ 5 j _ _ Q _ D _ _ G _ 1 r N B _ d _ _ _ 
+o E N l _ _ _ f _ Z _ _ _ F _ _ _ _ G _ O _ _ W _ s & w _ t d _ y M @ h g _ q z R V _ u P H _ C S _ Y _ B b 3 * _ K _ _ L U _ _ 
+_ s a _ _ _ f 9 c K _ _ _ D @ _ _ _ & _ m _ d _ L _ _ n _ _ _ _ _ _ _ _ F _ _ U Q 2 x _ z S r j C _ A _ l _ i g _ _ k _ _ o _ v 
+I u 3 _ @ O 7 b _ _ Z _ _ _ _ _ g f F q J B t Q _ _ P 6 _ _ X _ _ _ j z p R s _ o _ _ 9 _ l _ _ _ _ _ _ a c 4 _ 8 V _ 5 Y r _ H 
+_ _ _ L Q _ _ _ h T _ w W N F s _ _ 6 j 7 H 9 M K t g 5 R _ e Y Z r n _ J _ @ _ d _ P a _ _ _ _ _ & V _ _ _ _ _ * p _ y c X _ _ 
+_ 2 _ r T _ _ V _ _ _ m _ _ _ _ _ W P _ Y l p z _ _ S _ G _ i 9 6 _ t _ E M 8 _ F _ 4 K _ C _ f w R O _ _ _ q J x _ _ _ Q L A 7 
+_ _ _ d _ _ W C Y _ _ _ o _ H 9 _ _ _ K 8 5 X x T a O 2 y _ _ _ _ q G _ m _ _ I & _ A _ _ 1 D _ _ P 6 t u _ Q _ _ S _ _ b _ _ _ 
+1 J _ g _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ * r o _ M F _ u _ _ y H _ D L _ l i @ _ _ _ _ V _ Z G 7 2 p _ _ _ _ _ _ _ 3 R _ n 
+z 8 _ _ i o h m g C n l 6 M _ 4 _ k _ V _ U R I * _ _ _ p B _ W _ _ _ P w _ T _ O _ u v _ _ G _ d _ b _ f 3 F N J a _ _ K _ _ _ 
+c v _ K _ _ E _ _ _ _ _ _ _ Q _ _ _ u _ _ _ _ e I z f _ _ _ 1 _ _ _ W _ S _ O _ y _ Y 3 _ k b _ _ B _ H _ s _ _ _ 6 G 9 U m j N 
+
+# Solution:
+F C 7 W a A r k z & y G Q v 3 i x 6 X M D e K w u 4 Y 1 s T @ m P B E R * p j c N t V J q Z 8 d g O U S b f 2 h H l 5 o n I 9 L 
+V f d m * M D i w u x T g 4 L b q j v I U 2 O 8 E W k B c h & Z F N r H o G K Q z X R y s e C P l 9 p 3 @ Y n 5 S t 6 7 a 1 J A 
+B R U 1 5 g Q Y X E c d 7 t D j f C s W & h L k w e N V b 3 p z i m q A @ J I M T 9 G S u * n l P 8 o 6 x H v a Z 2 4 O F K y r 
+E & O T v n j 6 m a K p J H 1 V B A 7 9 P z l y S F Q o 2 U D r 3 W w Y h g k C M 4 b c I f L 5 q Z N G d * e t @ s x 8 R u i X 
+Z l c x S H J t o R 9 * C A N F i 1 d n a Q 5 V P M K I g X L G s D & 8 4 6 u y k W r h U 2 O @ E w j z T 7 B m v q f 3 p b e Y 
+2 K L 9 h w y @ n U B f O P Z r Y H 4 E * t m g q v d a C 5 6 8 l x b 7 e X 1 S 3 F i j Q A p o c k W s R J I u T G N z M D V & 
+8 b z I u G P N M q s e 5 @ S l J R Z F p 3 r o i y n 9 A x O f v L T V t 2 U a 6 m E w H Y g 7 X D 4 Q C 1 & K d j * k B W c h 
+4 e s p q 3 o X 8 I 2 k h 6 W Y b N S G c @ u T t l J R H * j 7 n f Z d O z 5 9 1 K v & B x a D V i L A F y r M Q m P g w E C U 
+e p v j 4 & z c A m @ u T C n w I X x P o K W 2 a 9 3 O 6 Q 7 q U R * k L B t g 8 D 5 H b J N Y h F 1 E S l s G y f d i Z M r V 
+J Y E V 2 d * s i D j 5 P r I 1 l g z Z M A 4 & F H x 8 k e B w q Q y W T f 9 @ K G p X h v o c 7 U m O n u N b C R S 6 t 3 L a 
+G y t U H r 5 a 7 6 S g e 8 * h c s R J F j w L d i V Y 4 f z K O l C M A D Z 1 u x m k @ E P T & 3 Q o W X 9 B N b v q I p n 2 
+M x i D g R q Q 3 V J E 2 f 9 o 1 v B t r * 6 H c & Z @ h S U A 4 e 7 p b a d N L l F C O y I n k 5 K Y P T 8 z W u X s m G w j 
+S n u k f L N A p s t & F c R X 5 Q 9 h @ b y q C g m J M D * l G j o i I V E K e 7 U r 2 6 3 W a 4 v x Z d H w Y P 8 1 T O z B 
+b 9 o O P C I B a x z H Z y k M 7 p e U f u Y i G j r T 1 N W R 8 3 S s X n v m w & Q * V d 4 q A L @ g 6 D t 2 E F K c l 5 h J 
+m W l F K 8 @ w d G q N b B Y O n D 3 T C S a E 5 P L X o p v I z 6 J c r u h 2 9 Z f t A g 1 s y M * i e V R j U Q 7 4 k & H x 
+T 7 Z 6 1 h X 3 K l L U 4 W v Q V d O N G k 8 m 2 n t y u b E s & P 5 x Y H w F B a j z S M i R I f r p c q J C D g 9 * o A @ e 
+f r J S 9 s & z 6 e l V L 2 5 B 3 4 A Q W y c v 8 C @ * K E H 1 N 7 u I P Z X q G R o U d O Y b t x a F j M w n m i g p D h k T 
+3 F n t O 1 m D W o i j d Z E v 8 I k Y u p 2 6 f R A x z y M g V & l U C Q S T @ P e s N c 5 K J h X 9 q B L 7 a H b G r w * 4 
+k w @ u U x 4 I 1 n X P s G h N Z r * R B V M d 9 c 2 q a W t O H v K F j e y L D A T 6 3 & 7 J f l g C m p b i 5 Y E Q S 8 o z 
+H T b Q 7 W Y o S F k t I w z c K G l g 1 X N s 6 U v e & P n D h 8 d 2 9 4 r * V i C x p a j m @ A E 5 3 Z O R L B J M f q u y 
+A g 8 N j B L y b p 3 @ R u a D e T n o x 7 C U k J h r d i G 5 c Y z f M O m E H v S 4 w q Q 2 1 6 P & V K * s I X Z l 9 t W F 
+5 X K P c V a h y 8 H 7 m O M U w E L z q i J f B b l j N s o 4 R A k g 1 t G p r u * n F 9 Z I T Q 2 d Y W D S & x 3 C @ e v 6 
+p * M v e Z 6 E r f g Q q K & C m O t S b a @ 9 V L I 3 T F Y X D J B n x 5 i w W 1 l 8 y h k z N c G U 4 o u H A d 2 j 7 s P R 
+R q C i l 2 d G J 4 * A Y 9 T x j & h H 5 P D F Q Z w m 7 u S p @ s a b 3 o W 6 E B L f X t M g 8 r z v I k y e O c n K V N U 1 
+9 B j X M p C R U b E 4 G S s 2 W V q O K Y o h D 5 T g m J x @ a F L v 7 8 z P I r H d t 3 l i * 1 w e Q n c A f y & u N k 6 Z 
+W 4 e G E N V S B J 6 y w p t q P 3 H u X d A D l I M & O n 2 k m @ h C c * R Z f j K 1 a L z x s b i T 7 g U v o 9 r F 8 Y 5 Q 
+w A T z 8 K t F O i m D M h C * E L y e l G B R 3 f U d 9 v Q o Y k 6 & s q x 4 b J 2 @ c p u V j a 5 W N r X Z n I H S g 7 1 P 
+r i f 2 L l x q N @ u 1 9 g c k t 5 m w Q s U C y X * E j G P S T H p O W b n 3 h Y Z 7 v 8 e 4 B d I K & F o 6 R J a A z V D M 
+U D P y 6 Q Z 5 F d r I 3 a 7 T & M f 2 n c z p H B s t L 1 K i e 9 V J u A N X * C W o g R m S Y @ q h 8 4 G k b w l v j x E O 
+v O m c b Y g J R X Q x H n 8 z 6 Z N 1 j 9 F a W w 4 7 e q C u 2 E I r f K l o A 5 D M & s T k p y 3 L t P S V h @ i U * B G d 
+u @ k * o a 1 H f j 5 v V L K & S 8 b r i g I 7 R A 6 F Y Z N h d U Q w B y D t X n q P 9 G E O 2 J M m z C x l 3 e T W 4 c s p 
+7 d h s & I 3 n e W Y o A l P Z @ * J v k x T 4 z V p b 8 c r a M 1 i S G j g 5 U y B Q 6 w F N 9 u f D H R E O q L t X C 2 m K 
+O P X Z p T H 1 @ 7 M Y D e l n G K r i 6 f g c s k 8 u 3 L V * o b 4 t y F A R J w I q C N d v z j x B E U 5 & 2 h Q m W a S 9 
+h k A Y y f M v & P 8 s K J m E d l j B Z W Q t @ 1 i D w a 4 F 7 z 9 L N r 2 V p o O e x u c * b g n q G S T I X C U R 6 H 3 5 
+i Q r B z j n * L g v 3 k d U 6 u 7 8 & e w 1 A o q 9 H l I T b S 5 m Z a @ Y J P s h D K F 2 y R C t M X O p W c E V x G 4 N f 
+K V R 5 N b e 7 x z w i * T q A a m o @ H v S X J p c P t 2 Z E Q G 8 B d U C W 4 3 6 Y k n f 9 F s h l r L 1 D j & M I u y O g 
+l c I E F S G g u y f 9 r b p 5 M n 2 C V L k J U 6 e K X z R x 1 h D j H P 3 O a Q 7 i m W & A o Y 8 * v N @ 4 t Z s T q d B w 
+d 6 W J w @ u L I Q F O S V X t z U D x E 4 P N & r j C 5 A h M g T s l q v c f Z H 1 G R b B 8 K 7 9 y 2 a m 3 e n o Y i * p k 
+C a x o s m 2 8 4 h G Z j R B W y 9 5 * I q 3 Y v N 7 Q f O g n w p X K i k & e t U M V l T S E u H c J A 6 P d z D L r 1 @ F b 
+D U 4 3 t q 9 & C H o c N 1 2 a T F p s R O h b Y G W S B m y d x I M * n E 6 u 5 L @ g j z X r e V Z w k i f Q K 8 A J P v 7 l 
+6 H 2 A m c 8 K s k C q & I d u 9 y Q 7 z 1 n P 4 Y F i Z @ l t j X v T 5 x e h S E g B f V U a 3 N R b o w W r G * p L O J M D 
+N o & b x y i O D M R L l 7 J S * c W d t C Z u j h X G Q r 9 3 p a 2 @ V w F 8 n 6 k 5 4 P H 1 v z s f K E Y q B U I e A g T m 
+t j g 4 3 E F d Z c p h v Q V G H x U A T I f B O S b W n o m N L i P D 6 Y J 7 C z w 2 * K R e M X u a 5 @ k y l r 1 & s 9 8 q 
+Q L 1 a V D l M * 2 A r i o 6 g F J w k v R E j p u z s I H 8 T t S c G K N B d q O X Z 7 @ y & x m e P U h C 9 4 3 Y f 5 n b W 
+P I Y n k 9 R r T B 4 K f U j m N b M l L 6 G 5 1 d D v V C q e E u A y & 3 Q H x h s p i o W F O * S Z J 2 g 8 w 7 @ a X z t c 
+q 5 * f G J S p E 9 N n z 3 e @ X Y K m g r & O A x a c U R w y W o 1 4 Z l b s j M 8 L D Q v t 6 T B V i I 7 F u k h 2 H P d C 
+s Z w e C U v u 5 1 W b X Y O P h a @ D 2 8 V S 7 E B f * K J & I n g q z m M k c T 9 l G r A 3 H t d 4 L Q j p 6 o R N y F x i 
+@ z B h X 7 T W t w a F 8 x y H 4 e i p s o q 3 g 2 5 L P M k 6 * O U 9 R C f r m N d b Y I J u G n l 1 D & A c V v j Z E Q K S 
+g 1 D H Z i B j Q 3 P S @ m A L p q Y f h J s n b O o U E 9 I C 5 * e N k W a G 2 d z F r X K w 4 v & u y t l T 7 M c V x 6 R 8 
+L 3 6 w I * O e q 5 T W U & G R 2 t g X 9 F b r h m 1 l S Y A B K d f u Q 7 o n v k c N Z D x M i p C 8 s z V E P 4 y H J j a @ 
+Y t Q q R u s 2 k N d C c X b f U z V y S D e l n * G 4 i g 5 H r w O 6 v I p x 7 8 a A o B 9 L m K J @ M j h P 1 W F E & T Z 3 
+& M V 7 J P c 4 H t h 8 u i g I R B C 6 3 N * K e T q k W j a 2 A Z Y E U s L D l f y O 1 m @ p n o F r w x d X 9 5 z b v S Q G 
+a h y @ d v b T l r D 6 B j x K L P E 5 w M 7 1 X 3 R z J V c Q 9 t F m 8 S H i s q & I W 4 * G U e k N g A Z f p O u n 2 C Y o 
+X G S C r z K U 2 v O M p s o J k u a c d T x @ N 8 y Z D 7 F P B 4 3 1 l & V j Y b n E e i t Q W I H R 9 5 6 L g A m w h f q * 
+n m 9 8 W F k x V Y e z E * w y v o I 4 A & H Z M K u p @ 6 f L J C R X 2 c P b g S 3 T 5 j h U Q q D 7 O G a 1 r N B t d i l s 
+o E N l A 5 p f 9 Z 1 a n F 4 7 Q i G 8 O m j W x s & w r t d v y M @ h g T q z R V J u P H 6 C S 2 Y c B b 3 * k K e D L U X I 
+y s a R Y 6 f 9 c K I B t D @ p O h & 3 m Z d G L 7 H n q w b J u V N 5 F 1 * U Q 2 x W z S r j C E A X l 8 i g M T k P e o 4 v 
+I u 3 M @ O 7 b G S Z 2 1 E i e g f F q J B t Q m D P 6 v d X U k K j z p R s A o * N 9 T l w h L W y n a c 4 x 8 V C 5 Y r & H 
+x S G L Q 4 A l h T b w W N F s C 2 6 j 7 H 9 M K t g 5 R 8 e Y Z r n 3 J i @ v d I P a E U q B D & V k 1 m z o * p O y c X f u 
+j 2 H r T X U V v * & m y 5 u 3 o W P b Y l p z Z @ S N G k i 9 6 g t a E M 8 B F c 4 K n C s f w R O I h e q J x 1 D d Q L A 7 
+* N F d n k W C Y L V J o z H 9 s @ c K 8 5 X x T a O 2 y 4 3 j f q G e m h 7 I & p A R M 1 D Z r P 6 t u v Q U i S w B b l g E 
+1 J q g B e w P j O U X x k f d A S T a N E v * r o C M F & u c b y H Q D L 4 l i @ t m 8 5 V 6 Z G 7 2 p 9 K Y s z W h 3 R I n 
+z 8 5 & i o h m g C n l 6 M r 4 D k 1 V y U R I * Q E A p B s W X c x P w 9 T Y O e u v L 7 G H d S b j f 3 F N J a q @ K Z 2 t 
+c v p K D t E Z P A 7 R a q Q 8 r w u L 4 n i e I z f h x l 1 V C 2 W o S d O & y g Y 3 J k b X 5 B T H * s M @ F 6 G 9 U m j N 
+
+# Statistics for the current run
+# Initial fill ratio: 54%
+# Number of choices: 0
+# Number of backtracks: 0
+
+# Solving '../test/grid-solver/grid-64x64-02.sku'...
+
+# Initial grid:
+@ _ _ S _ _ B Y q t _ k 1 9 l h _ _ H _ _ c g f _ F y _ _ _ w _ _ u _ E _ 6 a D j L & _ _ s r e _ o K 3 C m _ _ T V p _ 4 _ _ * 
+* _ _ _ _ w v u O _ M L _ _ I H @ t s r _ p _ n i d _ b a Z _ _ m l k _ _ g _ e G F E D _ _ _ 4 X W U T _ R _ _ _ 8 _ _ _ 3 2 1 
+_ s _ _ p o _ _ T _ G _ E D C _ L _ _ I 9 8 _ 6 _ & @ x _ u l k M H _ 5 4 3 _ _ _ _ w _ h _ _ d j e c _ a Z Y _ X _ U S R P O _ 
+_ k j i h g f e o n m c b _ _ _ _ W V _ T _ Q _ _ D B A 5 4 3 _ R _ L _ _ G F _ M _ H 9 8 _ 6 2 _ x s r q p d _ _ @ _ _ w v u t 
+c a _ _ W V T R _ i g f e d _ S _ F _ _ C B 5 _ m h _ _ N M L 8 & z y _ _ r _ _ _ @ _ v u _ q p I A _ 7 6 4 _ 1 l _ b Y _ _ _ G 
+_ P _ _ M L _ J _ _ p _ W V A 4 _ _ y w u _ 2 1 _ _ T S H _ 9 _ * @ x v d Z _ 7 l c b a Y R I 3 k i _ _ _ _ _ _ _ o n _ _ g f _ 
+I H _ _ E _ C _ R P _ 7 6 _ 3 2 _ _ d _ a _ Y 4 _ p o j g f e J t _ _ V U T _ _ _ m _ Q O _ K _ & @ _ _ w v _ l s _ _ h _ M L B 
+9 _ 6 5 4 3 2 _ * _ @ z y x w u _ m l _ j i _ e s r n _ K _ G 7 q _ c b _ _ O B o _ _ V _ T S P _ g f N M L J H _ a Z F E _ _ _ 
+& R * @ z y x w 7 6 P n l k d v N G O _ t u s r F J E D j i _ _ 5 4 C _ g c _ o _ _ I b _ Y _ _ 2 _ _ V _ _ _ m _ 1 9 _ _ a _ S 
+3 7 J 8 6 5 _ 9 & A R G Q Z Y _ 1 S X V _ _ w _ I H _ c b t @ s _ K O N _ q r _ 4 _ 2 _ _ y _ _ W D i _ x _ _ k C _ _ _ v p g f 
+L K _ T _ O t M B 9 C 8 p o X w _ _ _ a d k z b 4 _ 2 _ 6 S h _ _ _ Q P _ v s _ _ H D _ _ _ J _ l 5 n & j f g _ I _ _ _ _ q _ R 
+d c X g Z f b a K I F U O @ S _ _ j 5 h B q v _ Y o _ W y n _ p 8 3 2 1 D V _ w Q u M _ t & e _ _ _ _ R _ _ _ _ A 6 * z J s _ _ 
+k o _ m q n r C _ u _ _ _ _ _ _ K c x Y _ _ I M R Q e a l _ v g E S B G 7 X 6 _ O N _ j _ _ d _ F 3 _ p U 9 _ T L _ _ _ & Z _ 2 
+B _ 1 _ v p l j 5 4 _ 2 D q E _ y _ m H _ _ 6 _ C _ P M _ T K G h a _ _ _ e Z _ L 9 _ _ _ _ _ g d _ o @ s _ c _ _ u k t _ N n V 
+4 i 2 _ _ s P D _ _ H 1 x e a m _ _ p Q E o @ g 9 8 L _ O _ _ A _ b & k u W d I _ 7 _ R q w U c z J r * Y y v t j G _ _ _ l _ _ 
+_ I H G e F _ E M W c J _ g _ r D 4 3 _ A C 8 R _ k d f Z z _ u _ t n @ _ i 9 _ B _ 1 P _ v T _ _ _ _ q X S K _ b Y m x o _ _ w 
+z * k & G @ _ _ S a q p _ _ v D _ _ L u i r O o X W 5 n m K A _ _ 9 I f H h w _ Y d g _ B _ _ s _ V F _ c e _ _ J _ C _ Q 2 N j 
+N L _ A _ 7 6 _ _ _ _ & 5 _ _ K Q 3 _ _ y E H _ u * b l 9 c J _ _ 2 @ s 1 n _ S U _ j q _ _ x _ _ p O _ _ t i _ V w _ _ _ _ _ h 
+V 3 S I F T R t G e _ _ _ B n A U _ 4 5 & W P X Q _ j 8 1 k 2 O Z _ l i K _ J M N w _ y H 9 h u 7 _ _ _ _ r L E c p _ d g Y m a 
+_ _ e _ _ Q w _ _ V _ @ T _ _ _ c _ 2 S k _ d J P y _ I C _ _ _ _ W g 4 8 _ 7 3 R _ i p E 5 a Z o & Y z f X * b _ l K v 1 _ q r 
+_ 5 d E l _ m _ 2 k Y _ _ 7 _ c _ _ _ _ _ _ T K p _ a Z _ v V _ _ j * q G _ e _ b _ _ @ L J o _ Q _ I D A _ _ C 6 _ 8 B _ 4 & 3 
+Z 4 a _ _ K _ _ _ _ _ 9 d z _ I _ C _ 8 @ e _ 7 _ M _ 3 _ o _ L c Y t _ _ _ _ _ k Q * n V S m v U _ y 2 h 1 w s R X W _ u A _ _ 
+X 2 Y C c _ i _ 6 _ Q b M 3 8 1 t q N _ R _ x * 7 w U 4 _ _ _ _ r _ _ y _ a v V T O e _ K _ P A n _ _ 9 5 W G j Z _ _ k I _ z H 
+O 1 W B b H _ _ w _ u r _ _ j t a _ I v p A V 9 x _ & _ _ E z e _ C m d 5 _ _ F _ 8 _ l 4 2 M 7 _ Z T g K _ @ _ P _ y U _ n _ i 
+y @ & _ _ d F _ _ R 6 N _ i x V _ _ g t H _ X _ a K _ u r P T w D _ 5 B _ _ _ q m b O _ o Z _ _ 8 U 1 _ 4 G _ S p _ _ _ Y _ _ n 
+G _ _ Q 3 Y _ _ E B _ w & r o b M _ u _ 2 1 W _ S _ _ _ _ _ C _ _ n 4 F T _ h Z _ p l 6 _ _ _ J _ k N i m g j * f _ _ I _ _ _ x 
+_ g I Z _ 1 N T e p O _ _ _ f n F J Y d 7 _ _ P o _ k q _ j _ c S _ 8 A 6 R _ v D t @ _ & * s X 5 E _ Q _ _ 3 _ _ 4 _ K _ _ w _ 
+_ t f _ P _ k U C M 4 Z I _ _ _ 8 E q e 5 _ _ _ N G 3 _ & 6 s Q L m _ Y j 2 X _ A h S F y u i _ J n H K _ _ _ D g * B c l r v o 
+_ _ _ l _ _ _ V J 3 y s F G t _ 6 _ _ _ _ n b _ 2 L _ _ I R _ U H * 7 u i E P a 9 f _ C x _ g _ _ _ _ _ p @ q _ _ _ j _ N _ _ & 
+J _ L _ 9 6 4 n d _ 2 v h _ _ _ _ & U _ _ m S _ y 5 _ E i _ _ f x k p _ M C _ _ 8 _ _ B _ q Y I _ T X O o F _ c a t _ W _ @ _ b 
+2 W _ p _ _ A _ Q q k Y _ P 9 _ _ r R j _ * i I _ Z _ O z _ _ d g _ _ 3 o J _ @ 7 _ N _ v n V H _ a t C & s b f S T 6 5 8 _ y D 
+m M _ w _ _ _ _ z _ A S _ U _ 7 _ _ _ _ _ y f V h _ 4 J p _ * n 9 _ _ t b s _ _ 5 T L 1 _ k R E Y _ _ I u _ Z _ _ 3 O _ 2 H e q 
+x z p * O & _ _ l b w D i _ _ _ s P n _ r 2 _ a W V _ _ 8 _ U _ C 7 _ T _ _ _ _ y v q _ 1 _ 4 m e G _ d B _ _ _ _ S N L h _ 6 _ 
+_ y w _ X q @ G r S _ o B p O Q H _ _ 7 * 6 k _ d 1 F _ _ A b _ _ _ D _ _ 8 _ _ x l 5 _ J _ j R _ _ C _ n h _ _ 3 9 2 P f u _ _ 
+P f b _ _ m _ B _ 1 J _ G t 7 5 z U j 3 g _ _ 8 _ _ h e _ 9 x _ i r 6 _ _ w q 2 @ _ d W Q A _ Y _ l D S V _ H F _ Z _ O _ _ E X 
+K Y _ t L l o _ P g Z T a n e X q 5 w p _ _ _ _ r 2 u _ 7 y _ _ _ G _ h _ _ z _ i V F s D f _ _ _ v _ M W _ N & k Q I _ B _ _ c 
+H V Q r J i g 6 v U 9 A 3 _ _ _ Y l K C S N 1 W L O I w q D p j e y _ o f _ _ u & _ B M 7 _ c _ @ * _ Z _ P R X _ d _ T _ G b 5 
+E U M n A _ e 5 y _ d u _ _ c q V X @ _ f 9 _ m _ _ l C _ Q _ 3 W N P O _ 1 x _ _ 6 G k 2 L _ S s j _ o _ w I J H F R _ _ _ _ p 
+D T F _ 7 a d _ _ h _ C m _ R _ e u v _ _ t _ i M B S _ _ _ f _ Y A 9 U X p n Q _ Z _ g _ P H N K 2 3 c 1 _ _ q W J & _ _ 8 r _ 
+C S _ j 1 Z c 2 _ f N M V s W E o Q _ R _ D F _ _ P J m k _ 6 i a _ _ & _ d _ K t * 3 O X I u T _ _ 5 L 8 _ _ A U e w q _ 7 @ _ 
+w x @ _ & B _ S X d n P q K _ U u h _ z Z L _ s 8 _ _ i E _ M D _ _ _ J _ I 5 f _ 4 _ t N H 2 * _ C k v F _ o G _ _ T _ A O 9 Q 
+_ _ V Y U X _ O F D t I 9 N _ s _ _ o _ l g r C _ v K _ _ _ 4 a _ x z _ & S _ _ q _ Z c i 8 5 j _ b W m T M p _ w _ e f H 6 _ y 
+f p q R _ z W _ _ C _ Q _ v h M _ 2 A i 1 a * j H x Y 6 _ _ 5 P y w _ g _ N E c _ _ U _ m b 7 _ 3 _ d n _ B _ L @ _ r o F K G _ 
+r d _ b i * G N Z w W _ _ _ _ @ T V _ 6 _ 4 _ _ k s t o J _ c _ _ v j H p M C Y a P _ _ 3 F _ _ E h g u O _ S I _ q X _ L 1 _ _ 
+_ v c 1 o _ _ _ Y L i _ 7 6 r _ _ _ _ W _ H _ F & _ q T _ p S _ d s h _ n _ B X g E u J _ l w _ _ y _ 5 _ 8 _ Q * C V b a x _ Z 
+s _ _ K _ _ J Q _ 5 a B _ _ p x b _ _ N G @ t v _ _ 1 9 h W d Z _ _ e 8 _ F _ T f C _ X _ _ & _ r Y w _ l * 6 _ i 7 _ u 3 k _ _ 
+A F t a g C M 7 m 2 _ _ H 1 & 3 k _ _ n 8 K R q @ X w * _ N _ _ _ _ b 6 _ 9 _ O _ Y _ _ T Q G D x _ _ j e _ z _ E _ _ _ d c B U 
+e u m _ _ 8 _ l b E _ j J c _ _ w p 9 _ I 5 _ _ G f O _ n r y C _ _ Z 2 _ _ 3 L d _ o _ A 6 _ B q K a _ @ & _ U _ N t g S _ 4 z 
+M D _ _ y u Y _ _ o I e _ _ _ f r H _ _ _ T C G _ 6 _ _ _ q _ X _ h v _ _ _ @ _ _ _ a _ _ W _ l B F _ J _ 3 k _ _ n 4 _ Z U d 9 
+S _ n _ j x Z f a l _ 6 @ _ P d 5 v * O o Q _ B _ E z t 4 & _ 9 w _ _ e N u i _ p 2 C 7 k _ F _ h 1 q A _ I _ _ r _ 3 _ V X _ 8 
+b G T _ V _ 7 W i v & _ * h K Z 2 _ _ _ _ _ _ L _ u s p w e j y n _ r c F o _ _ _ I 4 H 6 3 _ _ C _ S _ _ l m z _ g _ @ _ B _ O 
+o _ l 2 H t z @ V X U 4 g F G y S _ i & 6 _ _ _ 5 I W 7 * Y _ b J _ _ a E m _ p _ B n A 9 _ 1 w _ P _ _ R _ s r K v _ C k L j T 
+F Q s 3 K r _ * _ _ S _ k C b R x w t @ Y _ y _ _ _ _ _ B _ n 2 _ _ X W A l L j v M _ f d _ D V _ H 4 E g o a _ e _ _ N P & p 6 
+a _ i 4 R A E d u _ _ H c w B N W _ f _ _ F e p Z _ v U 3 _ _ _ G _ V S 9 k K 8 P _ _ r g O * 5 D Q b X t j & @ y _ J _ m _ _ _ 
+p w v h k _ 1 _ n j D x 2 A s _ m _ _ 4 _ _ l E g N _ _ @ F 8 _ _ Q U C _ b H _ Z z J _ _ o L _ c O V _ y _ _ e u _ q * t _ _ _ 
+q _ U _ _ c & _ p m r _ Y W L J I 9 Z _ z _ _ A l _ R k d h _ M 4 _ 1 7 _ P _ _ u x _ T G i @ t 6 8 v w _ N n K o H f s b _ Q E 
+_ q _ x m _ V y D J K 5 _ R _ p _ k G _ w _ _ _ _ i N h _ _ 7 r v _ f _ @ & * s H 3 9 o c X _ _ g S j 4 I C _ _ _ 2 Y 8 T e F u 
+_ l _ d 2 j _ _ A Y L a v O _ o 4 7 F _ h _ 9 H w g 8 5 _ @ _ _ p J T _ x _ _ i 1 s R _ _ M _ q f c e _ _ K _ _ z _ _ 3 C V U _ 
+_ r B M _ R X i 3 c _ W _ b 4 e f a 8 _ _ s D t U Y _ _ Q _ q H o I _ _ w j u h V _ T d P _ l _ Z _ 2 _ J z F p O _ g _ _ _ A _ 
+_ Z A f _ e _ b 9 _ X h S _ * & i _ _ _ V z 3 _ _ j p _ _ a P o Q _ R _ q _ _ d _ D _ 8 @ 4 _ _ N 6 _ t 7 n E B G s l 1 r 5 _ L 
+1 _ 4 _ Q _ * L k _ s V Z j _ C R T _ y J X _ _ f c A & S O I v K 8 N l e _ g _ E _ 7 _ _ _ _ _ b 9 m _ 3 d _ _ _ _ _ a 6 w t @ 
+v J 3 o t k 8 K _ _ _ g _ l Q z E e _ q _ Y n _ B _ G L F _ D T 7 6 _ _ a H c P 2 A m w W j O C V _ * x i 5 _ _ 4 _ h & p _ X d 
+_ _ u _ s _ p _ U _ B _ r 2 F _ j o 6 1 m & _ c K _ _ d _ x _ _ 3 5 _ X O D _ A J g t _ z a _ f T w @ l Q q _ h _ _ _ R _ E _ v 
+7 N g c a _ _ _ t _ _ d _ _ T P p @ W * O I _ 5 n z 6 X M 3 _ l _ 1 E 9 _ B V _ _ S Y u e _ _ _ v s & k H _ _ 8 D _ o j q f Z J 
+
+# Solution:
+@ b 7 S d U B Y q t v k 1 9 l h A R H P M c g f O F y z X 2 w W N u i E J 6 a D j L & Z 5 s r e G o K 3 C m 8 n T V p Q 4 I x * 
+* & z y x w v u O N M L K J I H @ t s r q p o n i d c b a Z Y V m l k j h g f e G F E D C B A 4 X W U T S R Q P 9 8 7 6 5 3 2 1 
+t s r q p o n m T Q G F E D C B L K J I 9 8 7 6 * & @ x v u l k M H A 5 4 3 2 1 z y w i h g f d j e c b a Z Y V X W U S R P O N 
+l k j i h g f e o n m c b a Z Y X W V U T S Q N E D B A 5 4 3 1 R P L K I G F C M J H 9 8 7 6 2 * x s r q p d O & @ z y w v u t 
+c a Z X W V T R j i g f e d U S O F E D C B 5 3 m h Q P N M L 8 & z y w s r o n * @ x v u t q p I A 9 7 6 4 2 1 l k b Y K J H G 
+Q P O N M L K J s r p X W V A 4 & z y w u G 2 1 t U T S H C 9 6 * @ x v d Z 8 7 l c b a Y R I 3 k i h F E D B 5 q o n m j g f e 
+I H G F E D C A R P 8 7 6 5 3 2 * x d b a Z Y 4 q p o j g f e J t X W V U T S 9 n m k Q O N K 1 & @ z y w v u l s r i h c M L B 
+9 8 6 5 4 3 2 1 * & @ z y x w u v m l k j i h e s r n R K I G 7 q p c b Y Q O B o X W V U T S P t g f N M L J H d a Z F E D C A 
+& R * @ z y x w 7 6 P n l k d v N G O L t u s r F J E D j i X q 5 4 C M g c p o 3 K I b f Y W h 2 B A V Z Q e m 8 1 9 H U a T S 
+3 7 J 8 6 5 u 9 & A R G Q Z Y j 1 S X V U P w T I H * c b t @ s F K O N L q r m 4 n 2 z l y E o W D i h x a M k C B d e v p g f 
+L K N T Y O t M B 9 C 8 p o X w 7 i e a d k z b 4 3 2 1 6 S h m A U Q P y v s x F H D * Z V J G l 5 n & j f g u I E c r @ q W R 
+d c X g Z f b a K I F U O @ S L 9 j 5 h B q v l Y o x W y n r p 8 3 2 1 D V T w Q u M m t & e k H 4 G R P E C N A 6 * z J s i 7 
+k o h m q n r C f u b t z y V * K c x Y W J I M R Q e a l w v g E S B G 7 X 6 H O N A j s @ d i F 3 8 p U 9 1 T L D 5 4 & Z P 2 
+B A 1 W v p l j 5 4 3 2 D q E i y * m H F f 6 & C 7 P M U T K G h a Y R z e Z J L 9 8 S r x X g d I o @ s b c w Q u k t O N n V 
+4 i 2 V S s P D h T H 1 x e a m n Z p Q E o @ g 9 8 L B O 5 N A f b & k u W d I C 7 6 R q w U c z J r * Y y v t j G F X M l 3 K 
+U I H G e F Q E M W c J s g N r D 4 3 2 A C 8 R V k d f Z z & u j t n @ * i 9 l B 5 1 P p v T a O 7 L q X S K 6 b Y m x o y h w 
+z * k & G @ y x S a q p P E v D Z 6 L u i r O o X W 5 n m K A R T 9 I f H h w U Y d g 3 B 1 t s 4 V F 8 c e l M J b C 7 Q 2 N j 
+N L P A 8 7 6 v W Z f & 5 4 g K Q 3 z m y E H D u * b l 9 c J Y X 2 @ s 1 n R S U r j q I C x F a p O B k t i d V w G M e T o h 
+V 3 S I F T R t G e o * C B n A U b 4 5 & W P X Q @ j 8 1 k 2 O Z D l i K z J M N w f y H 9 h u 7 q x 6 v r L E c p s d g Y m a 
+u 9 e U n Q w s N V h @ T L m O c M 2 S k j d J P y D I C H B F 6 W g 4 8 A 7 3 R G i p E 5 a Z o & Y z f X * b x l K v 1 t q r 
+g 5 d E l M m r 2 k Y y U 7 i c h n 1 F s w T K p t a Z f v V S u j * q G x e N b W X @ L J o z Q R I D A H P C 6 O 8 B 9 4 & 3 
+Z 4 a D f K j q H x l 9 d z J I g C B 8 @ e G 7 6 M r 3 T o i L c Y t p P O & b k Q * n V S m v U N y 2 h 1 w s R X W E u A 5 F 
+X 2 Y C c J i p 6 F Q b M 3 8 1 t q N f R l x * 7 w U 4 s d g h r E o y B a v V T O e & K D P A n m u 9 5 W G j Z L @ k I S z H 
+O 1 W B b H h o w s u r R X j t a Y I v p A V 9 x q & N G E z e k C m d 5 L Q F 6 8 c l 4 2 M 7 S Z T g K J @ 3 P f y U D n * i 
+y @ & s * d F z c R 6 N j i x V C L g t H v X k a K 9 u r P T w D e 5 B l f I q m b O 2 o Z 3 M 8 U 1 W 4 G h S p A E J Y Q 7 n 
+G e K Q 3 Y q H E B 5 w & r o b M s u 9 2 1 W @ S A 7 v D 8 C t O n 4 F T y h Z c p l 6 a d z J L k N i m g j * f U P I X R V x 
+i g I Z B 1 N T e p O m u H f n F J Y d 7 h a P o b k q x j W c S V 8 A 6 R U v D t @ G & * s X 5 E l Q r 2 3 y M 4 L K z 9 w C 
+R t f O P b k U C M 4 Z I T 1 a 8 E q e 5 x p w N G 3 @ & 6 s Q L m d Y j 2 X z A h S F y u i W J n H K 9 V 7 D g * B c l r v o 
+8 X o l 5 S D V J 3 y s F G t W 6 A T c 4 n b O 2 L M Y I R m U H * 7 u i E P a 9 f Q C x r g K w z B e p @ q v 1 h j Z N d k & 
+J j L 7 9 6 4 n d K 2 v h * D g l & U Z 3 m S z y 5 H E i V 1 f x k p Q M C N r 8 e P B w q Y I R T X O o F A c a t u W G @ s b 
+2 W x p u E A h Q q k Y L P 9 l G r R j K * i I e Z X O z B F d g c w 3 o J 1 @ 7 U N 4 v n V H M a t C & s b f S T 6 5 8 m y D 
+m M C w r v a c z 8 A S X U @ 7 B N Q o D y f V h l 4 J p g * n 9 & K t b s W G 5 T L 1 j k R E Y d P I u 6 Z x F 3 O i 2 H e q 
+x z p * O & I 3 l b w D i Y H F s P n A r 2 c a W V Z g 8 X U @ C 7 J T k 5 j R y v q K 1 E 4 m e G Q d B u f 9 t S N L h o 6 M 
+W y w v X q @ G r S z o B p O Q H I & 7 * 6 k Z d 1 F K c A b N s M D L V 8 m E x l 5 U J e j R i t C a n h T g 3 9 2 P f u Y 4 
+P f b u N m s B L 1 J K G t 7 5 z U j 3 g M 4 8 T n h e R 9 x & i r 6 I c w q 2 @ o d W Q A p Y y l D S V k H F v Z a O * C E X 
+K Y R t L l o 8 P g Z T a n e X q 5 w p x O J d r 2 u H 7 y E 4 b G 3 h S @ z * i V F s D f C 9 m v 6 M W U N & k Q I A B j 1 c 
+H V Q r J i g 6 v U 9 A 3 8 2 k Y l K C S N 1 W L O I w q D p j e y F o f 4 t u & a B M 7 h c n @ * E Z z P R X m d x T s G b 5 
+E U M n A h e 5 y * d u 4 & c q V X @ T f 9 B m v a l C Y Q t 3 W N P O Z 1 x g r 6 G k 2 L 8 S s j 7 o b w I J H F R D i z K p 
+D T F k 7 a d 4 @ h j C m I R 6 e u v G L t E i M B S s o * f 5 Y A 9 U X p n Q w Z z g b P H N K 2 3 c 1 O x q W J & V y 8 r l 
+C S 9 j 1 Z c 2 x f N M V s W E o Q h R b D F y z P J m k G 6 i a B H & v d l K t * 3 O X I u T p r 5 L 8 Y 4 A U e w q n 7 @ g 
+w x @ 6 & B 3 S X d n P q K y U u h 7 z Z L m s 8 e g i E b M D V R a J r I 5 f W 4 p t N H 2 * 1 C k v F c o G Y j T l A O 9 Q 
+h n V Y U X L O F D t I 9 N u s d B o E l g r C 3 v K Q A 7 4 a @ x z * & S G k q 1 Z c i 8 5 j P b W m T M p 2 w R e f H 6 J y 
+f p q R T z W Z 4 C e Q 8 v h M J 2 A i 1 a * j H x Y 6 V l 5 P y w u g t N E c S k U I m b 7 O 3 X d n D B 9 L @ & r o F K G s 
+r d 5 b i * G N Z w W R A f z @ T V D 6 Q 4 & x k s t o J U c B l v j H p M C Y a P K e 3 F 9 y E h g u O 7 S I 2 q X n L 1 8 m 
+j v c 1 o 4 9 k Y L i O 7 6 r G 3 f P W e H U F & m q T 2 p S z d s h D n K B X g E u J M l w @ A y R 5 N 8 t Q * C V b a x I Z 
+s E y K I 2 J Q g 5 a B o S p x b O c N G @ t v j R 1 9 h W d Z U q e 8 m F A T f C V X n z & L r Y w H l * 6 4 i 7 M u 3 k D P 
+A F t a g C M 7 m 2 V l H 1 & 3 k y S n 8 K R q @ X w * L N u I P o b 6 W 9 4 O s Y r h T Q G D x f J j e i z Z E 5 v p d c B U 
+e u m P D 8 H l b E * j J c k T w p 9 X I 5 M Y G f O F n r y C 1 i Z 2 Q 7 3 L d R o x A 6 v B q K a s @ & V U h N t g S W 4 z 
+M D 8 L y u Y g 1 o I e t Q 5 f r H b s c T C G A 6 m V P q O X z h v x R * @ & K j a E S W N l B F p J 2 3 k i 7 n 4 w Z U d 9 
+S m n J j x Z f a l T 6 @ M P d 5 v * O o Q K B D E z t 4 & H 9 w g s e N u i y p 2 C 7 k U F b h 1 q A L I W Y r c 3 G V X R 8 
+b G T 9 V N 7 W i v & E * h K Z 2 D k J P R q L 1 u s p w e j y n f r c F o Y t X I 4 H 6 3 Q 8 C M S U d l m z 5 g A @ x B a O 
+o O l 2 H t z @ V X U 4 g F G y S 8 i & 6 3 N h 5 I W 7 * Y Q b J d q a E m M p e B n A 9 c 1 w u P Z f R x s r K v D C k L j T 
+F Q s 3 K r 5 * 8 O S q k C b R x w t @ Y U y u c T i G B J n 2 I Z X W A l L j v M h f d m D V 9 H 4 E g o a 7 e z 1 N P & p 6 
+a 6 i 4 R A E d u z 7 H c w B N W 1 f M n F e p Z C v U 3 L o x G T V S 9 k K 8 P q s r g O * 5 D Q b X t j & @ y I J 2 m h l Y 
+p w v h k I 1 P n j D x 2 A s 9 m d a 4 X 7 l E g N f r @ F 8 K B Q U C 3 b H 6 Z z J Y R o L & c O V G y T 5 e u M q * t i S W 
+q B U e C c & X p m r 3 Y W L J I 9 Z g z V j A l S R k d h a M 4 O 1 7 2 P D 5 u x y T G i @ t 6 8 v w * N n K o H f s b F Q E 
+6 q E x m W V y D J K 5 n R M p P k G l w d A Q b i N h t 1 7 r v L f z @ & * s H 3 9 o c X Z U g S j 4 I C O a B 2 Y 8 T e F u 
+n l D d 2 j S & A Y L a v O 6 o 4 7 F B h b 9 H w g 8 5 u @ Z E p J T r x t y i 1 s R N * M k q f c e P G K X W z m Q 3 C V U I 
+5 r B M @ R X i 3 c E W N b 4 e f a 8 x v s D t U Y C y Q m q H o I S n w j u h V & T d P G l 6 Z L 2 1 J z F p O K g 9 7 * A k 
+T Z A f w e O b 9 H X h S u * & i g C K V z 3 U J j p 2 W a P o Q F R m q Y k d I D v 8 @ 4 y x N 6 M t 7 n E B G s l 1 r 5 c L 
+1 h 4 z Q P * L k G s V Z j q C R T M y J X u 2 f c A & S O I v K 8 N l e U g W E i 7 5 F p B r b 9 m Y 3 d D o n x H a 6 w t @ 
+v J 3 o t k 8 K I @ 1 g f l Q z E e r q N Y n S B 9 G L F s D T 7 6 M Z a H c P 2 A m w W j O C V u * x i 5 U R 4 y h & p b X d 
+Y C u H s 9 p I U 7 B i r 2 F 8 j o 6 1 m & Z c K 4 V d e x k * 3 5 G X O D b A J g t L z a n f T w @ l Q q y h N P S R W E M v 
+7 N g c a G U F t y x d w m T P p @ W * O I L 5 n z 6 X M 3 R l 2 1 E 9 C B V 4 h S Y u e K b Q v s & k H A r 8 D i o j q f Z J 
+
+# Statistics for the current run
+# Initial fill ratio: 66%
+# Number of choices: 4
+# Number of backtracks: 4
+
+# Solving '../test/grid-solver/grid-64x64-03.sku'...
+
+# Initial grid:
+S l v q 7 8 V _ L _ _ E _ W m c 4 X _ _ N d 9 6 R 3 a D 1 n _ G K _ & U @ b P Q p k Z x _ _ w 2 s h o _ y _ _ f _ O z g t 5 J C 
+_ _ _ _ z _ g _ _ S h _ 2 4 x n o U M q j _ & _ _ F _ m e O 9 u B d p 6 f _ k _ _ N _ W b R i C H T Y l _ G I _ _ 7 _ y _ _ _ _ 
+t _ _ _ _ m r X _ _ R _ _ _ a y L l Y Q G _ _ S 4 _ I 7 _ _ * f h n _ _ 1 j _ s 8 _ _ E 3 B c M F K _ _ _ U _ _ v H & _ _ _ _ W 
+_ E k & _ _ * 2 l b _ _ _ _ G _ 3 p K W V 8 _ z C c d _ P @ _ _ _ _ L 7 _ 9 u O U _ t 1 v J g Y _ 4 _ _ _ _ R N o h _ _ j q Q _ 
+_ _ Z o I c M _ K P j O * u _ @ f _ h v 7 _ e D b T q k _ V L 6 4 a J _ E R m r S H _ & G n _ X W _ Q p 5 x C g _ U 2 d F 9 _ _ 
+U _ _ B _ 9 _ _ _ 7 I t 3 _ _ _ @ _ _ _ _ 5 R P _ _ & _ _ j K _ _ F N _ _ A _ _ T q V _ _ _ _ * _ _ _ n v k 2 _ _ _ a _ 4 _ _ c 
+_ A _ R T _ K L _ _ _ v N _ & f _ _ b _ B _ J 2 _ U h _ E _ Z _ _ Y _ V _ x y _ a 4 _ F _ I _ _ S X _ 7 z _ _ _ 6 u _ G P _ 1 _ 
+x h f d 4 w O _ _ _ _ B _ r _ Q n I _ C F s 1 a X M _ A o _ _ p S _ _ e * _ G c y z 7 @ j _ D 6 b _ Z _ m _ _ _ _ R T E l K Y V 
+C _ r G N _ R t v _ p U _ F _ s x 5 m _ _ L f _ c 2 1 & _ K u 8 I o e _ O M T 4 _ B w _ _ E b Q @ _ 6 _ j 9 _ l n Z _ 7 S J _ y 
+@ H B _ y _ w Q _ _ _ _ M _ 6 i _ v _ _ _ e _ o _ _ b _ _ I _ _ _ _ G _ _ p _ _ 3 _ g _ _ _ a _ T * _ Y _ _ _ _ m r _ z _ U X P 
+O M b K _ _ _ a u w _ 4 _ Q _ d T * G & _ S j _ 9 o _ _ p z _ Z l _ D @ _ _ x f _ 6 R _ 8 e P s 1 _ L _ B _ H y E _ _ _ 2 Y k q 
+_ _ _ _ q x U m @ o a 5 e _ C 7 9 _ P K H _ k _ _ W _ l _ _ _ _ _ _ _ _ S _ s _ _ L _ r z M _ n J R _ E i u b 8 1 I 6 D _ _ _ _ 
+E o F _ _ _ 3 _ & V _ 9 _ _ * I 8 _ a _ r 1 _ N D _ Y X A 6 4 @ n t P L U 2 _ b x _ 5 p _ j _ k m f _ _ K _ z S _ l _ _ _ R H G 
+n I _ * _ Z 4 D 8 g f _ X 2 K _ _ @ W w _ 6 l 7 k _ P J _ _ j _ _ E _ _ i Q _ H G S & _ o V 9 _ _ p C d _ O 3 h b L v _ a _ s u 
+2 u _ _ V S f P E _ _ 1 _ m h _ c Y J _ _ A _ i r g _ L s v _ _ _ _ * B 9 _ W 6 K _ l _ _ y 7 U _ I e _ G _ _ 4 x @ 3 p _ _ d F 
+J k l e 1 _ _ s 3 H Y G _ b S _ q _ _ I p O 4 _ _ f T n t h x _ _ u K g m y r _ _ d @ N F _ _ v _ Z U _ P Q X 7 j _ _ C M V 5 8 
+B 1 5 _ f _ Z _ _ _ _ _ _ V T g _ _ n _ 6 t _ _ & Y N h a 4 _ k W _ U o s 8 i X _ _ Q d _ D _ _ * 3 R _ _ _ _ _ _ v _ K _ I 2 9 
+_ _ I y _ R J _ U c W Y _ d _ u _ x _ 5 Z _ F e _ q _ _ _ m 2 s j M b _ _ _ w _ @ a _ * T _ N _ X _ v _ n o 7 O _ 8 S _ i 1 _ _ 
+_ _ @ E _ C H b P _ _ _ _ t _ _ u _ r U m j 7 k o _ 6 _ f _ I z e V _ K _ Y _ J l h O 2 s p _ 5 _ _ 9 _ _ _ _ i F B x _ W 4 _ _ 
+_ T _ n S _ _ W * _ r J x _ H _ _ _ s _ R _ b w B Q _ _ _ _ l _ _ O _ _ _ _ q 7 g o _ k _ F _ _ _ 2 _ 1 N j _ @ P _ _ h p _ & _ 
+3 x j F k p _ _ I a _ _ 6 _ _ _ P _ _ E h W Q _ _ _ S _ _ _ T O y R _ _ _ N _ _ _ 7 H 4 c _ _ G _ _ _ f _ _ V z _ _ t r w n m A 
+_ O 6 s i 2 _ _ _ B 8 @ _ 7 _ _ _ g X _ D _ d _ G _ * _ _ 3 w t F m 4 _ _ l _ n _ v _ K _ S W _ _ _ k _ Y I x _ _ _ C a o Q N _ 
+u 9 d _ _ K t w _ q _ A _ _ 3 o z a _ 1 _ _ M C W x D i R r V _ _ @ f p 2 S L * X y _ _ n _ & I P J _ _ e _ m _ T 5 g _ _ 7 j Y 
+* _ o L 8 4 e _ 2 _ _ k m S 5 h Y _ N B l i 3 _ _ X _ g @ y p _ _ r x I H _ z _ _ w j t C A _ V & D T Q W _ _ M _ d R q G u _ b 
+K @ _ _ _ _ _ _ _ _ _ W v _ _ _ M _ O _ C _ _ & _ b l * 2 J _ Y m _ V i a I S _ 5 _ _ P _ L _ g _ _ _ Z 9 _ _ _ _ _ _ _ _ _ h X 
+k _ _ U _ _ N O _ j _ y _ _ _ X 1 _ _ _ z 9 _ E 7 a M f W D _ I R _ F Y c 5 8 t A _ b B _ _ _ m K _ _ _ r _ s _ 4 C _ _ J _ _ x 
+L R a _ J b _ _ T _ 9 C H _ p _ l _ _ _ d _ t V x m 5 _ _ Z _ _ _ _ n _ _ G e 2 Q F _ X _ _ _ z _ A _ q & N _ Y _ _ k P _ W c 7 
+_ r _ T x u F 3 _ _ _ _ _ R _ _ _ S _ J Q _ _ _ L s _ _ k _ _ _ _ _ _ & _ _ 4 q _ _ _ D 2 _ y _ _ _ i _ _ _ _ _ 9 j o 6 U _ p _ 
+q _ M 4 * 5 l d f F J Q n _ _ x a k _ A _ p D _ _ K c _ _ _ _ _ _ _ _ _ _ o h _ _ E 9 _ U _ t & G _ _ W O V @ 1 Z m L R s w _ T 
+V m G _ o _ n v _ L i _ 4 _ P b 2 F _ r W R s 3 A E p _ _ _ t q z Q _ _ _ * d g h K x u N _ S w 5 8 _ J _ 6 j _ e y _ & _ @ f H 
+c P 8 z g _ _ p w A u _ _ * _ U v m Z 7 4 _ i 5 @ y j N _ & _ 1 J _ X _ D L H 3 C V _ R f T k O x _ M _ _ 2 l d Y _ _ F B G q S 
+_ _ 2 _ _ f _ B Y z _ S E 1 d _ g c _ o T @ u q _ 8 _ w G R F 4 r W s x N _ 7 _ H i 3 J M _ 6 j _ k h t p _ n P V _ I _ _ * _ _ 
+_ _ E _ _ s _ I H @ _ 2 O P c _ * 6 _ Z A U T W _ N _ 8 L F M e i l v X J _ B _ k j f a K _ z 1 _ m p u q _ 4 n r _ d _ _ g _ _ 
+d e t w R _ _ * N y Z _ _ v _ V 7 z 5 u a _ P h s 4 g G _ S _ o U _ Y _ Q E O 1 6 n _ l & 9 8 c A _ J _ _ b M T H _ _ I L m K p 
+6 4 y _ M _ L x _ u 1 _ g _ w S G i _ 2 K m v f Z O A _ _ _ b J @ I _ _ _ n p R e * B o d _ U T 8 E _ X _ z F _ W s _ 3 _ a C N 
+W _ P f a Q c N B p & 6 8 _ _ C j L _ R _ 4 O _ _ w z _ _ _ _ _ _ _ _ _ _ H 5 _ _ g r _ q _ X @ h _ _ S k v d o U G Z J A x _ E 
+_ V _ X A q G J _ _ _ _ _ T _ _ _ w _ p o _ _ _ P h _ _ l _ _ _ _ _ _ a _ _ M x _ _ _ y i _ 4 _ _ _ f _ _ _ _ _ O z @ 8 * _ e _ 
+Z g u _ 9 O _ _ d _ U 7 a _ o _ F _ _ _ k _ c r E j f _ _ T _ _ _ _ m _ _ 3 6 & b I _ Y _ _ _ A _ i _ 2 H P _ G _ _ M 4 _ y v 5 
+r _ _ k _ _ D H _ n _ q _ _ _ Y I _ _ _ @ J _ 1 m V 9 d Q 7 _ 2 g _ z j o s A S N _ u G _ _ _ Z C _ _ _ t _ L _ i T _ _ X _ _ l 
+l z _ _ _ _ _ _ _ _ _ D A _ _ _ N _ E _ 9 _ _ M _ p u B r k _ W G _ Z 8 d t K _ P _ _ 5 _ H _ 7 _ _ _ I g _ _ _ _ _ _ _ _ _ F R 
+h _ g j Q E 8 _ 4 _ _ u R a r e b _ l 9 P z q _ _ t _ K I w A _ _ * o J n _ X _ _ C c S @ U _ N O L d M s _ _ m _ Y 5 W f 6 _ 1 
+9 U w _ _ * d l _ 5 _ T _ _ Y F s Z _ N _ _ W c h 6 2 R g o 1 _ _ 8 B 4 v f I K j Q _ _ A _ H x y t _ _ V _ e _ a q G _ _ S P J 
+_ t 4 5 L H _ _ _ k @ P _ C _ _ _ 1 I _ S _ V _ j _ x _ _ d D U s A W _ _ T _ m _ R _ 9 _ 2 n _ _ _ * _ f h 6 _ _ _ b w y N l _ 
+T Z x W O a _ _ 1 8 _ _ J _ _ _ r _ _ e n C y _ _ _ m _ _ _ H b P U _ _ _ z _ _ _ & X q 4 _ _ d _ _ _ 5 _ _ N I _ _ j t v 2 V L 
+_ C _ V P _ _ c n _ z m s _ W _ _ _ F _ v _ 5 Y S k _ _ _ _ y _ _ g _ _ _ _ b p u 8 _ I _ K _ _ _ @ _ w T 7 _ R M _ _ Z H _ 3 _ 
+_ _ i J _ 3 s S O _ _ _ _ j _ _ K _ g x w X U H Y _ V _ Z _ G & 6 D _ R _ a _ @ t b y 7 l 1 _ W _ _ P _ _ _ _ k d e r _ Q E _ _ 
+_ _ e 1 _ D Y _ b Q S x _ g _ q _ 3 _ k J _ a 4 _ n _ _ _ C 8 5 O N H _ _ _ 9 _ Z s _ L V _ G _ v _ X _ U K & 2 _ * A _ R B _ _ 
+I 2 X _ @ _ b _ _ _ _ _ _ h A 9 _ _ 6 _ & B _ _ p P E z O e _ N x _ 7 Q w C t y _ _ i T _ g _ _ Z l a _ _ _ _ _ _ 4 _ s _ F o n 
+i W 9 3 d _ _ g k s H R _ Y l _ m _ _ n U F w _ _ D X 2 h a @ _ _ B 1 * 8 P V _ _ T e Z S _ _ y _ x 7 _ 4 f t v q _ _ j 5 z G Q 
+8 q _ _ j o T 5 W _ _ h _ L e _ S D y _ _ P _ t V z _ C & 9 _ _ _ _ 2 H 4 _ F Y s _ M _ _ X E r _ u N _ a _ _ Z J A m v _ _ n d 
+v p _ P _ X k V m i Q _ C 5 t _ _ 8 9 a _ Y K j 6 _ O o _ _ n _ _ S _ _ R r _ G d W I _ g f x _ _ B l y _ * U J h 1 e _ 7 _ b 4 
+R J Y _ _ _ I _ Z r _ b _ _ V 8 & _ f _ i k _ T g _ 4 Q m L P y p x h N z v _ e 1 _ 2 j _ 7 _ u w C _ _ S _ 5 X _ M _ _ _ c 9 O 
+_ _ _ _ c z C n A 1 * 3 p _ u M V _ q G 2 _ X _ _ Z _ T _ _ _ _ _ _ _ _ t _ E _ _ P _ Q B N _ i o b _ R h & O 9 8 f K @ _ _ _ _ 
+D B h a _ _ _ U 6 I _ & _ E _ G C N Q H _ r p _ t S _ _ c 5 _ j d _ g u _ _ f M _ 9 n _ J z @ 4 V _ m _ L _ T e R _ _ _ Y i y o 
+& f A _ Z _ y e _ _ _ _ S _ n B _ W _ _ _ M _ x _ _ K _ _ N _ _ _ _ l _ _ J _ _ O _ p _ _ _ h _ g F _ H _ _ _ _ u V _ U _ T a 2 
+w _ 1 m t _ x M a _ o g _ y _ 2 e 4 R _ _ c z _ u B J p _ W d 7 q 3 T _ K & U 9 _ l v _ _ 5 V L i _ n _ Q 8 _ E * X _ S k C _ 6 
+s 8 n D 3 I S _ _ _ _ N _ q _ m t C _ 4 f * r 9 O 1 _ F X _ _ H v _ _ E 5 _ a h i A G g L _ o p j _ W _ 7 _ _ _ _ P U c u e R w 
+_ 7 _ x E _ j 4 _ _ _ L Q _ 9 P _ _ c _ e _ N s _ r o _ 8 _ a _ _ i _ F _ 1 * _ & @ _ U _ W _ _ n G _ O X _ _ _ S 3 _ M h _ D _ 
+f _ _ 2 _ 1 _ _ _ h T o Y _ _ _ 6 _ _ _ _ H I G _ _ e _ _ u W _ _ y q _ _ m _ _ * c F _ _ _ _ K _ _ _ D M g 8 _ _ _ 4 _ d _ _ t 
+_ _ R h W M z _ r t 4 8 & B _ 5 O _ d F 1 _ E A q L Z x _ b C V H J S _ g c j U w X _ n y u _ l 3 _ 2 P I i * K _ k Y T @ p _ _ 
+_ * L t _ _ q Z c 3 _ _ _ _ 7 _ w P z m 5 l _ U f R k _ v G _ _ _ _ u M _ K & N 4 _ C O 6 Y j J _ o _ _ _ _ p a Q x _ _ g s B _ 
+m _ _ _ _ T a C _ _ d _ _ _ R D W b k 3 M _ _ X z _ 7 t _ _ S P L s _ _ 6 O _ I E _ _ V 9 h 2 H e 5 _ _ _ c _ _ & J q _ _ _ _ * 
+_ _ _ _ & _ P _ _ Z X _ l U O E p K 7 S 8 _ x _ _ I _ j M i N D t z R G b _ @ _ _ 5 _ e Q q v 3 f w A m _ J h _ _ a _ 9 _ _ _ _ 
+N w J p 6 l v _ j _ _ e _ I s a i Q _ _ q h 2 n K d U y * A _ g T _ 3 r x 7 C W z M k 8 _ _ f S u V & _ R _ _ H _ o F O m X E Z 
+
+# Solution:
+S l v q 7 8 V F L Y M E T W m c 4 X i * N d 9 6 R 3 a D 1 n B G K H & U @ b P Q p k Z x u r w 2 s h o j y e A f I O z g t 5 J C 
+P a Q @ z J g 1 s S h V 2 4 x n o U M q j E & Z 8 F v m e O 9 u B d p 6 f w k 5 L N K W b R i C H T Y l c G I t X 7 * y 3 r A D 
+t N D 6 p m r X q C R d z w a y L l Y Q G T A S 4 J I 7 5 x * f h n i 2 1 j g s 8 e o E 3 B c M F K O 9 u U P V v H & k Z b @ W 
+5 E k & e y * 2 l b A Z F X G H 3 p K W V 8 m z C c d S P @ s r M T L 7 I 9 u O U f t 1 v J g Y a 4 D B 6 w R N o h n x j q Q i 
+Y 3 Z o I c M i K P j O * u 8 @ f t h v 7 y e D b T q k N V L 6 4 a J z E R m r S H A & G n l X W 1 Q p 5 x C g B U 2 d F 9 w s 
+U b H B s 9 W G J 7 I t 3 o 1 6 @ O u g x 5 R P y i & Y z j K w D F N C X A l Z T q V h m d Q * E M 8 n v k 2 r f p a e 4 L S c 
+j A C R T n K L D e g v N p & f k r b c B w J 2 l U h W E H Z Q 3 Y t V q x y o a 4 s F 5 I O 9 S X @ 7 z d i * 6 u 8 G P M 1 m 
+x h f d 4 w O u i 9 k B 5 r U Q n I H C F s 1 a X M t A o 2 g p S v 8 e * W G c y z 7 @ j P D 6 b q Z & m 3 J L N R T E l K Y V 
+C d r G N A R t v W p U P F q s x 5 m z X L f g c 2 1 & H K u 8 I o e 3 O M T 4 Y B w i D E b Q @ a 6 V j 9 k l n Z h 7 S J * y 
+@ H B 9 y L w Q R O n l M x 6 i h v 2 D u e Z o 5 C b q V I E S 7 j G d k p N 8 3 J g f 1 4 a t T * F Y A s W & m r c z K U X P 
+O M b K 5 W 7 a u w N 4 r Q J d T * G & t S j F 9 o 3 U p z m Z l X D @ V h x f I 6 R C 8 e P s 1 v L c B n H y E g i A 2 Y k q 
+X j p g q x U m @ o a 5 e c C 7 9 V P K H 3 k Q N W G l y * O d Y & A w S F s v 2 L h r z M Z n J R t E i u b 8 1 I 6 D T f 4 B 
+E o F c v i 3 h & V y 9 B Z * I 8 s a d r 1 C N D 7 Y X A 6 4 @ n t P L U 2 J b x u 5 p W j T k m f q g K M z S w l O Q e R H G 
+n I T * Y Z 4 D 8 g f z X 2 K A U @ W w y 6 l 7 k e P J F M j B 5 E c 1 i Q R H G S & m o V 9 q r p C d x O 3 h b L v N a t s u 
+2 u z 8 V S f P E T t 1 k m h j c Y J M b A n i r g R L s v Q a Z C * B 9 q W 6 K O l H X y 7 U D I e N G 5 w 4 x @ 3 p & o d F 
+J k l e 1 6 & s 3 H Y G D b S L q E B I p O 4 R w f T n t h x i a u K g m y r z c d @ N F * A v 2 Z U o P Q X 7 j W 9 C M V 5 8 
+B 1 5 A f P Z z y l e w j V T g H q n O 6 t S @ & Y N h a 4 7 k W G U o s 8 i X r m Q d x D M b * 3 R C E F u p L v J K c I 2 9 
+Q & I y G R J r U c W Y K d D u A x p 5 Z f F e H q C P 9 m 2 s j M b t h g w E @ a L * T 3 N B X 6 v 4 n o 7 O l 8 S V i 1 z k 
+g c @ E D C H b P R v n G t X N u T r U m j 7 k o A 6 Z f 1 I z e V a K & Y Q J l h O 2 s p q 5 d y 9 8 w L S i F B x * W 4 M 3 
+a T U n S V m W * f r J x i H 4 y G s 8 R I b w B Q L M d c l v 9 O C A 3 D q 7 g o z k Y F u E t 2 5 1 N j K @ P 6 X h p Z & e 
+3 x j F k p X Y I a C M 6 & L 1 P 2 o E h W Q * U 5 S e K 8 T O y R d Z B N v u 9 7 H 4 c i J G l g s f b q V z @ D t r w n m A 
+M O 6 s i 2 h q z B 8 @ 9 7 Z p J g X V D & d L G u * b j 3 w t F m 4 5 T l 1 n R v U K e S W P c H k r Y I x A y E C a o Q N f 
+u 9 d N l K t w Q q F A b s 3 o z a 4 1 c v M C W x D i R r V E k @ f p 2 S L * X y 8 6 n Z & I P J G h e B m U T 5 g H O 7 j Y 
+* v o L 8 4 e 7 2 E O k m S 5 h Y 9 N B l i 3 K J X F g @ y p n c r x I H 6 z P f w j t C A 1 V & D T Q W Z a M s d R q G u U b 
+K @ s 7 w t Q j o D 6 W v 3 B k M H O f C x G & d b l * 2 J U Y m 1 V i a I S T 5 r q P p L e g R c 4 Z 9 y E F A n N u z 8 h X 
+k i & U H h N O V j l y q G @ X 1 n w P z 9 L E 7 a M f W D 6 I R p F Y c 5 8 t A Z b B * o d m K S u e r T s 3 4 C Q 2 J v g x 
+L R a S J b 1 E T M 9 C H 8 p r l y * 6 d K t V x m 5 O B Z o h u f n v j G e 2 Q F 4 X I @ s z U A w q & N g Y 3 i k P D W c 7 
+A r W T x u F 3 e K 5 c Z R g t X S 8 J Q N h B L s H V k P z C E w O & l @ 4 q n 1 Y D 2 G y a I 7 i v * m f b 9 j o 6 U d p M 
+q X M 4 * 5 l d f F J Q n N 2 x a k j A Y p D I e K c u S g i 3 C P 6 b y o h B 7 E 9 v U 8 t & G z H W O V @ 1 Z m L R s w r T 
+V m G I o Y n v 7 L i a 4 O P b 2 F U r W R s 3 A E p 9 T X t q z Q M k Z * d g h K x u N c S w 5 8 B J C 6 j D e y l & 1 @ f H 
+c P 8 z g e 6 p w A u s h * I U v m Z 7 4 b i 5 @ y j N n & r 1 J K X 9 D L H 3 C V W R f T k O x Q M a o 2 l d Y t E F B G q S 
+y D 2 Z C f 9 B Y z m S E 1 d & g c e o T @ u q v 8 Q w G R F 4 r W s x N U 7 A H i 3 J M l 6 j L k h t p X n P V K I 5 b * O a 
+o S E b h s 5 I H @ G 2 O P c R * 6 C Z A U T W 3 N y 8 L F M e i l v X J V B w k j f a K x z 1 7 m p u q D 4 n r Q d Y 9 g t & 
+d e t w R j @ * N y Z r i v F V 7 z 5 u a q P h s 4 g G C S X o U k Y f Q E O 1 6 n D l & 9 8 c A W J x 3 b M T H 2 B I L m K p 
+6 4 y Y M & L x h u 1 j g k w S G i t 2 K m v f Z O A H D q b J @ I 9 c P n p R e * B o d Q U T 8 E r X l z F 5 W s 7 3 V a C N 
+W n P f a Q c N B p & 6 8 9 b C j L 3 R s 4 O l 1 w z I i t Y * 2 7 y T F H 5 D V g r M q m X @ h e K S k v d o U G Z J A x u E 
+1 V 7 X A q G J t m L K I T Q 3 D w S p o g H d P h n 6 l U 5 c N b r a C u M x W 2 E y i v 4 F Y & f s Z R 9 B O z @ 8 * k e j 
+Z g u C 9 O p 8 d J U 7 a l o z F B V X k n c r E j f @ x T R K * h m W e 3 6 & b I S Y t s L A N i 1 2 H P Q G D w M 4 q y v 5 
+r K 3 k F B D H 5 n E q W e M Y I & x y @ J 8 1 m V 9 d Q 7 v 2 g 4 z j o s A S N p u G h O R Z C U c * t a L w i T f b X P 6 l 
+l z m v 2 U i T x X s D A f 4 * N e E b 9 Q Y M a p u B r k & W G q Z 8 d t K L P 3 J 5 w H C 7 6 O V I g @ y j c S 1 o n h F R 
+h y g j Q E 8 & 4 2 D u R a r e b 7 l 9 P z q p T t B K I w A F V * o J n Z X i v C c S @ U 3 N O L d M s H G m k Y 5 W f 6 x 1 
+9 U w r n * d l p 5 3 T 7 M Y F s Z @ N O D W c h 6 2 R g o 1 L & 8 B 4 v f I K j Q m z A k H x y t b i V E e u a q G X C S P J 
+p t 4 5 L H u K X k @ P o C E Z Q 1 I i S G V 8 j v x r 7 d D U s A W q M T 3 m J R a 9 O 2 n e B Y * F f h 6 c g & b w y N l z 
+T Z x W O a o R 1 8 B f J K i w r h A e n C y u * @ m s 3 l H b P U E S G z Y k M & X q 4 6 F d Q 9 g 5 D p N I 7 c j t v 2 V L 
+G C q V P N A c n & z m s 6 W l d f F t v 2 5 Y S k i a J Q y X 1 g j h L e b p u 8 * I E K B o 4 @ x w T 7 r R M 9 D Z H O 3 U 
+z F i J B 3 s S O * c I L j N v K M g x w X U H Y 9 V 4 Z f G & 6 D 5 R u a 2 @ t b y 7 l 1 p W q n P A 8 C o k d e r m Q E T h 
+7 6 e 1 m D Y f b Q S x t g y q E 3 T k J o a 4 M n W c u C 8 5 O N H l r d 9 F Z s P L V w G h v j X z U K & 2 p * A i R B I @ 
+I 2 X M @ v b k G d V H U h A 9 R j 6 L & B * m p P E z O e q N x c 7 Q w C t y D Y i T r g 5 f Z l a 3 J S 1 W K 4 u s 8 F o n 
+i W 9 3 d r E g k s H R c Y l O m u L n U F w J I D X 2 h a @ A b B 1 * 8 P V C o T e Z S & K y M x 7 6 4 f t v q N p j 5 z G Q 
+8 q * O j o T 5 W U 7 h @ L e K S D y l g P B t V z w C & 9 f x Q 6 2 H 4 i F Y s G M b R X E r p u N k a 1 c Z J A m v I 3 n d 
+v p N P u X k V m i Q F C 5 t T Z 8 9 a 3 Y K j 6 H O o q E n M A S @ s R r c G d W I w g f x D z B l y 2 * U J h 1 e L 7 & b 4 
+R J Y l K F I 6 Z r q b d D V 8 & A f s i k o T g G 4 Q m L P y p x h N z v n e 1 U 2 j a 7 * u w C 3 @ S W 5 X t M H B E c 9 O 
+4 L S H c z C n A 1 * 3 p J u M V d q G 2 7 X v F Z r T U s e l w 5 I y t k E a m P 6 Q B N Y i o b j R h & O 9 8 f K @ x D W g 
+D B h a b 7 2 U 6 I x & w E v G C N Q H * r p O t S 8 1 c 5 k j d Z g u W X f M q 9 n 3 J z @ 4 V P m K L A T e R F s l Y i y o 
+& f A Q Z G y e 9 4 P X S z n B 5 W 1 @ E M 6 x i * K v b N 3 R o L l m 7 J D j O t p c k C h 8 g F I H d Y q s u V w U r T a 2 
+w s 1 m t @ x M a N o g f y j 2 e 4 R h I c z b u B J p Y W d 7 q 3 T O K & U 9 F l v A H 5 V L i r n G Q 8 D E * X P S k C Z 6 
+s 8 n D 3 I S y M x K N V q k m t C & 4 f * r 9 O 1 @ F X Y J H v 2 Q E 5 B a h i A G g L b o p j d W T 7 l Z 6 z P U c u e R w 
+b 7 V x E g j 4 C 6 w L Q H 9 P B J c T e u N s 2 r o 5 8 p a m f i k F Y 1 * l & @ d U Z W I R n G z O X t v q S 3 y M h A D K 
+f 5 O 2 U 1 B A S h T o Y @ z J 6 R v j L H I G Q & e 3 w u W 9 X y q P p m Z V * c F s 7 a r K k N E D M g 8 x C b 4 n d l i t 
+e Q R h W M z 9 r t 4 8 & B f 5 O o d F 1 a E A q L Z x 6 b C V H J S D g c j U w X N n y u m l 3 s 2 P I i * K G k Y T @ p 7 v 
+H * L t X d q Z c 3 2 i y n 7 W w P z m 5 l @ U f R k E v G h T 8 e u M A K & N 4 D C O 6 Y j J 9 o S b F r p a Q x V 1 g s B I 
+m G K i r T a C F v d p u A R D W b k 3 M Z g X z l 7 t 4 B S P L s w n 6 O o I E x 1 V 9 h 2 H e 5 y U @ c Y Q & J q f N j 8 * 
+F Y c u & k P o g Z X * l U O E p K 7 S 8 V x y n I s j M i N D t z R G b 4 @ d B 5 T e Q q v 3 f w A m 1 J h C 2 a W 9 6 H L r 
+N w J p 6 l v @ j G b e 1 I s a i Q D Y q h 2 n K d U y * A c g T 9 3 r x 7 C W z M k 8 P t f S u V & L R 4 B H 5 o F O m X E Z 
+
+# Statistics for the current run
+# Initial fill ratio: 61%
+# Number of choices: 511
+# Number of backtracks: 1020
+

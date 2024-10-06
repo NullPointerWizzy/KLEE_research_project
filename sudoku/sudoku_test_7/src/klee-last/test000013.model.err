@@ -1,0 +1,20 @@
+Error: concretized symbolic size
+File: grid.c
+Line: 35
+assembly.ll line: 10254
+State: 70
+Stack: 
+	#000010254 in grid_alloc(symbolic) at grid.c:35
+	#100011780 in grid_generate(symbolic, false) at sudoku.c:309
+	#200012550 in __klee_posix_wrapped_main(2, 139889468243968) at sudoku.c:514
+	#300007232 in __user_main(3, 140698532708352, 140698532708384) at runtime/POSIX/klee_init_env.c:245
+	#400000645 in __uClibc_main(140682686627840, 3, 140698532708352, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#500000810 in main(3, 140698532708352)
+Info: 
+  size expr: (Mul w64 8
+                       (SExt w64 (Extract w32 0 (ZExt w64 (Extract w8 0 (Add w32 4294967248
+                                                                                 (SExt w32 (Read w8 (Extract w32 0 (Add w64 2
+                                                                                                                            (SExt w64 (ZExt w32 (Eq 45 (Read w8 1 arg00))))))
+                                                                                                    [3=0] @ arg00))))))))
+  concretization : 8
+  unbound example: 32

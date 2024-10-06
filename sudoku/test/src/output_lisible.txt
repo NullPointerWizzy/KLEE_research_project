@@ -1,0 +1,132 @@
+ktest file : 'klee-out-0/test000001.ktest'
+-V.
+ 
+sudoku 1.0.0
+Solve/generate sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+ 
+ 
+ktest file : 'klee-out-0/test000002.ktest'
+-h.
+ 
+Usage: sudoku [-a|-o FILE|-v|-V|-h] FILE...
+       sudoku -g[SIZE] [-u|-o FILE|-v|-V|inputFile-h]
+Solve or generate Sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+
+-a,--all                search for all possible solutions
+-g[N],--generate[=N]    generate a grid of size NxN (default: 9)
+-o FILE,--outpout FILE  write output to FILE
+-u,--unique             generate a grid with unique solution
+-v,--verbose            verbose output
+-V,--version            display version and exit
+-h,--help               display this help and exit
+ 
+ 
+ktest file : 'klee-out-0/test000003.ktest'
+-..
+ 
+sudoku: error : the file - is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000004.ktest'
+--.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000005.ktest'
+-a.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000006.ktest'
+...
+ 
+sudoku: error : the file  is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000007.ktest'
+-o.
+ 
+./sudoku: option requires an argument -- 'o'
+sudoku: error: invalid option '-o'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000008.ktest'
+-u.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000009.ktest'
+-:.
+ 
+./sudoku: invalid option -- ':'
+sudoku: error: invalid option '-:'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000010.ktest'
+-v.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000011.ktest'
+...
+ 
+sudoku: error : the file  is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000012.ktest'
+-..
+ 
+./sudoku: invalid option -- ''
+sudoku: error: invalid option '-'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000013.ktest'
+./.
+ 
+sudoku: error : the file / is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000014.ktest'
+...
+ 
+sudoku: error : the file  is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000015.ktest'
+/h.
+ 
+sudoku: error : the file /h is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000016.ktest'
+-g.
+ 
+5 4 _ 7 _ 9 _ 8 2 
+_ 7 _ 5 1 _ 6 9 3 
+9 1 3 8 6 2 4 5 7 
+8 2 4 _ 5 6 _ 3 1 
+7 _ 5 1 _ _ _ _ _ 
+6 3 _ _ 7 8 9 4 5 
+3 8 2 6 _ _ _ 7 4 
+4 6 7 3 _ _ 2 1 9 
+1 5 9 4 2 7 3 6 8 
+
+ 
+ 

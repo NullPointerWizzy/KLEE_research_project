@@ -1,0 +1,606 @@
+ktest file : 'klee-out-0/test000001.ktest'
+-h..
+ 
+Usage: sudoku [-a|-o FILE|-v|-V|-h] FILE...
+       sudoku -g[SIZE] [-u|-o FILE|-v|-V|inputFile-h]
+Solve or generate Sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+
+-a,--all                search for all possible solutions
+-g[N],--generate[=N]    generate a grid of size NxN (default: 9)
+-o FILE,--outpout FILE  write output to FILE
+-u,--unique             generate a grid with unique solution
+-v,--verbose            verbose output
+-V,--version            display version and exit
+-h,--help               display this help and exit
+ 
+ 
+ktest file : 'klee-out-0/test000002.ktest'
+-V..
+ 
+sudoku 1.0.0
+Solve/generate sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+ 
+ 
+ktest file : 'klee-out-0/test000003.ktest'
+-V..
+ 
+sudoku 1.0.0
+Solve/generate sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+ 
+ 
+ktest file : 'klee-out-0/test000004.ktest'
+-h..
+ 
+Usage: sudoku [-a|-o FILE|-v|-V|-h] FILE...
+       sudoku -g[SIZE] [-u|-o FILE|-v|-V|inputFile-h]
+Solve or generate Sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+
+-a,--all                search for all possible solutions
+-g[N],--generate[=N]    generate a grid of size NxN (default: 9)
+-o FILE,--outpout FILE  write output to FILE
+-u,--unique             generate a grid with unique solution
+-v,--verbose            verbose output
+-V,--version            display version and exit
+-h,--help               display this help and exit
+ 
+ 
+ktest file : 'klee-out-0/test000005.ktest'
+-aV.
+ 
+sudoku 1.0.0
+Solve/generate sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+ 
+ 
+ktest file : 'klee-out-0/test000006.ktest'
+-ah.
+ 
+Usage: sudoku [-a|-o FILE|-v|-V|-h] FILE...
+       sudoku -g[SIZE] [-u|-o FILE|-v|-V|inputFile-h]
+Solve or generate Sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+
+-a,--all                search for all possible solutions
+-g[N],--generate[=N]    generate a grid of size NxN (default: 9)
+-o FILE,--outpout FILE  write output to FILE
+-u,--unique             generate a grid with unique solution
+-v,--verbose            verbose output
+-V,--version            display version and exit
+-h,--help               display this help and exit
+ 
+ 
+ktest file : 'klee-out-0/test000007.ktest'
+-uV.
+ 
+sudoku 1.0.0
+Solve/generate sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+ 
+ 
+ktest file : 'klee-out-0/test000008.ktest'
+-vV.
+ 
+sudoku 1.0.0
+Solve/generate sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+ 
+ 
+ktest file : 'klee-out-0/test000009.ktest'
+--h.
+ 
+Usage: sudoku [-a|-o FILE|-v|-V|-h] FILE...
+       sudoku -g[SIZE] [-u|-o FILE|-v|-V|inputFile-h]
+Solve or generate Sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+
+-a,--all                search for all possible solutions
+-g[N],--generate[=N]    generate a grid of size NxN (default: 9)
+-o FILE,--outpout FILE  write output to FILE
+-u,--unique             generate a grid with unique solution
+-v,--verbose            verbose output
+-V,--version            display version and exit
+-h,--help               display this help and exit
+ 
+ 
+ktest file : 'klee-out-0/test000010.ktest'
+-uh.
+ 
+Usage: sudoku [-a|-o FILE|-v|-V|-h] FILE...
+       sudoku -g[SIZE] [-u|-o FILE|-v|-V|inputFile-h]
+Solve or generate Sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+
+-a,--all                search for all possible solutions
+-g[N],--generate[=N]    generate a grid of size NxN (default: 9)
+-o FILE,--outpout FILE  write output to FILE
+-u,--unique             generate a grid with unique solution
+-v,--verbose            verbose output
+-V,--version            display version and exit
+-h,--help               display this help and exit
+ 
+ 
+ktest file : 'klee-out-0/test000011.ktest'
+-vh.
+ 
+Usage: sudoku [-a|-o FILE|-v|-V|-h] FILE...
+       sudoku -g[SIZE] [-u|-o FILE|-v|-V|inputFile-h]
+Solve or generate Sudoku grids of size: 1, 4, 9, 16, 25, 36, 49, 64
+
+-a,--all                search for all possible solutions
+-g[N],--generate[=N]    generate a grid of size NxN (default: 9)
+-o FILE,--outpout FILE  write output to FILE
+-u,--unique             generate a grid with unique solution
+-v,--verbose            verbose output
+-V,--version            display version and exit
+-h,--help               display this help and exit
+ 
+ 
+ktest file : 'klee-out-0/test000012.ktest'
+-...
+ 
+sudoku: error : the file - is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000013.ktest'
+-g4.
+ 
+2 _ 1 3 
+1 3 _ _ 
+4 _ 3 _ 
+3 2 4 1 
+
+ 
+ 
+ktest file : 'klee-out-0/test000014.ktest'
+--..
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000015.ktest'
+....
+ 
+sudoku: error : the file  is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000016.ktest'
+-a..
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000017.ktest'
+....
+ 
+sudoku: error : the file  is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000018.ktest'
+--=.
+ 
+./sudoku: option '--=' is ambiguous; possibilities: '--help' '--all' '--generate' '--output' '--unique' '--verbose' '--version'
+sudoku: error: invalid option '--='!
+
+ 
+ 
+ktest file : 'klee-out-0/test000019.ktest'
+--a.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000020.ktest'
+-aa.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000021.ktest'
+-o..
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000022.ktest'
+./..
+ 
+sudoku: error : the file / is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000023.ktest'
+....
+ 
+sudoku: error : the file  is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000024.ktest'
+-o..
+ 
+./sudoku: option requires an argument -- 'o'
+sudoku: error: invalid option '-o'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000025.ktest'
+-ao.
+ 
+./sudoku: option requires an argument -- 'o'
+sudoku: error: invalid option '-ao'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000026.ktest'
+--o.
+ 
+./sudoku: option '--output' requires an argument
+sudoku: error: invalid option '--o'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000027.ktest'
+--u.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000028.ktest'
+.//.
+ 
+sudoku: error : the file // is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000029.ktest'
+./..
+ 
+sudoku: error : the file / is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000030.ktest'
+....
+ 
+sudoku: error : the file  is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000031.ktest'
+../.
+ 
+sudoku: error : the file / is not readable
+
+ 
+ 
+ktest file : 'klee-out-0/test000032.ktest'
+-au.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000033.ktest'
+-a:.
+ 
+./sudoku: invalid option -- ':'
+sudoku: error: invalid option '-a:'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000034.ktest'
+-u..
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000035.ktest'
+-av.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000036.ktest'
+--..
+ 
+./sudoku: unrecognized option '--'
+sudoku: error: invalid option '--'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000037.ktest'
+--v.
+ 
+./sudoku: option '--v' is ambiguous; possibilities: '--verbose' '--version'
+sudoku: error: invalid option '--v'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000038.ktest'
+-:..
+ 
+./sudoku: invalid option -- ':'
+sudoku: error: invalid option '-:'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000039.ktest'
+-:..
+ 
+./sudoku: invalid option -- ':'
+sudoku: error: invalid option './sudoku'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000040.ktest'
+-ua.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000041.ktest'
+-v..
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000042.ktest'
+-va.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000043.ktest'
+/...
+ 
+sudoku: error : the file cannot be opened correctly
+
+ 
+ 
+ktest file : 'klee-out-0/test000044.ktest'
+-a..
+ 
+./sudoku: invalid option -- ''
+sudoku: error: invalid option '-a'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000045.ktest'
+-g2.
+ 
+sudoku: error : invalid size of grid
+
+ 
+ 
+ktest file : 'klee-out-0/test000046.ktest'
+-uu.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000047.ktest'
+-uv.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000048.ktest'
+-vu.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000049.ktest'
+-vv.
+ 
+sudoku: error : no input grid given !
+
+ 
+ 
+ktest file : 'klee-out-0/test000050.ktest'
+-g..
+ 
+sudoku: error : the argument pass to the option 'generate' is not an integer
+
+ 
+ 
+ktest file : 'klee-out-0/test000051.ktest'
+-uo.
+ 
+./sudoku: option requires an argument -- 'o'
+sudoku: error: invalid option '-uo'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000052.ktest'
+-g-.
+ 
+sudoku: error : the argument pass to the option 'generate' is not an integer
+
+ 
+ 
+ktest file : 'klee-out-0/test000053.ktest'
+-g+.
+ 
+sudoku: error : the argument pass to the option 'generate' is not an integer
+
+ 
+ 
+ktest file : 'klee-out-0/test000054.ktest'
+-g0.
+ 
+sudoku: error : the argument pass to the option 'generate' is not an integer
+
+ 
+ 
+ktest file : 'klee-out-0/test000055.ktest'
+-g..
+ 
+sudoku: error : the argument pass to the option 'generate' is not an integer
+
+ 
+ 
+ktest file : 'klee-out-0/test000056.ktest'
+-gA.
+ 
+sudoku: error : the argument pass to the option 'generate' is not an integer
+
+ 
+ 
+ktest file : 'klee-out-0/test000057.ktest'
+-u:.
+ 
+./sudoku: invalid option -- ':'
+sudoku: error: invalid option '-u:'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000058.ktest'
+-...
+ 
+./sudoku: invalid option -- ''
+sudoku: error: invalid option '-'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000059.ktest'
+-vo.
+ 
+./sudoku: option requires an argument -- 'o'
+sudoku: error: invalid option '-vo'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000060.ktest'
+-...
+ 
+./sudoku: invalid option -- ''
+sudoku: error: invalid option './sudoku'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000061.ktest'
+-v:.
+ 
+./sudoku: invalid option -- ':'
+sudoku: error: invalid option '-v:'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000062.ktest'
+-u..
+ 
+./sudoku: invalid option -- ''
+sudoku: error: invalid option '-u'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000063.ktest'
+-v..
+ 
+./sudoku: invalid option -- ''
+sudoku: error: invalid option '-v'!
+
+ 
+ 
+ktest file : 'klee-out-0/test000064.ktest'
+-g1.
+ 
+1 
+
+ 
+ 
+ktest file : 'klee-out-0/test000065.ktest'
+--g.
+ 
+2 5 1 _ 4 8 6 7 _ 
+_ 3 9 6 7 1 5 2 8 
+6 8 7 2 5 9 3 4 1 
+_ 9 8 4 6 2 _ _ 7 
+1 4 2 9 _ 7 8 5 _ 
+_ 7 _ 1 8 5 _ 9 _ 
+8 _ _ _ 2 4 9 6 5 
+7 _ _ 8 9 3 _ 1 2 
+9 2 4 _ 1 6 _ 8 _ 
+
+ 
+ 
+ktest file : 'klee-out-0/test000066.ktest'
+-ag.
+ 
+sudoku: warning : option 'all' conflict with generate mode, disabling it !
+1 5 8 _ 3 7 _ 4 _ 
+3 6 _ _ 4 5 9 7 1 
+9 _ 7 1 6 2 3 _ 8 
+4 8 _ 2 7 6 5 1 9 
+2 1 9 5 8 4 6 3 7 
+_ _ 6 3 9 1 _ _ 4 
+_ 2 5 6 1 _ _ _ 3 
+8 _ 4 7 _ 3 1 _ 5 
+6 3 1 _ 5 9 7 _ 2 
+
+ 
+ 
+ktest file : 'klee-out-0/test000067.ktest'
+-ug.
+ 
+1 5 6 2 4 3 9 _ _ 
+_ 2 9 _ 8 5 _ 1 4 
+_ 7 _ _ 6 1 5 2 _ 
+_ 6 3 1 9 _ 4 5 2 
+2 9 _ 3 _ 4 8 _ 1 
+4 8 1 5 2 6 7 3 9 
+5 4 _ _ _ _ 3 9 7 
+9 3 2 4 5 7 1 8 _ 
+6 1 7 8 3 9 _ _ 5 
+
+ 
+ 
+ktest file : 'klee-out-0/test000068.ktest'
+-vg.
+ 
+4 _ 5 3 _ 2 9 1 7 
+9 2 1 8 4 7 _ 3 6 
+_ 7 6 1 5 9 4 2 _ 
+_ 9 2 _ 7 3 8 _ 1 
+_ 4 8 6 _ _ 3 9 5 
+_ 5 3 _ 9 _ 7 6 2 
+5 6 7 9 1 _ 2 8 3 
+8 1 _ _ _ 5 6 7 4 
+2 3 4 _ _ 6 1 5 _ 
+
+ 
+ 
+ktest file : 'klee-out-0/test000069.ktest'
+-g`.
+ 
+sudoku: error : the argument pass to the option 'generate' is not an integer
+
+ 
+ 
+ktest file : 'klee-out-0/test000070.ktest'
+-g..
+ 
+7 _ 1 2 4 _ 3 5 8 
+6 2 5 8 3 _ _ _ _ 
+4 _ _ 1 5 9 6 _ 7 
+9 5 4 7 1 3 8 6 2 
+8 3 _ 9 2 _ _ 7 1 
+_ _ _ 6 8 5 _ 3 4 
+1 7 8 3 6 2 4 _ 5 
+5 6 9 4 7 _ 2 1 3 
+3 4 _ 5 _ _ 7 8 6 
+
+ 
+ 

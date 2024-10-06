@@ -1,0 +1,325 @@
+        -:    0:Source:colors.c
+        -:    0:Graph:colors.gcno
+        -:    0:Data:colors.gcda
+        -:    0:Runs:131
+        -:    1:#include "colors.h"
+        -:    2:
+        -:    3:#include <stdio.h>
+        -:    4:#include <unistd.h>
+        -:    5:
+        -:    6:#include <math.h>
+        -:    7:#include <time.h>
+        -:    8:
+        -:    9:/************ COLORS_FULL ************/
+    31635:   10:colors_t colors_full (const size_t size) {
+    31635:   11:  return (size >= MAX_COLORS) ? -1ULL : (1ULL << size) - 1;
+        -:   12:}
+        -:   13:
+        -:   14:/************ COLORS_EMPTY ************/
+    #####:   15:colors_t colors_empty (void) { return 0; }
+        -:   16:
+        -:   17:/************ COLORS_SET ************/
+  108653*:   18:colors_t colors_set (const size_t color_id) {
+  108653*:   19:  return (color_id >= MAX_COLORS) ? 0 : (1ULL << color_id);
+        -:   20:}
+        -:   21:
+        -:   22:/************ COLORS_ADD ************/
+   72950*:   23:colors_t colors_add (const colors_t colors, const size_t color_id) {
+    #####:   24:  return colors | colors_set (color_id);
+        -:   25:}
+        -:   26:
+        -:   27:/************ COLORS_DISCARD ************/
+    #####:   28:colors_t colors_discard (const colors_t colors, const size_t color_id) {
+    #####:   29:  return (colors & ~colors_set (color_id));
+        -:   30:}
+        -:   31:
+        -:   32:/************ COLORS_IS_IN ************/
+    35703:   33:bool colors_is_in (const colors_t colors, const size_t color_id) {
+     1080:   34:  return ((colors & colors_set (color_id)) != 0);
+        -:   35:}
+        -:   36:
+        -:   37:/************ COLORS_NEGATE ************/
+    #####:   38:colors_t colors_negate (const colors_t colors) { return ~colors; }
+        -:   39:
+        -:   40:/************ COLORS_AND ************/
+  583648*:   41:colors_t colors_and (const colors_t colors1, const colors_t colors2) {
+  583648*:   42:  return colors1 & colors2;
+        -:   43:}
+        -:   44:
+        -:   45:/************ COLORS_OR ************/
+  111550*:   46:colors_t colors_or (const colors_t colors1, const colors_t colors2) {
+  111550*:   47:  return colors1 | colors2;
+        -:   48:}
+        -:   49:
+        -:   50:/************ COLORS_XOR ************/
+    #####:   51:colors_t colors_xor (const colors_t colors1, const colors_t colors2) {
+    #####:   52:  return colors1 ^ colors2;
+        -:   53:}
+        -:   54:
+        -:   55:/************ COLORS_SUBTRACT ************/
+   19684*:   56:colors_t colors_subtract (const colors_t colors1, const colors_t colors2) {
+   19684*:   57:  return colors1 & ~colors2;
+        -:   58:}
+        -:   59:
+        -:   60:/************ COLORS_IS_SUBSET ************/
+  207009*:   61:bool colors_is_subset (const colors_t colors1, const colors_t colors2) {
+  207009*:   62:  return (colors1 & colors2) == colors1;
+        -:   63:}
+        -:   64:
+        -:   65:/************ COLORS_IS_SINGLETON ************/
+   172141:   66:bool colors_is_singleton (const colors_t colors) {
+    54180:   67:  return (colors & (colors - 1)) == 0 && colors != 0;
+        -:   68:}
+        -:   69:
+        -:   70:/************ COLORS_COUNT ************/
+   648363:   71:size_t colors_count (const colors_t colors) {
+        -:   72:  /* Create masks */
+   648363:   73:  colors_t B5 = (1ULL << 32) - 1;
+   648363:   74:  colors_t B4 = B5 ^ (B5 << 16);
+   648363:   75:  colors_t B3 = B4 ^ (B4 << 8);
+   648363:   76:  colors_t B2 = B3 ^ (B3 << 4);
+   648363:   77:  colors_t B1 = B2 ^ (B2 << 2);
+   648363:   78:  colors_t B0 = B1 ^ (B1 << 1);
+        -:   79:
+        -:   80:  /* Compute popcount */
+   648363:   81:  colors_t x = colors;
+   648363:   82:  x = ((x >> 1) & B0) + (x & B0);
+   648363:   83:  x = ((x >> 2) & B1) + (x & B1);
+   648363:   84:  x = ((x >> 4) + x) & B2;
+   648363:   85:  x = ((x >> 8) + x) & B3;
+   648363:   86:  x = ((x >> 16) + x) & B4;
+   648363:   87:  x = ((x >> 32) + x) & B5;
+        -:   88:
+   648363:   89:  return x;
+        -:   90:}
+        -:   91:
+        -:   92:/************ COLORS_RIGHTMOST ************/
+    #####:   93:colors_t colors_rightmost (const colors_t colors) { return colors & -colors; }
+        -:   94:
+        -:   95:/************ COLORS_LEFTMOST ************/
+    #####:   96:colors_t colors_leftmost (const colors_t colors) {
+    #####:   97:  if (colors == 0) {
+        -:   98:    return 0;
+        -:   99:  }
+        -:  100:
+        -:  101:  colors_t tmp_colors = colors;
+        -:  102:  size_t count = 0;
+    #####:  103:  while ((tmp_colors >> 1) != 0) {
+    #####:  104:    tmp_colors >>= 1;
+    #####:  105:    count++;
+        -:  106:  }
+        -:  107:
+    #####:  108:  return colors_set (count);
+        -:  109:}
+        -:  110:
+        -:  111:/************ PRNG_INIT ************/
+      566:  112:void prng_init (void) {
+        -:  113:  /* Initialization is done only once at first execution */
+      566:  114:  static bool seed_initialized = false;
+      566:  115:  if (!seed_initialized) {
+        2:  116:    srand ((time (NULL) * getpid ()) % MAX_COLORS);
+        2:  117:    seed_initialized = true;
+        -:  118:  }
+      566:  119:}
+        -:  120:
+        -:  121:/************ COLORS_RANDOM ************/
+      510:  122:colors_t colors_random (const colors_t colors) {
+      510:  123:  if (colors == 0) {
+        -:  124:    return 0;
+        -:  125:  }
+        -:  126:
+      510:  127:  prng_init ();
+      510:  128:  size_t random_index = rand () % colors_count (colors);
+        -:  129:
+      510:  130:  colors_t tmp_colors = colors;
+     1171:  131:  while (random_index > 0) {
+      661:  132:    tmp_colors &= (tmp_colors - 1);
+      661:  133:    random_index--;
+        -:  134:  }
+        -:  135:
+      510:  136:  return tmp_colors & -tmp_colors;
+        -:  137:}
+        -:  138:
+        -:  139:/************ COLORS_IS_EQUAL ************/
+    4050*:  140:bool colors_is_equal (const colors_t colors1, const colors_t colors2) {
+    4050*:  141:  return colors1 == colors2;
+        -:  142:}
+        -:  143:
+        -:  144:/************ SUBGRID_CONSISTENCY ************/
+     4050:  145:bool subgrid_consistency (colors_t *subgrid[], const size_t size) {
+     4050:  146:  colors_t all_colors = colors_empty ();
+     4050:  147:  colors_t all_singleton = 0;
+        -:  148:
+    40500:  149:  for (size_t i = 0; i < size; i++) {
+    36450:  150:    if (*subgrid[i] == 0) {
+        -:  151:      return false;
+        -:  152:    }
+        -:  153:
+    36450:  154:    if (colors_is_singleton (*subgrid[i])) {
+        -:  155:
+    14814:  156:      if (colors_is_subset (*subgrid[i], all_singleton)) {
+        -:  157:        return false;
+        -:  158:      }
+    14814:  159:      all_singleton = colors_or (all_singleton, *subgrid[i]);
+        -:  160:    }
+        -:  161:
+    36450:  162:    all_colors = colors_or (all_colors, *subgrid[i]);
+        -:  163:  }
+        -:  164:
+     8100:  165:  return colors_is_equal (all_colors, colors_full (size));
+        -:  166:}
+        -:  167:
+        -:  168:/************ HEURISTIC_CROSS_HATCHING ************/
+     4860:  169:static bool heuristics_cross_hatching (colors_t *subgrid[], size_t size) {
+     4860:  170:  colors_t all_singleton = colors_empty ();
+        -:  171:
+    48600:  172:  for (size_t i = 0; i < size; i++) {
+    60286:  173:    if (colors_is_singleton (*subgrid[i])) {
+    16546:  174:      all_singleton = colors_or (all_singleton, *subgrid[i]);
+        -:  175:    }
+        -:  176:  }
+        -:  177:
+        -:  178:  bool change = false;
+    48600:  179:  for (size_t i = 0; i < size; i++) {
+    87480:  180:    if (!colors_is_singleton (*subgrid[i]) &&
+    27194:  181:        colors_and (all_singleton, *subgrid[i])) {
+      962:  182:      *subgrid[i] = colors_subtract (*subgrid[i], all_singleton);
+      962:  183:      change = true;
+        -:  184:    }
+        -:  185:  }
+        -:  186:
+     4860:  187:  return change;
+        -:  188:}
+        -:  189:
+        -:  190:/************ HEURISTIC_LONE_NUMBER ************/
+     4860:  191:static bool heuristics_lone_number (colors_t *subgrid[], size_t size) {
+     4860:  192:  colors_t first_appearance = colors_empty ();
+     4860:  193:  colors_t second_appearance = colors_empty ();
+     4860:  194:  colors_t intersection;
+        -:  195:
+    48600:  196:  for (size_t i = 0; i < size; i++) {
+    43740:  197:    intersection = colors_and (first_appearance, *subgrid[i]);
+    43740:  198:    first_appearance = colors_or (first_appearance, *subgrid[i]);
+    43740:  199:    second_appearance = colors_or (second_appearance, intersection);
+        -:  200:  }
+        -:  201:
+     4860:  202:  colors_t lone_number = colors_subtract (first_appearance, second_appearance);
+     4860:  203:  if (lone_number == 0) {
+        -:  204:    return false;
+        -:  205:  }
+        -:  206:
+        -:  207:  bool change = false;
+        -:  208:
+    34800:  209:  for (size_t i = 0; i < size; i++) {
+    31320:  210:    intersection = colors_and (*subgrid[i], lone_number);
+        -:  211:
+    31320:  212:    if (!colors_is_equal (intersection, colors_empty ()) &&
+    16603:  213:        !colors_is_equal (*subgrid[i], intersection)) {
+       20:  214:      *subgrid[i] = intersection;
+       20:  215:      change = true;
+        -:  216:    }
+        -:  217:  }
+        -:  218:  return change;
+        -:  219:}
+        -:  220:
+        -:  221:/************ SUBGRID_HEURISTIC_NAKED_SUBSET ************/
+     4860:  222:bool heuristics_naked_subset (colors_t *subgrid[], size_t size) {
+        -:  223:
+     4860:  224:  bool change = false;
+        -:  225:
+    48600:  226:  for (size_t i = 0; i < size; i++) {
+    43740:  227:    colors_t colors_present = colors_empty ();
+        -:  228:
+    87480:  229:    if (!colors_is_singleton (*subgrid[i]) &&
+    27123:  230:        !colors_is_equal (*subgrid[i], colors_full (size))) {
+    21355:  231:      colors_present = colors_add (colors_present, i);
+        -:  232:
+   213550:  233:      for (size_t j = 0; j < size && colors_count (colors_present) <=
+   192195:  234:                                         colors_count (*subgrid[i]);
+   192195:  235:           j++) {
+   192195:  236:        if (colors_is_subset (*subgrid[j], *subgrid[i]))
+   103190:  237:          colors_present = colors_add (colors_present, j);
+        -:  238:      }
+        -:  239:
+    21355:  240:      if (colors_count (colors_present) == colors_count (*subgrid[i])) {
+    38470:  241:        for (size_t j = 0; j < size; j++) {
+        -:  242:
+    69246:  243:          if (!colors_is_in (colors_present, j)) {
+    13862:  244:            colors_t tmp = *subgrid[j];
+    13862:  245:            *subgrid[j] = colors_subtract (*subgrid[j], *subgrid[i]);
+        -:  246:
+    13862:  247:            if (tmp != *subgrid[j]) {
+    34623:  248:              change = true;
+        -:  249:            }
+        -:  250:          }
+        -:  251:        }
+        -:  252:      }
+        -:  253:    }
+        -:  254:  }
+     4860:  255:  return change;
+        -:  256:}
+        -:  257:
+        -:  258:/************ SUBGRID_HEURISTIC_HIDDEN_SUBSET ************/
+     4844:  259:static bool heuristics_hidden_subset (colors_t *subgrid[], size_t size) {
+     4844:  260:  bool change = false;
+        -:  261:
+    48440:  262:  for (size_t i = 0; i < size; i++) {
+        -:  263:    /* Number due to empiric test */
+        -:  264:    /*if (colors_count (*subgrid[i]) >= size/2) {
+        -:  265:      continue;
+        -:  266:    }*/
+        -:  267:
+    43596:  268:    colors_t **cell_to_change = malloc (size * sizeof (colors_t *));
+    43596:  269:    size_t count = 0;
+    43596:  270:    size_t max_intersection = 0;
+    43596:  271:    size_t count_intersection;
+        -:  272:
+   435960:  273:    for (size_t i_subgrid = 0; i_subgrid < size; i_subgrid++) {
+   392364:  274:      colors_t intersection = colors_and (*subgrid[i], *subgrid[i_subgrid]);
+        -:  275:
+   392364:  276:      if (intersection != 0) {
+   219337:  277:        cell_to_change[count] = subgrid[i_subgrid];
+   219337:  278:        count++;
+   219337:  279:        count_intersection = colors_count (intersection);
+   219337:  280:        if (max_intersection < count_intersection) {
+        -:  281:          max_intersection = count_intersection;
+        -:  282:        }
+        -:  283:      }
+        -:  284:    }
+        -:  285:
+    43596:  286:    if (count == max_intersection) {
+   115152:  287:      for (size_t j = 0; j < count; j++) {
+    89030:  288:        colors_t new_color = colors_and (*cell_to_change[j], *subgrid[i]);
+    89030:  289:        if (!colors_is_equal (*cell_to_change[j], new_color)) {
+        1:  290:          *cell_to_change[j] = new_color;
+        1:  291:          change = true;
+        -:  292:        }
+        -:  293:      }
+        -:  294:    }
+    43596:  295:    free (cell_to_change);
+        -:  296:  }
+        -:  297:
+     4844:  298:  return change;
+        -:  299:}
+        -:  300:
+        -:  301:/************ SUBGRID_HEURISTICS ************/
+     4860:  302:bool subgrid_heuristics (colors_t *subgrid[], size_t size) {
+     4860:  303:  if (subgrid == NULL) {
+        -:  304:    return false;
+        -:  305:  }
+        -:  306:
+     4860:  307:  bool change = false;
+        -:  308:
+     4860:  309:  change = heuristics_cross_hatching (subgrid, size) || change;
+        -:  310:
+     4860:  311:  change = heuristics_lone_number (subgrid, size) || change;
+        -:  312:
+     4860:  313:  bool change2 = heuristics_naked_subset (subgrid, size);
+     4860:  314:  change = change || change2;
+        -:  315:
+     4860:  316:  if (!change2) {
+     5129:  317:    change = heuristics_hidden_subset (subgrid, size) || change;
+        -:  318:  }
+        -:  319:
+        -:  320:  return change;
+        -:  321:}

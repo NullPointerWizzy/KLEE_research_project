@@ -1,0 +1,16 @@
+Error: memory error: null page access
+File: libc/stdio/fclose.c
+Line: 33
+assembly.ll line: 17104
+State: 72
+Stack: 
+	#000017104 in fclose(0) at libc/stdio/fclose.c:33
+	#100013207 in file_parser(139752029290496) at sudoku.c:207
+	#200012606 in __klee_posix_wrapped_main(2, 139889468243968) at sudoku.c:535
+	#300007232 in __user_main(3, 140698532708352, 140698532708384) at runtime/POSIX/klee_init_env.c:245
+	#400000645 in __uClibc_main(140682686627840, 3, 140698532708352, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#500000810 in main(3, 140698532708352)
+Info: 
+	address: 56
+	next: object at 139443328516096 of size 1
+		MO7946[1] allocated at __klee_posix_wrapped_main():  %7 = alloca i8, align 1

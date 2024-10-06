@@ -1,0 +1,23 @@
+klee --optimize --libc=uclibc --posix-runtime sudoku_final.bc ../test/grid-solver/grid-09x09-02.sku
+PID: 89140
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2024-03-30 16:03:25
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2024-03-30 16:09:48
+Elapsed: 00:06:23
+KLEE: done: explored paths = 14
+KLEE: done: avg. constructs per query = 129
+KLEE: done: total queries = 2768
+KLEE: done: valid queries = 2754
+KLEE: done: invalid queries = 14
+KLEE: done: query cex = 2768
+
+KLEE: done: total instructions = 1090056453
+KLEE: done: completed paths = 14
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 14

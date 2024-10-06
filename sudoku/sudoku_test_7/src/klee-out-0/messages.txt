@@ -1,0 +1,11 @@
+KLEE: Using STP solver backend
+KLEE: SAT solver: MiniSat
+KLEE: Deterministic allocator: Using quarantine queue size 8
+KLEE: Deterministic allocator: globals (start-address=0x7ff50e100000 size=10 GiB)
+KLEE: Deterministic allocator: constants (start-address=0x7ff28e100000 size=10 GiB)
+KLEE: Deterministic allocator: heap (start-address=0x7ef28e100000 size=1024 GiB)
+KLEE: Deterministic allocator: stack (start-address=0x7ed28e100000 size=128 GiB)
+KLEE: ERROR: grid.c:35: concretized symbolic size
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: libc/stdio/fclose.c:33: memory error: null page access
+KLEE: NOTE: now ignoring this error at this location
